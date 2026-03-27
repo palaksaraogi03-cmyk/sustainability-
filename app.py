@@ -21,46 +21,60 @@ st.set_page_config(
 )
 
 # -----------------------------
-# GLOBAL THEME (PASTEL GREEN)
+# 🌿 GLOBAL PASTEL GREEN THEME
 # -----------------------------
 st.markdown("""
 <style>
 
 /* Background */
 .stApp {
-    background-color: #f6fbf7;
+    background-color: #f7fcf9;
 }
 
-/* Titles */
+/* Headings */
 h1, h2, h3 {
-    color: #1B5E20;
+    color: #1b4332;
+    font-weight: 600;
 }
 
 /* Metric Cards */
 [data-testid="stMetric"] {
-    background-color: #E8F5E9;
+    background-color: #e6f4ea;
     padding: 15px;
     border-radius: 12px;
     text-align: center;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.05);
 }
 
 /* Sidebar */
 section[data-testid="stSidebar"] {
     background-color: #ffffff;
+    border-right: 1px solid #eaeaea;
+}
+
+/* Sidebar text */
+section[data-testid="stSidebar"] h2 {
+    color: #1b4332;
 }
 
 /* Buttons */
 .stButton>button {
-    background-color: #4CAF50;
+    background-color: #74c69d;
     color: white;
     border-radius: 10px;
     border: none;
+    padding: 8px 16px;
 }
 
 /* Tables */
 [data-testid="stDataFrame"] {
-    background-color: #ffffff;
     border-radius: 10px;
+}
+
+/* Divider */
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 </style>
@@ -72,9 +86,13 @@ section[data-testid="stSidebar"] {
 df = load_data()
 
 # -----------------------------
-# SIDEBAR BRANDING
+# 🌿 SIDEBAR BRANDING
 # -----------------------------
-st.sidebar.image("logo.png", width=120)
+try:
+    st.sidebar.image("logo.png", width=120)
+except:
+    pass
+
 st.sidebar.markdown("## 🌱 EcoSense AI")
 st.sidebar.caption("Sustainable Intelligence Platform")
 
@@ -84,7 +102,7 @@ st.sidebar.markdown("---")
 # NAVIGATION
 # -----------------------------
 page = st.sidebar.radio(
-    "Go to",
+    "Navigate",
     [
         "Executive Summary",
         "Descriptive Analysis",

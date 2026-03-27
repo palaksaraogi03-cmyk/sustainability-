@@ -1,98 +1,139 @@
 import streamlit as st
-import plotly.express as px
+import pandas as pd
 
-def show(df):
-    # -----------------------------
-    # Header
-    # -----------------------------
-    st.title("🌱 Sustainable Marketplace")
-    st.caption("Data-driven insights for eco-conscious commerce")
+import exec_summary
+import descriptive
+import clustering
+import association
+import prediction
+import prescriptive
+import scorer
 
-    st.markdown(" ")
+from utils import load_data
 
-    # -----------------------------
-    # KPIs (Styled Cards)
-    # -----------------------------
-    high_intent = (df['Purchase_Intent'] > 3).mean() * 100
-    avg_awareness = df['Awareness'].mean()
-    avg_price_sensitivity = df['Price_Sensitivity'].mean()
+# -----------------------------
+# PAGE CONFIG
+# -----------------------------
+st.set_page_config(
+    page_title="EcoSense AI",
+    layout="wide",
+    initial_sidebar_state="expanded"
+)
 
-    col1, col2, col3 = st.columns(3)
+# -----------------------------
+# 🌿 GLOBAL PASTEL GREEN THEME
+# -----------------------------
+st.markdown("""
+<style>
 
-    with col1:
-        st.metric("High Purchase Intent", f"{high_intent:.1f}%")
+/* Background */
+.stApp {
+    background-color: #f7fcf9;
+}
 
-    with col2:
-        st.metric("Avg Awareness", f"{avg_awareness:.2f}")
+/* Headings */
+h1, h2, h3 {
+    color: #1b4332;
+    font-weight: 600;
+}
 
-    with col3:
-        st.metric("Price Sensitivity", f"{avg_price_sensitivity:.2f}")
+/* Metric Cards */
+[data-testid="stMetric"] {
+    background-color: #e6f4ea;
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.05);
+}
 
-    st.markdown("---")
+/* Sidebar */
+section[data-testid="stSidebar"] {
+    background-color: #ffffff;
+    border-right: 1px solid #eaeaea;
+}
 
-    # -----------------------------
-    # Category Distribution
-    # -----------------------------
-    st.markdown("### 🛍️ Product Preferences")
+/* Sidebar text */
+section[data-testid="stSidebar"] h2 {
+    color: #1b4332;
+}
 
-    fig = px.pie(df, names="Preferred_Category")
+/* Buttons */
+.stButton>button {
+    background-color: #74c69d;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    padding: 8px 16px;
+}
 
-    fig.update_layout(
-        template="simple_white",
-        showlegend=True,
-        margin=dict(l=10, r=10, t=40, b=10)
-    )
+/* Tables */
+[data-testid="stDataFrame"] {
+    border-radius: 10px;
+}
 
-    st.plotly_chart(fig, use_container_width=True)
+/* Divider */
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 
-    st.markdown("---")
+</style>
+""", unsafe_allow_html=True)
 
-    # -----------------------------
-    # Awareness vs Purchase Intent
-    # -----------------------------
-    st.markdown("### 📈 Awareness vs Purchase Intent")
+# -----------------------------
+# LOAD DATA
+# -----------------------------
+df = load_data()
 
-    fig2 = px.scatter(
-        df,
-        x="Awareness",
-        y="Purchase_Intent",
-        opacity=0.5
-    )
+# -----------------------------
+# 🌿 SIDEBAR BRANDING
+# -----------------------------
+try:
+    st.sidebar.image("logo.png", width=120)
+except:
+    pass
 
-    fig2.update_layout(
-        template="simple_white",
-        margin=dict(l=10, r=10, t=40, b=10)
-    )
+st.sidebar.markdown("## 🌱 EcoSense AI")
+st.sidebar.caption("Sustainable Intelligence Platform")
 
-    st.plotly_chart(fig2, use_container_width=True)
+st.sidebar.markdown("---")
 
-    st.markdown("---")
+# -----------------------------
+# NAVIGATION
+# -----------------------------
+page = st.sidebar.radio(
+    "Navigate",
+    [
+        "Executive Summary",
+        "Descriptive Analysis",
+        "Clustering",
+        "Association Rules",
+        "Prediction Models",
+        "Prescriptive Analysis",
+        "New Customer Scorer"
+    ]
+)
 
-    # -----------------------------
-    # Insights
-    # -----------------------------
-    st.markdown("### 🔍 Key Insights")
+# -----------------------------
+# ROUTING
+# -----------------------------
+if page == "Executive Summary":
+    exec_summary.show(df)
 
-    st.markdown("""
-- Strong demand for sustainable products in the UAE  
-- Awareness significantly influences purchase intent  
-- Price sensitivity remains a key barrier  
-- Eco-conscious users show high conversion potential  
-""")
+elif page == "Descriptive Analysis":
+    descriptive.show(df)
 
-    st.markdown("---")
+elif page == "Clustering":
+    clustering.show(df)
 
-    # -----------------------------
-    # Business Opportunity
-    # -----------------------------
-    st.markdown("### 🚀 Strategic Opportunity")
+elif page == "Association Rules":
+    association.show(df)
 
-    st.success("""
-Focus on **price-sensitive but environmentally aware users**:
+elif page == "Prediction Models":
+    prediction.show(df)
 
-• Offer discounts & bundles  
-• Highlight certifications & trust signals  
-• Educate users through content  
+elif page == "Prescriptive Analysis":
+    prescriptive.show(df)
 
-👉 This segment offers the highest ROI potential.
-""")
+elif page == "New Customer Scorer":
+    scorer.show(df)

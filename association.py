@@ -1,18 +1,15 @@
 import streamlit as st
+import pandas as pd
 import plotly.express as px
-from sklearn.cluster import KMeans
-from sklearn.preprocessing import StandardScaler
-from sklearn.decomposition import PCA
+from mlxtend.frequent_patterns import apriori, association_rules
 
 # -----------------------------
 # HEADER
 # -----------------------------
 def header():
     col1, col2 = st.columns([1, 6])
-
     with col1:
         st.image("logo.png", width=60)
-
     with col2:
         st.markdown("## EcoSense AI")
 
@@ -25,61 +22,100 @@ def show(df):
     header()
     st.markdown("---")
 
-    st.title("🔍 Customer Segmentation")
-    st.caption("Grouping customers based on behavior")
+    st.title("🔗 Association Rules")
+    st.caption("Understanding relationships between customer preferences")
 
     try:
         # -----------------------------
+        # INTERACTIVE SLIDERS 🔥
+        # -----------------------------
+        st.markdown("### ⚙️ Adjust Rule Strength")
+
+        col1, col2 = st.columns(2)
+
+        with col1:
+            support = st.slider("Min Support", 0.05, 0.5, 0.1)
+
+        with col2:
+            confidence = st.slider("Min Confidence", 0.1, 1.0, 0.4)
+
+        st.markdown("---")
+
+        # -----------------------------
         # SELECT FEATURES
         # -----------------------------
-        features = [
+        selected = df[[
             "Awareness",
-            "Price_Sensitivity",
             "Environmental_Concern",
             "Health_Concern",
-            "Social_Influence"
-        ]
-
-        X = df[features]
-
-        # -----------------------------
-        # SCALE
-        # -----------------------------
-        scaler = StandardScaler()
-        X_scaled = scaler.fit_transform(X)
+            "Price_Sensitivity",
+            "Certification_Importance",
+            "Reviews_Importance"
+        ]]
 
         # -----------------------------
-        # KMEANS
+        # BINARIZE
         # -----------------------------
-        kmeans = KMeans(n_clusters=4, random_state=42)
-        df['Cluster'] = kmeans.fit_predict(X_scaled)
+        binary = selected.applymap(lambda x: 1 if x >= 4 else 0)
 
         # -----------------------------
-        # PCA (for visualization)
+        # APRIORI
         # -----------------------------
-        pca = PCA(n_components=2)
-        components = pca.fit_transform(X_scaled)
+        frequent = apriori(binary, min_support=support, use_colnames=True)
 
-        df['PC1'] = components[:, 0]
-        df['PC2'] = components[:, 1]
+        if frequent.empty:
+            st.warning("No frequent itemsets found. Try lowering support.")
+            return
+
+        rules = association_rules(frequent, metric="confidence", min_threshold=confidence)
+
+        if rules.empty:
+            st.info("""
+No strong rules found at current threshold.
+
+👉 Try lowering support/confidence to discover patterns.
+""")
+            return
 
         # -----------------------------
-        # CLEAN SCATTER (PASTEL 🌿)
+        # FORMAT RULES
         # -----------------------------
-        st.markdown("### 📊 Customer Segments")
+        rules['antecedents'] = rules['antecedents'].apply(lambda x: ', '.join(list(x)))
+        rules['consequents'] = rules['consequents'].apply(lambda x: ', '.join(list(x)))
 
-        fig = px.scatter(
-            df,
-            x="PC1",
-            y="PC2",
-            color=df["Cluster"].astype(str),
-            color_discrete_sequence=[
-                "#52b788",
-                "#74c69d",
-                "#95d5b2",
-                "#b7e4c7"
-            ],
-            opacity=0.7
+        rules['confidence'] = rules['confidence'].astype(float)
+        rules['lift'] = rules['lift'].astype(float)
+        rules['support'] = rules['support'].astype(float)
+
+        # -----------------------------
+        # TOP RULES
+        # -----------------------------
+        st.markdown("### 🔥 Top Association Rules")
+
+        top_rules = rules.sort_values(by="confidence", ascending=False).head(5)
+
+        for _, row in top_rules.iterrows():
+            st.success(f"""
+**IF:** {row['antecedents']}  
+**THEN:** {row['consequents']}  
+
+Confidence: {row['confidence']:.2f}  
+Lift: {row['lift']:.2f}
+""")
+
+        st.markdown("---")
+
+        # -----------------------------
+        # CONFIDENCE BAR (PASTEL)
+        # -----------------------------
+        st.markdown("### 📊 Rule Strength (Confidence)")
+
+        fig = px.bar(
+            top_rules,
+            x="confidence",
+            y="antecedents",
+            orientation='h',
+            color_discrete_sequence=["#74c69d"]
         )
 
         fig.update_layout(
@@ -94,64 +130,60 @@ def show(df):
         st.markdown("---")
 
         # -----------------------------
-        # SEGMENT PROFILES
+        # LIFT SCATTER (FIXED 🔥)
         # -----------------------------
-        st.markdown("### 📋 Segment Profiles")
+        st.markdown("### 📈 Lift Analysis")
 
-        cluster_summary = df.groupby("Cluster")[features].mean().round(2)
-
-        st.dataframe(
-            cluster_summary.style.set_properties(**{
-                'background-color': '#ffffff',
-                'color': '#1b4332'
-            }),
-            use_container_width=True
+        fig2 = px.scatter(
+            rules,
+            x="support",
+            y="lift",
+            color="confidence",
+            color_continuous_scale=["#d8f3dc", "#52b788"],
+            opacity=0.7
         )
+
+        fig2.update_layout(
+            template="simple_white",
+            paper_bgcolor="#f7fcf9",
+            plot_bgcolor="#f7fcf9",
+            font=dict(color="#1b4332")
+        )
+
+        st.plotly_chart(fig2, use_container_width=True)
 
         st.markdown("---")
 
         # -----------------------------
-        # SEGMENT INTERPRETATION
+        # INSIGHTS
         # -----------------------------
-        st.markdown("### 🧠 Segment Insights")
+        st.markdown("### 🧠 Key Insights")
 
         st.markdown("""
-**Cluster 0 – Premium Eco Users**
-- High awareness  
-- Low price sensitivity  
-👉 Target with premium products  
+- High awareness users prefer certifications  
+- Health-conscious users rely on reviews  
+- Trust signals strongly influence decisions  
 
-**Cluster 1 – Price-Sensitive Greens**
-- High awareness  
-- High price sensitivity  
-👉 Offer discounts  
-
-**Cluster 2 – Unaware Users**
-- Low awareness  
-👉 Focus on education  
-
-**Cluster 3 – Casual Buyers**
-- Moderate behavior  
-👉 Use retargeting strategies  
+👉 Bundling these features increases conversions
 """)
 
         st.markdown("---")
 
         # -----------------------------
-        # BUSINESS STRATEGY
+        # BUSINESS APPLICATION
         # -----------------------------
         st.markdown("### 🚀 Business Application")
 
         st.success("""
-Customer segmentation enables:
+Use association rules to:
 
-• Personalized marketing  
-• Better targeting  
-• Improved conversion  
+• Bundle products & features  
+• Improve cross-selling  
+• Personalize recommendations  
 
-👉 Focus on Cluster 1 for highest growth potential
+👉 Example: Show certifications + reviews together
 """)
 
     except Exception as e:
-        st.error("Error in clustering page")
+        st.error("Error in association page")
         st.write(e)

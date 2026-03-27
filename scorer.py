@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+import plotly.express as px
 from sklearn.ensemble import RandomForestClassifier
 from utils import preprocess
 
@@ -63,7 +64,7 @@ def show(df):
             model.fit(X, y)
 
             # -----------------------------
-            # 🔥 FIX: Align columns properly
+            # FIX: Align columns
             # -----------------------------
             new_processed = new_processed[X.columns]
 
@@ -106,17 +107,71 @@ def show(df):
             new_df['Recommendation'] = new_df['Segment'].apply(recommend)
 
             # -----------------------------
-            # Output
+            # 🎯 PREMIUM OUTPUT STARTS HERE
             # -----------------------------
-            st.markdown("### 📊 Results")
+            st.markdown("### 📊 Prediction Summary")
 
-            st.dataframe(new_df, use_container_width=True)
+            # KPI Cards
+            avg_prob = new_df['Purchase_Probability'].mean()
+            high_intent = (new_df['Purchase_Probability'] > 0.7).sum()
+
+            col1, col2 = st.columns(2)
+
+            col1.metric("Avg Purchase Probability", f"{avg_prob:.2f}")
+            col2.metric("High Intent Users", high_intent)
 
             st.markdown("---")
 
-            # -----------------------------
+            # Top Users
+            st.markdown("### 🌟 Top High-Intent Customers")
+
+            top_users = new_df.sort_values(
+                by="Purchase_Probability",
+                ascending=False
+            ).head(5)
+
+            st.dataframe(
+                top_users.style.highlight_max(
+                    axis=0,
+                    subset=['Purchase_Probability']
+                ),
+                use_container_width=True
+            )
+
+            st.markdown("---")
+
+            # Distribution Chart
+            st.markdown("### 📈 Probability Distribution")
+
+            fig = px.histogram(
+                new_df,
+                x="Purchase_Probability",
+                nbins=10
+            )
+
+            fig.update_layout(
+                template="simple_white",
+                margin=dict(l=10, r=10, t=30, b=10)
+            )
+
+            st.plotly_chart(fig, use_container_width=True)
+
+            st.markdown("---")
+
+            # Clean Table
+            st.markdown("### 📋 All Customers")
+
+            st.dataframe(
+                new_df.sort_values(
+                    by="Purchase_Probability",
+                    ascending=False
+                ),
+                use_container_width=True
+            )
+
+            st.markdown("---")
+
             # Download Results
-            # -----------------------------
             csv = new_df.to_csv(index=False).encode('utf-8')
 
             st.download_button(
@@ -128,9 +183,7 @@ def show(df):
 
             st.markdown("---")
 
-            # -----------------------------
-            # Insight
-            # -----------------------------
+            # Final Insight
             st.success("""
 This system enables:
 

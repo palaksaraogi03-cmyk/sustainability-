@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+import plotly.express as px
 from mlxtend.frequent_patterns import apriori, association_rules
 
 def show(df):
@@ -10,81 +11,108 @@ def show(df):
 
     try:
         # -----------------------------
-        # Prepare Data (One-hot encoding)
+        # Prepare Data
         # -----------------------------
-        df_rules = df.copy()
-
-        df_rules = df_rules[[
-            'Preferred_Category',
-            'Purchase_Frequency',
-            'Income'
-        ]]
-
+        df_rules = df[['Preferred_Category', 'Purchase_Frequency', 'Income']]
         df_encoded = pd.get_dummies(df_rules)
 
         # -----------------------------
-        # Apply Apriori
+        # Apriori
         # -----------------------------
-        freq_items = apriori(
-            df_encoded,
-            min_support=0.1,
-            use_colnames=True
-        )
+        freq_items = apriori(df_encoded, min_support=0.1, use_colnames=True)
 
-        rules = association_rules(
-            freq_items,
-            metric="confidence",
-            min_threshold=0.5
-        )
+        rules = association_rules(freq_items, metric="confidence", min_threshold=0.5)
 
-        # Sort rules
+        if rules.empty:
+            st.warning("No strong association rules found.")
+            return
+
         rules = rules.sort_values(by="lift", ascending=False)
 
-        st.markdown("### 📊 Top Association Rules")
+        # Clean columns
+        rules['antecedents'] = rules['antecedents'].apply(lambda x: ', '.join(list(x)))
+        rules['consequents'] = rules['consequents'].apply(lambda x: ', '.join(list(x)))
 
-        # Clean display
-        display_rules = rules[['antecedents', 'consequents', 'support', 'confidence', 'lift']].copy()
+        st.markdown("### 🎯 Top Rule Insight")
 
-        # Convert frozenset to string
-        display_rules['antecedents'] = display_rules['antecedents'].apply(lambda x: ', '.join(list(x)))
-        display_rules['consequents'] = display_rules['consequents'].apply(lambda x: ', '.join(list(x)))
+        top_rule = rules.iloc[0]
 
-        st.dataframe(display_rules.head(10), use_container_width=True)
+        st.success(f"""
+**If a user shows:** {top_rule['antecedents']}  
+👉 They are likely to also show: **{top_rule['consequents']}**
+
+Lift: {top_rule['lift']:.2f} | Confidence: {top_rule['confidence']:.2f}
+""")
 
         st.markdown("---")
 
         # -----------------------------
-        # Key Insights
+        # VISUAL: Lift Chart
+        # -----------------------------
+        st.markdown("### 📊 Strongest Associations (by Lift)")
+
+        top_rules = rules.head(8).copy()
+        top_rules['rule'] = top_rules['antecedents'] + " → " + top_rules['consequents']
+
+        fig = px.bar(
+            top_rules,
+            x='lift',
+            y='rule',
+            orientation='h'
+        )
+
+        fig.update_layout(
+            template="simple_white",
+            margin=dict(l=10, r=10, t=30, b=10),
+            yaxis_title="Rule",
+            xaxis_title="Lift"
+        )
+
+        st.plotly_chart(fig, use_container_width=True)
+
+        st.markdown("---")
+
+        # -----------------------------
+        # Table (clean)
+        # -----------------------------
+        st.markdown("### 📋 Rule Details")
+
+        display_cols = ['antecedents', 'consequents', 'support', 'confidence', 'lift']
+
+        st.dataframe(
+            rules[display_cols].head(10),
+            use_container_width=True
+        )
+
+        st.markdown("---")
+
+        # -----------------------------
+        # Insights
         # -----------------------------
         st.markdown("### 🔍 Key Insights")
 
-        if not display_rules.empty:
-            top_rule = display_rules.iloc[0]
-
-            st.markdown(f"""
-- Customers who show **{top_rule['antecedents']}** are likely to also show **{top_rule['consequents']}**
-- High lift ({top_rule['lift']:.2f}) indicates a strong relationship
-- These patterns can be used for targeted marketing
+        st.markdown("""
+- High lift values indicate **strong relationships between behaviors**
+- Certain customer groups tend to exhibit **predictable patterns**
+- These insights help in **personalization and targeting**
 """)
-        else:
-            st.info("No strong association rules found. Try adjusting thresholds.")
 
         st.markdown("---")
 
         # -----------------------------
-        # Business Recommendations
+        # Business Use
         # -----------------------------
         st.markdown("### 🚀 Business Applications")
 
         st.success("""
-Use association rules to:
+Use these rules to:
 
 • Recommend related products  
-• Personalize marketing campaigns  
-• Bundle products effectively  
-• Improve cross-selling strategies  
+• Create smart bundles  
+• Personalize user journeys  
+• Improve cross-selling  
 
-👉 Helps increase conversion and basket size
+👉 This directly increases conversion and revenue
 """)
 
     except Exception as e:

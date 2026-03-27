@@ -9,117 +9,131 @@ def show(df):
 
     st.markdown(" ")
 
-    try:
-        # -----------------------------
-        # Upload Section
-        # -----------------------------
-        uploaded_file = st.file_uploader("📤 Upload New Customer Data (CSV)", type=["csv"])
+    # -----------------------------
+    # Sample File Download
+    # -----------------------------
+    st.markdown("### 📥 Download Sample Template")
 
-        if uploaded_file is not None:
+    sample = df.drop(columns=['Purchase_Intent']).head(5)
+    csv_sample = sample.to_csv(index=False).encode('utf-8')
 
-            new_df = pd.read_csv(uploaded_file)
+    st.download_button(
+        label="Download Sample CSV",
+        data=csv_sample,
+        file_name="sample_input.csv",
+        mime="text/csv"
+    )
 
-            st.markdown("### 📄 Uploaded Data")
-            st.dataframe(new_df.head(), use_container_width=True)
+    st.markdown("---")
 
-            st.markdown("---")
+    # -----------------------------
+    # Manual Input Option
+    # -----------------------------
+    st.markdown("### ✍️ Enter Single Customer")
 
-            # -----------------------------
-            # Combine for preprocessing
-            # -----------------------------
-            combined_df = pd.concat([df, new_df], ignore_index=True)
+    col1, col2 = st.columns(2)
 
-            processed_df, _ = preprocess(combined_df)
+    with col1:
+        awareness = st.slider("Awareness", 1, 5, 3)
+        price = st.slider("Price Sensitivity", 1, 5, 3)
+        env = st.slider("Environmental Concern", 1, 5, 3)
 
-            # Split back
-            train_df = processed_df.iloc[:len(df)]
-            new_processed = processed_df.iloc[len(df):]
+    with col2:
+        health = st.slider("Health Concern", 1, 5, 3)
+        income = st.selectbox("Income", ["Low", "Medium", "High"])
+        category = st.selectbox("Preferred Category", ["Fashion", "Home Products", "Food", "Personal Care"])
 
-            # -----------------------------
-            # Train Model
-            # -----------------------------
-            X = train_df.drop('Purchase_Intent', axis=1)
-            y = (train_df['Purchase_Intent'] > 3).astype(int)
+    if st.button("Predict Single Customer"):
 
-            model = RandomForestClassifier(random_state=42)
-            model.fit(X, y)
+        input_df = pd.DataFrame([{
+            'Age': 25,
+            'Gender': 'Male',
+            'Income': income,
+            'Occupation': 'Student',
+            'Awareness': awareness,
+            'Purchase_Frequency': 'Occasionally',
+            'Environmental_Concern': env,
+            'Health_Concern': health,
+            'Social_Influence': 3,
+            'Price_Sensitivity': price,
+            'Availability_Issue': 2,
+            'Preferred_Category': category,
+            'Certification_Importance': 3,
+            'Reviews_Importance': 3,
+            'Brand_Story_Importance': 2,
+            'UI_Expectation': 4,
+            'Delivery_Expectation': 3
+        }])
 
-            # -----------------------------
-            # Predict
-            # -----------------------------
-            predictions = model.predict_proba(new_processed)[:, 1]
+        combined = pd.concat([df, input_df], ignore_index=True)
+        processed, _ = preprocess(combined)
 
-            new_df['Purchase_Probability'] = predictions.round(2)
+        train = processed.iloc[:len(df)]
+        test = processed.iloc[len(df):]
 
-            # -----------------------------
-            # Segment Assignment
-            # -----------------------------
-            def assign_segment(row):
-                if row['Awareness'] >= 4 and row['Price_Sensitivity'] <= 2:
-                    return "Eco Enthusiast"
-                elif row['Awareness'] >= 4 and row['Price_Sensitivity'] >= 4:
-                    return "Price-Conscious Green"
-                elif row['Awareness'] <= 2:
-                    return "Unaware User"
-                else:
-                    return "Occasional Buyer"
+        X = train.drop('Purchase_Intent', axis=1)
+        y = (train['Purchase_Intent'] > 3).astype(int)
 
-            new_df['Segment'] = new_df.apply(assign_segment, axis=1)
+        model = RandomForestClassifier(random_state=42)
+        model.fit(X, y)
 
-            # -----------------------------
-            # Recommendation Engine
-            # -----------------------------
-            def recommend(segment):
-                if segment == "Eco Enthusiast":
-                    return "Show premium sustainable products"
-                elif segment == "Price-Conscious Green":
-                    return "Offer discounts and bundles"
-                elif segment == "Unaware User":
-                    return "Show educational content"
-                else:
-                    return "Use retargeting ads"
+        prob = model.predict_proba(test)[0][1]
 
-            new_df['Recommendation'] = new_df['Segment'].apply(recommend)
+        st.success(f"Purchase Probability: {prob:.2f}")
 
-            # -----------------------------
-            # Output
-            # -----------------------------
-            st.markdown("### 📊 Predictions & Recommendations")
+    st.markdown("---")
 
-            st.dataframe(new_df, use_container_width=True)
+    # -----------------------------
+    # Upload CSV
+    # -----------------------------
+    st.markdown("### 📤 Upload CSV for Bulk Prediction")
 
-            st.markdown("---")
+    uploaded_file = st.file_uploader("Upload CSV", type=["csv"])
 
-            # -----------------------------
-            # Download Option
-            # -----------------------------
-            csv = new_df.to_csv(index=False).encode('utf-8')
+    if uploaded_file is not None:
 
-            st.download_button(
-                label="📥 Download Results",
-                data=csv,
-                file_name='customer_predictions.csv',
-                mime='text/csv'
-            )
+        new_df = pd.read_csv(uploaded_file)
 
-            st.markdown("---")
+        st.dataframe(new_df.head(), use_container_width=True)
 
-            # -----------------------------
-            # Insight
-            # -----------------------------
-            st.success("""
-This system enables real-time decision making:
+        combined_df = pd.concat([df, new_df], ignore_index=True)
+        processed_df, _ = preprocess(combined_df)
 
-• Identify high-value customers  
-• Personalize marketing strategies  
-• Improve conversion rates  
+        train_df = processed_df.iloc[:len(df)]
+        new_processed = processed_df.iloc[len(df):]
 
-👉 Transforms raw data into actionable intelligence
+        X = train_df.drop('Purchase_Intent', axis=1)
+        y = (train_df['Purchase_Intent'] > 3).astype(int)
+
+        model = RandomForestClassifier(random_state=42)
+        model.fit(X, y)
+
+        preds = model.predict_proba(new_processed)[:, 1]
+        new_df['Purchase_Probability'] = preds.round(2)
+
+        st.markdown("### 📊 Results")
+        st.dataframe(new_df, use_container_width=True)
+
+        csv = new_df.to_csv(index=False).encode('utf-8')
+
+        st.download_button(
+            label="Download Results",
+            data=csv,
+            file_name='predictions.csv',
+            mime='text/csv'
+        )
+
+    else:
+        st.info("Upload a CSV file or use manual input above")
+
+    st.markdown("---")
+
+    st.success("""
+This tool enables:
+
+• Real-time prediction  
+• Customer segmentation  
+• Personalized marketing  
+
+👉 A complete decision-support system
 """)
-
-        else:
-            st.info("Upload a CSV file to start predictions")
-
-    except Exception as e:
-        st.error("Error in scorer page")
-        st.write(e)

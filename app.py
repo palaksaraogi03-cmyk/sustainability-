@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 
+# IMPORT ALL PAGES
 import exec_summary
 import descriptive
 import clustering
@@ -21,7 +22,7 @@ st.set_page_config(
 )
 
 # -----------------------------
-# 🌿 GLOBAL PASTEL GREEN THEME
+# GLOBAL PASTEL THEME
 # -----------------------------
 st.markdown("""
 <style>
@@ -34,47 +35,31 @@ st.markdown("""
 /* Headings */
 h1, h2, h3 {
     color: #1b4332;
-    font-weight: 600;
 }
 
 /* Metric Cards */
 [data-testid="stMetric"] {
     background-color: #e6f4ea;
-    padding: 15px;
-    border-radius: 12px;
-    text-align: center;
-    box-shadow: 0px 2px 8px rgba(0,0,0,0.05);
+    padding: 12px;
+    border-radius: 10px;
 }
 
 /* Sidebar */
 section[data-testid="stSidebar"] {
     background-color: #ffffff;
-    border-right: 1px solid #eaeaea;
-}
-
-/* Sidebar text */
-section[data-testid="stSidebar"] h2 {
-    color: #1b4332;
 }
 
 /* Buttons */
 .stButton>button {
     background-color: #74c69d;
     color: white;
-    border-radius: 10px;
+    border-radius: 8px;
     border: none;
-    padding: 8px 16px;
 }
 
 /* Tables */
 [data-testid="stDataFrame"] {
     border-radius: 10px;
-}
-
-/* Divider */
-hr {
-    margin-top: 20px;
-    margin-bottom: 20px;
 }
 
 </style>
@@ -86,7 +71,7 @@ hr {
 df = load_data()
 
 # -----------------------------
-# 🌿 SIDEBAR BRANDING
+# SIDEBAR BRANDING
 # -----------------------------
 try:
     st.sidebar.image("logo.png", width=120)
@@ -115,7 +100,7 @@ page = st.sidebar.radio(
 )
 
 # -----------------------------
-# ROUTING
+# PAGE ROUTING (VERY IMPORTANT)
 # -----------------------------
 if page == "Executive Summary":
     exec_summary.show(df)

@@ -1,162 +1,160 @@
 import streamlit as st
-import plotly.express as px
-import plotly.graph_objects as go
-from sklearn.model_selection import train_test_split
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, roc_curve, auc
-from utils import preprocess
 import pandas as pd
+import plotly.express as px
+from mlxtend.frequent_patterns import apriori, association_rules
 
+# -----------------------------
+# HEADER
+# -----------------------------
+def header():
+    col1, col2 = st.columns([1, 6])
+
+    with col1:
+        st.image("logo.png", width=60)
+
+    with col2:
+        st.markdown("## EcoSense AI")
+
+
+# -----------------------------
+# MAIN FUNCTION
+# -----------------------------
 def show(df):
-    st.title("🤖 Prediction Models")
-    st.caption("Predicting customer purchase intent")
 
-    st.markdown(" ")
+    header()
+    st.markdown("---")
+
+    st.title("🔗 Association Rules")
+    st.caption("Understanding relationships between customer preferences")
 
     try:
         # -----------------------------
-        # Preprocess Data
+        # SELECT FEATURES
         # -----------------------------
-        df_processed, _ = preprocess(df)
-
-        X = df_processed.drop('Purchase_Intent', axis=1)
-        y = (df_processed['Purchase_Intent'] > 3).astype(int)
-
-        # -----------------------------
-        # Train/Test Split
-        # -----------------------------
-        X_train, X_test, y_train, y_test = train_test_split(
-            X, y, test_size=0.2, random_state=42
-        )
+        selected = df[[
+            "Awareness",
+            "Environmental_Concern",
+            "Health_Concern",
+            "Price_Sensitivity",
+            "Certification_Importance",
+            "Reviews_Importance"
+        ]]
 
         # -----------------------------
-        # Model
+        # BINARIZE (IMPORTANT)
         # -----------------------------
-        model = RandomForestClassifier(random_state=42)
-        model.fit(X_train, y_train)
-
-        y_pred = model.predict(X_test)
-        y_prob = model.predict_proba(X_test)[:, 1]
+        binary = selected.applymap(lambda x: 1 if x >= 4 else 0)
 
         # -----------------------------
-        # Metrics
+        # APRIORI
         # -----------------------------
-        acc = accuracy_score(y_test, y_pred)
-        prec = precision_score(y_test, y_pred)
-        rec = recall_score(y_test, y_pred)
-        f1 = f1_score(y_test, y_pred)
+        frequent = apriori(binary, min_support=0.2, use_colnames=True)
 
-        st.markdown("### 📊 Model Performance")
-
-        col1, col2, col3, col4 = st.columns(4)
-
-        col1.metric("Accuracy", f"{acc:.2f}")
-        col2.metric("Precision", f"{prec:.2f}")
-        col3.metric("Recall", f"{rec:.2f}")
-        col4.metric("F1 Score", f"{f1:.2f}")
-
-        st.markdown("---")
+        rules = association_rules(frequent, metric="confidence", min_threshold=0.6)
 
         # -----------------------------
-        # ROC Curve (🔥 UPGRADED)
+        # FORMAT RULES
         # -----------------------------
-        st.markdown("### 📈 ROC Curve")
-
-        fpr, tpr, _ = roc_curve(y_test, y_prob)
-        roc_auc = auc(fpr, tpr)
-
-        fig_roc = go.Figure()
-
-        # ROC Curve
-        fig_roc.add_trace(go.Scatter(
-            x=fpr,
-            y=tpr,
-            mode='lines',
-            name=f"ROC Curve (AUC = {roc_auc:.2f})",
-            line=dict(width=3, color="#6366F1"),
-            fill='tozeroy',
-            fillcolor='rgba(99,102,241,0.1)'
-        ))
-
-        # Baseline
-        fig_roc.add_trace(go.Scatter(
-            x=[0, 1],
-            y=[0, 1],
-            mode='lines',
-            name="Random Model",
-            line=dict(dash='dash', color='gray')
-        ))
-
-        fig_roc.update_layout(
-            template="simple_white",
-            title="ROC Curve",
-            xaxis_title="False Positive Rate",
-            yaxis_title="True Positive Rate",
-            legend=dict(orientation="h", y=-0.2),
-            margin=dict(l=10, r=10, t=40, b=10)
-        )
-
-        st.plotly_chart(fig_roc, use_container_width=True)
-
-        st.markdown("---")
+        rules['antecedents'] = rules['antecedents'].apply(lambda x: ', '.join(list(x)))
+        rules['consequents'] = rules['consequents'].apply(lambda x: ', '.join(list(x)))
 
         # -----------------------------
-        # Feature Importance
+        # TOP RULES
         # -----------------------------
-        st.markdown("### 🔍 Feature Importance")
+        st.markdown("### 🔥 Top Association Rules")
 
-        importance = pd.DataFrame({
-            'Feature': X.columns,
-            'Importance': model.feature_importances_
-        }).sort_values(by='Importance', ascending=False)
+        top_rules = rules.sort_values(by="confidence", ascending=False).head(5)
 
-        fig_imp = px.bar(
-            importance.head(10),
-            x='Importance',
-            y='Feature',
-            orientation='h'
-        )
+        for _, row in top_rules.iterrows():
+            st.info(f"""
+**IF:** {row['antecedents']}  
+**THEN:** {row['consequents']}  
 
-        fig_imp.update_layout(
-            template="simple_white",
-            margin=dict(l=10, r=10, t=30, b=10)
-        )
-
-        st.plotly_chart(fig_imp, use_container_width=True)
-
-        st.markdown("---")
-
-        # -----------------------------
-        # Insights
-        # -----------------------------
-        st.markdown("### 🔍 Key Insights")
-
-        top_feature = importance.iloc[0]['Feature']
-
-        st.markdown(f"""
-- The most important driver of purchase intent is **{top_feature}**
-- Awareness and price sensitivity strongly influence decisions  
-- The model effectively distinguishes high-intent users  
+Confidence: {row['confidence']:.2f}  
+Lift: {row['lift']:.2f}
 """)
 
         st.markdown("---")
 
         # -----------------------------
-        # Business Application
+        # VISUAL (CONFIDENCE)
+        # -----------------------------
+        st.markdown("### 📊 Rule Strength (Confidence)")
+
+        fig = px.bar(
+            top_rules,
+            x="confidence",
+            y="antecedents",
+            orientation='h',
+            color_discrete_sequence=["#74c69d"]
+        )
+
+        fig.update_layout(
+            template="simple_white",
+            paper_bgcolor="#f7fcf9",
+            plot_bgcolor="#f7fcf9",
+            font=dict(color="#1b4332")
+        )
+
+        st.plotly_chart(fig, use_container_width=True)
+
+        st.markdown("---")
+
+        # -----------------------------
+        # LIFT VISUAL
+        # -----------------------------
+        st.markdown("### 📈 Lift Analysis")
+
+        fig2 = px.scatter(
+            rules,
+            x="support",
+            y="lift",
+            size="confidence",
+            color_discrete_sequence=["#52b788"],
+            opacity=0.7
+        )
+
+        fig2.update_layout(
+            template="simple_white",
+            paper_bgcolor="#f7fcf9",
+            plot_bgcolor="#f7fcf9",
+            font=dict(color="#1b4332")
+        )
+
+        st.plotly_chart(fig2, use_container_width=True)
+
+        st.markdown("---")
+
+        # -----------------------------
+        # BUSINESS INSIGHTS
+        # -----------------------------
+        st.markdown("### 🧠 Key Insights")
+
+        st.markdown("""
+- Customers with high awareness value certifications  
+- Health-conscious users rely on reviews  
+- Price-sensitive users still show eco-interest  
+
+👉 Bundling features can increase conversions
+""")
+
+        st.markdown("---")
+
+        # -----------------------------
+        # BUSINESS APPLICATION
         # -----------------------------
         st.markdown("### 🚀 Business Application")
 
         st.success("""
-Use this model to:
+Use association rules to:
 
-• Target high-intent users  
-• Personalize marketing campaigns  
-• Optimize pricing strategies  
-• Improve conversion rates  
+• Recommend bundled features  
+• Personalize product suggestions  
+• Improve cross-selling  
 
-👉 Enables data-driven growth decisions
+👉 Example: Show certifications + reviews together
 """)
 
     except Exception as e:
-        st.error("Error in prediction page")
+        st.error("Error in association page")
         st.write(e)

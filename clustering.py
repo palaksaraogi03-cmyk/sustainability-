@@ -10,102 +10,100 @@ def show(df):
 
     st.markdown(" ")
 
-    # -----------------------------
-    # Preprocess Data
-    # -----------------------------
-    df_processed, _ = preprocess(df)
+    try:
+        # -----------------------------
+        # Preprocess Data
+        # -----------------------------
+        df_processed, _ = preprocess(df)
 
-    features = [
-        'Awareness',
-        'Environmental_Concern',
-        'Price_Sensitivity',
-        'Health_Concern'
-    ]
+        features = [
+            'Awareness',
+            'Environmental_Concern',
+            'Price_Sensitivity',
+            'Health_Concern'
+        ]
 
-    X = df_processed[features]
+        X = df_processed[features]
 
-    # -----------------------------
-    # KMeans Clustering
-    # -----------------------------
-    kmeans = KMeans(n_clusters=4, random_state=42, n_init=10)
-    df['Cluster'] = kmeans.fit_predict(X)
+        # -----------------------------
+        # KMeans
+        # -----------------------------
+        kmeans = KMeans(n_clusters=4, random_state=42)
+        clusters = kmeans.fit_predict(X)
 
-    st.markdown("### 📊 Cluster Distribution")
+        df['Cluster'] = clusters
 
-    cluster_counts = df['Cluster'].value_counts().reset_index()
-    cluster_counts.columns = ['Cluster', 'Count']
+        # -----------------------------
+        # Cluster Distribution
+        # -----------------------------
+        st.markdown("### 📊 Cluster Distribution")
 
-    fig_bar = px.bar(cluster_counts, x='Cluster', y='Count')
+        cluster_counts = df['Cluster'].value_counts().reset_index()
+        cluster_counts.columns = ['Cluster', 'Count']
 
-    fig_bar.update_layout(
-        template="simple_white",
-        margin=dict(l=10, r=10, t=30, b=10)
-    )
+        fig_bar = px.bar(cluster_counts, x='Cluster', y='Count')
+        fig_bar.update_layout(
+            template="simple_white",
+            margin=dict(l=10, r=10, t=30, b=10)
+        )
 
-    st.plotly_chart(fig_bar, use_container_width=True)
+        st.plotly_chart(fig_bar, use_container_width=True)
 
-    st.markdown("---")
+        st.markdown("---")
 
-    # -----------------------------
-    # PCA Visualization
-    # -----------------------------
-    st.markdown("### 🔍 Cluster Visualization (2D Projection)")
+        # -----------------------------
+        # PCA Visualization
+        # -----------------------------
+        st.markdown("### 🔍 Cluster Visualization")
 
-    pca = PCA(n_components=2)
-    components = pca.fit_transform(X)
+        pca = PCA(n_components=2)
+        components = pca.fit_transform(X)
 
-    df['PCA1'] = components[:, 0]
-    df['PCA2'] = components[:, 1]
+        df['PCA1'] = components[:, 0]
+        df['PCA2'] = components[:, 1]
 
-    fig_scatter = px.scatter(
-        df,
-        x='PCA1',
-        y='PCA2',
-        color=df['Cluster'].astype(str),
-        opacity=0.7
-    )
+        fig_scatter = px.scatter(
+            df,
+            x='PCA1',
+            y='PCA2',
+            color=df['Cluster'].astype(str),
+            opacity=0.7
+        )
 
-    fig_scatter.update_layout(
-        template="simple_white",
-        margin=dict(l=10, r=10, t=30, b=10)
-    )
+        fig_scatter.update_layout(
+            template="simple_white",
+            margin=dict(l=10, r=10, t=30, b=10)
+        )
 
-    st.plotly_chart(fig_scatter, use_container_width=True)
+        st.plotly_chart(fig_scatter, use_container_width=True)
 
-    st.markdown("---")
+        st.markdown("---")
 
-    # -----------------------------
-    # Cluster Profiles (Insights)
-    # -----------------------------
-    st.markdown("### 👤 Customer Segments")
+        # -----------------------------
+        # Insights
+        # -----------------------------
+        st.markdown("### 👤 Customer Segments")
 
-    st.markdown("""
+        st.markdown("""
 **Cluster 0 – Eco Enthusiasts 🌱**  
-- High awareness & environmental concern  
-- Low price sensitivity  
-👉 Ideal for premium sustainable products  
+High awareness, low price sensitivity → premium users  
 
 **Cluster 1 – Price-Conscious Greens 💸**  
-- High concern but high price sensitivity  
-👉 Target with discounts & bundles  
+High concern, high price sensitivity → discounts needed  
 
-**Cluster 2 – Unaware Mass 🤷**  
-- Low awareness & engagement  
-👉 Focus on education & awareness campaigns  
+**Cluster 2 – Unaware Users 🤷**  
+Low awareness → education needed  
 
 **Cluster 3 – Occasional Buyers 🛍️**  
-- Moderate across all factors  
-👉 Use nudges & retargeting  
+Moderate behavior → nudges & retargeting  
 """)
 
-    st.markdown("---")
+        st.markdown("---")
 
-    # -----------------------------
-    # Business Insight
-    # -----------------------------
-    st.markdown("### 🚀 Key Insight")
-
-    st.success("""
-The biggest opportunity lies in converting **price-sensitive but environmentally aware users**.  
-Targeting this segment can significantly improve overall conversion rates.
+        st.success("""
+Biggest opportunity: Convert **price-sensitive eco-conscious users** using targeted offers.
 """)
+
+    except Exception as e:
+        st.error("Error in clustering page")
+        st.write(e)

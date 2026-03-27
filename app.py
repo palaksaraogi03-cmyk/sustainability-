@@ -1,129 +1,156 @@
 import streamlit as st
 import pandas as pd
+import plotly.express as px
+from sklearn.ensemble import RandomForestClassifier
+from utils import preprocess
 
-import exec_summary
-import descriptive
-import clustering
-import association
-import prediction
-import prescriptive
-import scorer
+def show(df):
+    st.title("🎯 New Customer Scorer")
+    st.caption("Predict behavior and generate smart recommendations")
 
-from utils import load_data
+    st.markdown(" ")
 
-# -----------------------------
-# Page Config
-# -----------------------------
-st.set_page_config(
-    page_title="Sustainable Marketplace",
-    layout="wide",
-    initial_sidebar_state="expanded"
-)
+    try:
+        # -----------------------------
+        # Upload Section
+        # -----------------------------
+        st.markdown("### 📤 Upload Customer Data")
 
-# -----------------------------
-# Custom Minimal Theme (🔥 UI Upgrade)
-# -----------------------------
-st.markdown("""
-<style>
+        uploaded_file = st.file_uploader("Upload CSV file", type=["csv"])
 
-    /* Background */
-    .stApp {
-        background-color: #f8f9fb;
-    }
+        if uploaded_file is not None:
 
-    /* Headings */
-    h1, h2, h3 {
-        font-weight: 600;
-        color: #111827;
-    }
+            new_df = pd.read_csv(uploaded_file)
 
-    /* Remove top padding */
-    .block-container {
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-    }
+            st.markdown("### 📄 Uploaded Preview")
+            st.dataframe(new_df.head(), use_container_width=True)
 
-    /* Metric Cards */
-    [data-testid="stMetric"] {
-        background-color: white;
-        padding: 18px;
-        border-radius: 14px;
-        box-shadow: 0px 4px 12px rgba(0,0,0,0.05);
-        text-align: center;
-    }
+            st.markdown("---")
 
-    /* Sidebar */
-    section[data-testid="stSidebar"] {
-        background-color: #ffffff;
-        border-right: 1px solid #eee;
-    }
+            # -----------------------------
+            # Preprocess
+            # -----------------------------
+            combined_df = pd.concat([df, new_df], ignore_index=True)
+            processed_df, _ = preprocess(combined_df)
 
-    /* Sidebar text */
-    .css-1d391kg {
-        font-size: 16px;
-    }
+            train_df = processed_df.iloc[:len(df)]
+            new_processed = processed_df.iloc[len(df):]
 
-    /* Buttons */
-    .stButton>button {
-        border-radius: 10px;
-        background-color: #111827;
-        color: white;
-        border: none;
-        padding: 8px 16px;
-    }
+            X = train_df.drop('Purchase_Intent', axis=1)
+            y = (train_df['Purchase_Intent'] > 3).astype(int)
 
-    /* Divider spacing */
-    hr {
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
+            model = RandomForestClassifier(random_state=42)
+            model.fit(X, y)
 
-</style>
-""", unsafe_allow_html=True)
+            # Fix column alignment
+            new_processed = new_processed[X.columns]
 
-# -----------------------------
-# Load Data
-# -----------------------------
-df = load_data()
+            preds = model.predict_proba(new_processed)[:, 1]
+            new_df['Purchase_Probability'] = preds.round(2)
 
-# -----------------------------
-# Sidebar Navigation
-# -----------------------------
-st.sidebar.title("🌿 Navigation")
+            # -----------------------------
+            # Segment + Recommendation
+            # -----------------------------
+            def assign_segment(row):
+                if row['Awareness'] >= 4 and row['Price_Sensitivity'] <= 2:
+                    return "Eco Enthusiast"
+                elif row['Awareness'] >= 4 and row['Price_Sensitivity'] >= 4:
+                    return "Price-Conscious Green"
+                elif row['Awareness'] <= 2:
+                    return "Unaware User"
+                else:
+                    return "Occasional Buyer"
 
-page = st.sidebar.radio(
-    "Go to",
-    [
-        "Executive Summary",
-        "Descriptive Analysis",
-        "Clustering",
-        "Association Rules",
-        "Prediction Models",
-        "Prescriptive Analysis",
-        "New Customer Scorer"
-    ]
-)
+            def recommend(segment):
+                if segment == "Eco Enthusiast":
+                    return "Promote premium products"
+                elif segment == "Price-Conscious Green":
+                    return "Offer discounts"
+                elif segment == "Unaware User":
+                    return "Educate user"
+                else:
+                    return "Retarget user"
 
-# -----------------------------
-# Page Routing
-# -----------------------------
-if page == "Executive Summary":
-    exec_summary.show(df)
+            new_df['Segment'] = new_df.apply(assign_segment, axis=1)
+            new_df['Recommendation'] = new_df['Segment'].apply(recommend)
 
-elif page == "Descriptive Analysis":
-    descriptive.show(df)
+            # -----------------------------
+            # 🎯 EXECUTIVE SUMMARY (LIKE MUSE)
+            # -----------------------------
+            st.markdown("### 🧠 Summary")
 
-elif page == "Clustering":
-    clustering.show(df)
+            avg_prob = new_df['Purchase_Probability'].mean()
+            high_users = (new_df['Purchase_Probability'] > 0.7).sum()
 
-elif page == "Association Rules":
-    association.show(df)
+            st.markdown(f"""
+- Average purchase likelihood: **{avg_prob:.2f}**  
+- High intent users: **{high_users} users**  
+- Majority segment: **{new_df['Segment'].mode()[0]}**
+""")
 
-elif page == "Prediction Models":
-    prediction.show(df)
+            st.markdown("---")
 
-elif page == "Prescriptive Analysis":
-    prescriptive.show(df)
+            # -----------------------------
+            # 🌟 TOP USERS
+            # -----------------------------
+            st.markdown("### 🌟 High-Value Customers")
 
-elif page == "New Customer Scorer":
-    scorer.show(df)
+            top = new_df.sort_values(by="Purchase_Probability", ascending=False).head(3)
+
+            for i, row in top.iterrows():
+                st.info(f"""
+**User {i+1}**
+- Probability: {row['Purchase_Probability']}
+- Segment: {row['Segment']}
+- Strategy: {row['Recommendation']}
+""")
+
+            st.markdown("---")
+
+            # -----------------------------
+            # 📈 VISUAL (CLEAN)
+            # -----------------------------
+            st.markdown("### 📊 Distribution")
+
+            fig = px.histogram(new_df, x="Purchase_Probability")
+
+            fig.update_layout(template="simple_white")
+
+            st.plotly_chart(fig, use_container_width=True)
+
+            st.markdown("---")
+
+            # -----------------------------
+            # 📋 OPTIONAL TABLE
+            # -----------------------------
+            with st.expander("View Full Data"):
+                st.dataframe(new_df, use_container_width=True)
+
+            # -----------------------------
+            # Download
+            # -----------------------------
+            csv = new_df.to_csv(index=False).encode('utf-8')
+
+            st.download_button(
+                label="📥 Download Results",
+                data=csv,
+                file_name="predictions.csv",
+                mime="text/csv"
+            )
+
+            st.markdown("---")
+
+            # -----------------------------
+            # FINAL INSIGHT
+            # -----------------------------
+            st.success("""
+Focus on **high probability + price-sensitive users**  
+→ They give highest conversion uplift with offers
+""")
+
+        else:
+            st.info("Upload a CSV file to begin")
+
+    except Exception as e:
+        st.error("Error in scorer page")
+        st.write(e)

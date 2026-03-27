@@ -1,126 +1,165 @@
 import streamlit as st
 import plotly.express as px
-import pandas as pd
-from sklearn.cluster import KMeans
-from utils import preprocess
 
+# -----------------------------
+# HEADER
+# -----------------------------
+def header():
+    col1, col2 = st.columns([1, 6])
+
+    with col1:
+        st.image("logo.png", width=60)
+
+    with col2:
+        st.markdown("## EcoSense AI")
+
+
+# -----------------------------
+# MAIN FUNCTION
+# -----------------------------
 def show(df):
-    st.title("🧠 Customer Segmentation")
-    st.caption("Understanding different customer groups")
 
-    st.markdown(" ")
+    header()
+    st.markdown("---")
 
-    try:
-        # -----------------------------
-        # Preprocess
-        # -----------------------------
-        df_processed, _ = preprocess(df)
+    st.title("📊 Descriptive Analysis")
+    st.caption("Understanding customer demographics and behavior")
 
-        features = [
-            'Awareness',
-            'Environmental_Concern',
-            'Price_Sensitivity',
-            'Health_Concern'
+    # -----------------------------
+    # AGE DISTRIBUTION
+    # -----------------------------
+    st.markdown("### 👥 Age Distribution")
+
+    fig_age = px.histogram(
+        df,
+        x="Age",
+        nbins=20,
+        color_discrete_sequence=["#74c69d"]
+    )
+
+    fig_age.update_layout(
+        template="simple_white",
+        paper_bgcolor="#f7fcf9",
+        plot_bgcolor="#f7fcf9",
+        font=dict(color="#1b4332")
+    )
+
+    st.plotly_chart(fig_age, use_container_width=True)
+
+    st.markdown("---")
+
+    # -----------------------------
+    # GENDER DISTRIBUTION
+    # -----------------------------
+    st.markdown("### 👤 Gender Distribution")
+
+    fig_gender = px.pie(
+        df,
+        names="Gender",
+        color_discrete_sequence=[
+            "#52b788",
+            "#74c69d",
+            "#95d5b2"
         ]
+    )
 
-        X = df_processed[features]
+    fig_gender.update_traces(textinfo="percent+label")
 
-        # -----------------------------
-        # KMeans
-        # -----------------------------
-        kmeans = KMeans(n_clusters=4, random_state=42)
-        df['Cluster'] = kmeans.fit_predict(X)
+    fig_gender.update_layout(
+        template="simple_white",
+        paper_bgcolor="#f7fcf9",
+        font=dict(color="#1b4332")
+    )
 
-        # -----------------------------
-        # Cluster Size
-        # -----------------------------
-        st.markdown("### 📊 Cluster Distribution")
+    st.plotly_chart(fig_gender, use_container_width=True)
 
-        cluster_counts = df['Cluster'].value_counts().reset_index()
-        cluster_counts.columns = ['Cluster', 'Count']
+    st.markdown("---")
 
-        fig_bar = px.bar(cluster_counts, x='Cluster', y='Count')
+    # -----------------------------
+    # INCOME DISTRIBUTION (FIXED 🔥)
+    # -----------------------------
+    st.markdown("### 💰 Income Distribution")
 
-        fig_bar.update_layout(template="simple_white")
-        st.plotly_chart(fig_bar, use_container_width=True)
+    income_counts = df["Income"].value_counts().reset_index()
+    income_counts.columns = ["Income Level", "Count"]
 
-        st.markdown("---")
+    fig_income = px.bar(
+        income_counts,
+        x="Income Level",
+        y="Count",
+        color_discrete_sequence=["#74c69d"]
+    )
 
-        # -----------------------------
-        # CLUSTER PROFILE (🔥 BEST VISUAL)
-        # -----------------------------
-        st.markdown("### 📈 Cluster Characteristics")
+    fig_income.update_layout(
+        template="simple_white",
+        paper_bgcolor="#f7fcf9",
+        plot_bgcolor="#f7fcf9",
+        font=dict(color="#1b4332")
+    )
 
-        cluster_profile = df.groupby('Cluster')[features].mean().reset_index()
+    st.plotly_chart(fig_income, use_container_width=True)
 
-        fig_profile = px.bar(
-            cluster_profile.melt(id_vars="Cluster"),
-            x="variable",
-            y="value",
-            color="Cluster",
-            barmode="group"
-        )
+    st.markdown("---")
 
-        fig_profile.update_layout(
-            template="simple_white",
-            xaxis_title="Features",
-            yaxis_title="Average Score"
-        )
+    # -----------------------------
+    # PURCHASE FREQUENCY (FIXED 🔥)
+    # -----------------------------
+    st.markdown("### 🛒 Purchase Frequency")
 
-        st.plotly_chart(fig_profile, use_container_width=True)
+    freq_counts = df["Purchase_Frequency"].value_counts().reset_index()
+    freq_counts.columns = ["Frequency", "Count"]
 
-        st.markdown("---")
+    fig_freq = px.bar(
+        freq_counts,
+        x="Frequency",
+        y="Count",
+        color_discrete_sequence=["#74c69d"]
+    )
 
-        # -----------------------------
-        # SIMPLE SCATTER (OPTIONAL CLEAN)
-        # -----------------------------
-        st.markdown("### 🔍 Simplified View")
+    fig_freq.update_layout(
+        template="simple_white",
+        paper_bgcolor="#f7fcf9",
+        plot_bgcolor="#f7fcf9",
+        font=dict(color="#1b4332")
+    )
 
-        fig_scatter = px.scatter(
-            df,
-            x="Awareness",
-            y="Price_Sensitivity",
-            color=df['Cluster'].astype(str),
-            opacity=0.6
-        )
+    st.plotly_chart(fig_freq, use_container_width=True)
 
-        fig_scatter.update_layout(template="simple_white")
+    st.markdown("---")
 
-        st.plotly_chart(fig_scatter, use_container_width=True)
+    # -----------------------------
+    # AWARENESS LEVEL
+    # -----------------------------
+    st.markdown("### 📱 Awareness Levels")
 
-        st.markdown("---")
+    fig_awareness = px.histogram(
+        df,
+        x="Awareness",
+        color_discrete_sequence=["#74c69d"]
+    )
 
-        # -----------------------------
-        # SEGMENT EXPLANATION
-        # -----------------------------
-        st.markdown("### 👤 Customer Segments")
+    fig_awareness.update_layout(
+        template="simple_white",
+        paper_bgcolor="#f7fcf9",
+        plot_bgcolor="#f7fcf9",
+        font=dict(color="#1b4332")
+    )
 
-        st.markdown("""
-**Cluster 0 – Eco Enthusiasts 🌱**  
-High awareness, low price sensitivity → premium segment  
+    st.plotly_chart(fig_awareness, use_container_width=True)
 
-**Cluster 1 – Price-Conscious Greens 💸**  
-High concern but price sensitive → discount-focused  
+    st.markdown("---")
 
-**Cluster 2 – Unaware Users 🤷**  
-Low awareness → education needed  
+    # -----------------------------
+    # INSIGHTS
+    # -----------------------------
+    st.markdown("### 🔍 Key Insights")
 
-**Cluster 3 – Occasional Buyers 🛍️**  
-Moderate behavior → retargeting  
+    st.markdown("""
+- Majority users are young adults  
+- Balanced gender distribution  
+- Medium income group dominates  
+- Most users purchase occasionally  
+- Awareness is moderate but growing  
+
+👉 Opportunity: Educate users to increase adoption
 """)
-
-        st.markdown("---")
-
-        # -----------------------------
-        # BUSINESS INSIGHT
-        # -----------------------------
-        st.markdown("### 🚀 Key Insight")
-
-        st.success("""
-Focus on **price-sensitive eco-conscious users** —  
-this segment has the highest potential for conversion improvement.
-""")
-
-    except Exception as e:
-        st.error("Error in clustering page")
-        st.write(e)

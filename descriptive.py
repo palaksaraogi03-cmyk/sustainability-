@@ -1,94 +1,100 @@
 import streamlit as st
 import plotly.express as px
 
+# -----------------------------
+# HEADER
+# -----------------------------
+def header():
+    col1, col2 = st.columns([1, 6])
+
+    with col1:
+        st.image("logo.png", width=60)
+
+    with col2:
+        st.markdown("## EcoSense AI")
+
+
+# -----------------------------
+# MAIN FUNCTION
+# -----------------------------
 def show(df):
+
+    header()
+    st.markdown("---")
+
     st.title("📊 Descriptive Analysis")
-    st.caption("Understanding customer demographics, behavior, and preferences")
+    st.caption("Understanding customer demographics and behavior")
 
     st.markdown(" ")
 
     # -----------------------------
-    # Demographics
+    # AGE DISTRIBUTION
     # -----------------------------
-    st.markdown("### 👥 Customer Demographics")
+    st.markdown("### 👥 Age Distribution")
 
-    col1, col2 = st.columns(2)
-
-    # Age Distribution
-    with col1:
-        fig_age = px.histogram(df, x="Age", nbins=20)
-        fig_age.update_layout(
-            template="simple_white",
-            margin=dict(l=10, r=10, t=30, b=10)
-        )
-        st.plotly_chart(fig_age, use_container_width=True)
-
-    # Gender Distribution
-    with col2:
-        fig_gender = px.pie(df, names="Gender")
-        fig_gender.update_layout(
-            template="simple_white",
-            margin=dict(l=10, r=10, t=30, b=10)
-        )
-        st.plotly_chart(fig_gender, use_container_width=True)
-
-    st.markdown("---")
-
-    # -----------------------------
-    # Awareness & Behavior
-    # -----------------------------
-    st.markdown("### 🌱 Awareness & Behavior")
-
-    col3, col4 = st.columns(2)
-
-    # Awareness Levels
-    with col3:
-        fig_awareness = px.histogram(df, x="Awareness")
-        fig_awareness.update_layout(
-            template="simple_white",
-            margin=dict(l=10, r=10, t=30, b=10)
-        )
-        st.plotly_chart(fig_awareness, use_container_width=True)
-
-    # Purchase Frequency
-    with col4:
-        fig_freq = px.pie(df, names="Purchase_Frequency")
-        fig_freq.update_layout(
-            template="simple_white",
-            margin=dict(l=10, r=10, t=30, b=10)
-        )
-        st.plotly_chart(fig_freq, use_container_width=True)
-
-    st.markdown("---")
-
-    # -----------------------------
-    # Product Preferences
-    # -----------------------------
-    st.markdown("### 🛍️ Product Preferences")
-
-    cat_df = df['Preferred_Category'].value_counts().reset_index()
-    cat_df.columns = ['Category', 'Count']
-
-    fig_cat = px.bar(cat_df, x='Category', y='Count')
-
-    fig_cat.update_layout(
-        template="simple_white",
-        margin=dict(l=10, r=10, t=30, b=10)
+    fig_age = px.histogram(
+        df,
+        x="Age",
+        nbins=20,
+        color_discrete_sequence=["#74c69d"]
     )
 
-    st.plotly_chart(fig_cat, use_container_width=True)
+    fig_age.update_layout(
+        template="simple_white",
+        paper_bgcolor="#f7fcf9",
+        plot_bgcolor="#f7fcf9",
+        font=dict(color="#1b4332")
+    )
+
+    st.plotly_chart(fig_age, use_container_width=True)
 
     st.markdown("---")
 
     # -----------------------------
-    # Income Distribution
+    # GENDER DISTRIBUTION
+    # -----------------------------
+    st.markdown("### 👤 Gender Distribution")
+
+    fig_gender = px.pie(
+        df,
+        names="Gender",
+        color_discrete_sequence=[
+            "#52b788",
+            "#74c69d",
+            "#95d5b2"
+        ]
+    )
+
+    fig_gender.update_traces(textinfo="percent+label")
+
+    fig_gender.update_layout(
+        template="simple_white",
+        paper_bgcolor="#f7fcf9",
+        font=dict(color="#1b4332")
+    )
+
+    st.plotly_chart(fig_gender, use_container_width=True)
+
+    st.markdown("---")
+
+    # -----------------------------
+    # INCOME DISTRIBUTION
     # -----------------------------
     st.markdown("### 💰 Income Distribution")
 
-    fig_income = px.pie(df, names="Income")
+    fig_income = px.bar(
+        df["Income"].value_counts().reset_index(),
+        x="index",
+        y="Income",
+        labels={"index": "Income Level", "Income": "Count"},
+        color_discrete_sequence=["#74c69d"]
+    )
+
     fig_income.update_layout(
         template="simple_white",
-        margin=dict(l=10, r=10, t=30, b=10)
+        paper_bgcolor="#f7fcf9",
+        plot_bgcolor="#f7fcf9",
+        font=dict(color="#1b4332")
     )
 
     st.plotly_chart(fig_income, use_container_width=True)
@@ -96,14 +102,62 @@ def show(df):
     st.markdown("---")
 
     # -----------------------------
-    # Key Insights (Minimal + Clean)
+    # PURCHASE FREQUENCY
+    # -----------------------------
+    st.markdown("### 🛒 Purchase Frequency")
+
+    fig_freq = px.bar(
+        df["Purchase_Frequency"].value_counts().reset_index(),
+        x="index",
+        y="Purchase_Frequency",
+        labels={"index": "Frequency", "Purchase_Frequency": "Count"},
+        color_discrete_sequence=["#74c69d"]
+    )
+
+    fig_freq.update_layout(
+        template="simple_white",
+        paper_bgcolor="#f7fcf9",
+        plot_bgcolor="#f7fcf9",
+        font=dict(color="#1b4332")
+    )
+
+    st.plotly_chart(fig_freq, use_container_width=True)
+
+    st.markdown("---")
+
+    # -----------------------------
+    # PLATFORM USAGE (PROXY)
+    # -----------------------------
+    st.markdown("### 📱 Awareness Levels")
+
+    fig_awareness = px.histogram(
+        df,
+        x="Awareness",
+        color_discrete_sequence=["#74c69d"]
+    )
+
+    fig_awareness.update_layout(
+        template="simple_white",
+        paper_bgcolor="#f7fcf9",
+        plot_bgcolor="#f7fcf9",
+        font=dict(color="#1b4332")
+    )
+
+    st.plotly_chart(fig_awareness, use_container_width=True)
+
+    st.markdown("---")
+
+    # -----------------------------
+    # INSIGHTS (MUSE STYLE)
     # -----------------------------
     st.markdown("### 🔍 Key Insights")
 
     st.markdown("""
-- Majority of users are **young and digitally active**  
-- Awareness of sustainable products is **moderate but growing**  
-- Most users purchase sustainable products **occasionally**  
-- **Home Products and Personal Care** lead demand  
-- Middle-income users dominate the customer base  
+- Majority users fall in young adult category  
+- Balanced gender distribution  
+- Medium income segment dominates  
+- Most users purchase occasionally  
+- Awareness levels are moderate  
+
+👉 Indicates strong potential for growth through education and targeting
 """)

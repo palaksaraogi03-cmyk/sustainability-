@@ -2,7 +2,13 @@
 import streamlit as st
 import pandas as pd
 from utils import load_data
-from pages import exec_summary, descriptive, clustering, association, prediction, prescriptive, scorer
+import exec_summary
+import descriptive
+import clustering
+import association
+import prediction
+import prescriptive
+import scorer
 
 st.set_page_config(page_title="Sustainable Marketplace Analytics", layout="wide")
 

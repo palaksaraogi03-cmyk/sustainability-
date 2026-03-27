@@ -25,8 +25,6 @@ def show(df):
     st.title("📊 Descriptive Analysis")
     st.caption("Understanding customer demographics and behavior")
 
-    st.markdown(" ")
-
     # -----------------------------
     # AGE DISTRIBUTION
     # -----------------------------
@@ -78,15 +76,17 @@ def show(df):
     st.markdown("---")
 
     # -----------------------------
-    # INCOME DISTRIBUTION
+    # INCOME DISTRIBUTION (FIXED 🔥)
     # -----------------------------
     st.markdown("### 💰 Income Distribution")
 
+    income_counts = df["Income"].value_counts().reset_index()
+    income_counts.columns = ["Income Level", "Count"]
+
     fig_income = px.bar(
-        df["Income"].value_counts().reset_index(),
-        x="index",
-        y="Income",
-        labels={"index": "Income Level", "Income": "Count"},
+        income_counts,
+        x="Income Level",
+        y="Count",
         color_discrete_sequence=["#74c69d"]
     )
 
@@ -102,15 +102,17 @@ def show(df):
     st.markdown("---")
 
     # -----------------------------
-    # PURCHASE FREQUENCY
+    # PURCHASE FREQUENCY (FIXED 🔥)
     # -----------------------------
     st.markdown("### 🛒 Purchase Frequency")
 
+    freq_counts = df["Purchase_Frequency"].value_counts().reset_index()
+    freq_counts.columns = ["Frequency", "Count"]
+
     fig_freq = px.bar(
-        df["Purchase_Frequency"].value_counts().reset_index(),
-        x="index",
-        y="Purchase_Frequency",
-        labels={"index": "Frequency", "Purchase_Frequency": "Count"},
+        freq_counts,
+        x="Frequency",
+        y="Count",
         color_discrete_sequence=["#74c69d"]
     )
 
@@ -126,7 +128,7 @@ def show(df):
     st.markdown("---")
 
     # -----------------------------
-    # PLATFORM USAGE (PROXY)
+    # AWARENESS LEVEL
     # -----------------------------
     st.markdown("### 📱 Awareness Levels")
 
@@ -148,16 +150,16 @@ def show(df):
     st.markdown("---")
 
     # -----------------------------
-    # INSIGHTS (MUSE STYLE)
+    # INSIGHTS
     # -----------------------------
     st.markdown("### 🔍 Key Insights")
 
     st.markdown("""
-- Majority users fall in young adult category  
+- Majority users are young adults  
 - Balanced gender distribution  
-- Medium income segment dominates  
+- Medium income group dominates  
 - Most users purchase occasionally  
-- Awareness levels are moderate  
+- Awareness is moderate but growing  
 
-👉 Indicates strong potential for growth through education and targeting
+👉 Opportunity: Educate users to increase adoption
 """)

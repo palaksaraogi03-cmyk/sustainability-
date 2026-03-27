@@ -1,41 +1,49 @@
-
 import streamlit as st
-import pandas as pd
-from utils import load_data
-import exec_summary
-import descriptive
-import clustering
-import association
-import prediction
-import prescriptive
-import scorer
 
-st.set_page_config(page_title="Sustainable Marketplace Analytics", layout="wide")
+st.set_page_config(
+    page_title="Sustainable Marketplace",
+    layout="wide",
+    initial_sidebar_state="expanded"
+)
 
-st.sidebar.title("Navigation")
-page = st.sidebar.radio("Go to", [
-    "Executive Summary",
-    "Descriptive Analysis",
-    "Clustering",
-    "Association Rules",
-    "Prediction Models",
-    "Prescriptive Analysis",
-    "New Customer Scorer"
-])
+# Custom CSS (🔥 THIS MAKES IT BEAUTIFUL)
+st.markdown("""
+<style>
+    /* Background */
+    .stApp {
+        background-color: #f8f9fb;
+    }
 
-df = load_data()
+    /* Titles */
+    h1, h2, h3 {
+        font-weight: 600;
+        color: #1f2937;
+    }
 
-if page == "Executive Summary":
-    exec_summary.show(df)
-elif page == "Descriptive Analysis":
-    descriptive.show(df)
-elif page == "Clustering":
-    clustering.show(df)
-elif page == "Association Rules":
-    association.show(df)
-elif page == "Prediction Models":
-    prediction.show(df)
-elif page == "Prescriptive Analysis":
-    prescriptive.show(df)
-elif page == "New Customer Scorer":
-    scorer.show(df)
+    /* Cards */
+    .block-container {
+        padding-top: 2rem;
+    }
+
+    /* Metrics */
+    [data-testid="stMetric"] {
+        background-color: white;
+        padding: 15px;
+        border-radius: 12px;
+        box-shadow: 0px 4px 12px rgba(0,0,0,0.05);
+    }
+
+    /* Sidebar */
+    section[data-testid="stSidebar"] {
+        background-color: #ffffff;
+        border-right: 1px solid #eee;
+    }
+
+    /* Buttons */
+    .stButton>button {
+        border-radius: 10px;
+        background-color: #111827;
+        color: white;
+    }
+</style>
+""", unsafe_allow_html=True)

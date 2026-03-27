@@ -1,20 +1,18 @@
 import streamlit as st
 import plotly.express as px
-import plotly.graph_objects as go
-import numpy as np
+import pandas as pd
 from sklearn.cluster import KMeans
-from sklearn.decomposition import PCA
 from utils import preprocess
 
 def show(df):
     st.title("🧠 Customer Segmentation")
-    st.caption("Identifying distinct customer groups using K-Means clustering")
+    st.caption("Understanding different customer groups")
 
     st.markdown(" ")
 
     try:
         # -----------------------------
-        # Preprocess Data
+        # Preprocess
         # -----------------------------
         df_processed, _ = preprocess(df)
 
@@ -28,13 +26,13 @@ def show(df):
         X = df_processed[features]
 
         # -----------------------------
-        # KMeans Clustering
+        # KMeans
         # -----------------------------
         kmeans = KMeans(n_clusters=4, random_state=42)
         df['Cluster'] = kmeans.fit_predict(X)
 
         # -----------------------------
-        # Cluster Distribution
+        # Cluster Size
         # -----------------------------
         st.markdown("### 📊 Cluster Distribution")
 
@@ -43,115 +41,84 @@ def show(df):
 
         fig_bar = px.bar(cluster_counts, x='Cluster', y='Count')
 
-        fig_bar.update_layout(
-            template="simple_white",
-            margin=dict(l=10, r=10, t=30, b=10)
-        )
-
+        fig_bar.update_layout(template="simple_white")
         st.plotly_chart(fig_bar, use_container_width=True)
 
         st.markdown("---")
 
         # -----------------------------
-        # PCA Transformation
+        # CLUSTER PROFILE (🔥 BEST VISUAL)
         # -----------------------------
-        pca = PCA(n_components=2)
-        components = pca.fit_transform(X)
+        st.markdown("### 📈 Cluster Characteristics")
 
-        df['PCA1'] = components[:, 0]
-        df['PCA2'] = components[:, 1]
+        cluster_profile = df.groupby('Cluster')[features].mean().reset_index()
 
-        # -----------------------------
-        # PREMIUM SCATTER PLOT
-        # -----------------------------
-        st.markdown("### 🔍 Customer Segments Visualization")
-
-        fig = go.Figure()
-
-        colors = ["#6366F1", "#10B981", "#F59E0B", "#EF4444"]
-
-        for i in range(4):
-            cluster_data = df[df['Cluster'] == i]
-
-            fig.add_trace(go.Scatter(
-                x=cluster_data['PCA1'],
-                y=cluster_data['PCA2'],
-                mode='markers',
-                name=f"Cluster {i}",
-                marker=dict(
-                    size=8,
-                    color=colors[i],
-                    opacity=0.7
-                )
-            ))
-
-        # -----------------------------
-        # Add Cluster Centers (🔥 KEY)
-        # -----------------------------
-        centers = []
-        for i in range(4):
-            cluster_data = df[df['Cluster'] == i]
-            centers.append([
-                cluster_data['PCA1'].mean(),
-                cluster_data['PCA2'].mean()
-            ])
-
-        centers = np.array(centers)
-
-        fig.add_trace(go.Scatter(
-            x=centers[:, 0],
-            y=centers[:, 1],
-            mode='markers+text',
-            name="Centers",
-            marker=dict(
-                size=18,
-                color="black",
-                symbol="x"
-            ),
-            text=[f"C{i}" for i in range(4)],
-            textposition="top center"
-        ))
-
-        fig.update_layout(
-            template="simple_white",
-            title="Customer Segments (PCA Projection)",
-            margin=dict(l=10, r=10, t=40, b=10),
-            legend_title="Clusters"
+        fig_profile = px.bar(
+            cluster_profile.melt(id_vars="Cluster"),
+            x="variable",
+            y="value",
+            color="Cluster",
+            barmode="group"
         )
 
-        st.plotly_chart(fig, use_container_width=True)
+        fig_profile.update_layout(
+            template="simple_white",
+            xaxis_title="Features",
+            yaxis_title="Average Score"
+        )
+
+        st.plotly_chart(fig_profile, use_container_width=True)
 
         st.markdown("---")
 
         # -----------------------------
-        # Segment Profiles
+        # SIMPLE SCATTER (OPTIONAL CLEAN)
+        # -----------------------------
+        st.markdown("### 🔍 Simplified View")
+
+        fig_scatter = px.scatter(
+            df,
+            x="Awareness",
+            y="Price_Sensitivity",
+            color=df['Cluster'].astype(str),
+            opacity=0.6
+        )
+
+        fig_scatter.update_layout(template="simple_white")
+
+        st.plotly_chart(fig_scatter, use_container_width=True)
+
+        st.markdown("---")
+
+        # -----------------------------
+        # SEGMENT EXPLANATION
         # -----------------------------
         st.markdown("### 👤 Customer Segments")
 
         st.markdown("""
 **Cluster 0 – Eco Enthusiasts 🌱**  
-High awareness, low price sensitivity → premium users  
+High awareness, low price sensitivity → premium segment  
 
 **Cluster 1 – Price-Conscious Greens 💸**  
-High concern, high price sensitivity → discounts needed  
+High concern but price sensitive → discount-focused  
 
 **Cluster 2 – Unaware Users 🤷**  
 Low awareness → education needed  
 
 **Cluster 3 – Occasional Buyers 🛍️**  
-Moderate behavior → nudges & retargeting  
+Moderate behavior → retargeting  
 """)
 
         st.markdown("---")
 
         # -----------------------------
-        # Key Business Insight
+        # BUSINESS INSIGHT
         # -----------------------------
         st.markdown("### 🚀 Key Insight")
 
         st.success("""
-Biggest opportunity lies in converting **price-sensitive eco-conscious users**  
-through targeted pricing and awareness strategies.
+Focus on **price-sensitive eco-conscious users** —  
+this segment has the highest potential for conversion improvement.
 """)
 
     except Exception as e:

@@ -6,78 +6,50 @@ from utils import preprocess
 
 def show(df):
     st.title("🎯 New Customer Scorer")
-    st.caption("Predict customer behavior and recommend strategies")
+    st.caption("Predict behavior and generate smart recommendations")
 
     st.markdown(" ")
 
     try:
         # -----------------------------
-        # SAMPLE DOWNLOAD
+        # Upload Section
         # -----------------------------
-        st.markdown("### 📥 Download Sample Template")
+        st.markdown("### 📤 Upload Customer Data")
 
-        sample = df.drop(columns=['Purchase_Intent']).head(5)
-        csv_sample = sample.to_csv(index=False).encode('utf-8')
-
-        st.download_button(
-            label="Download Sample CSV",
-            data=csv_sample,
-            file_name="sample_input.csv",
-            mime="text/csv"
-        )
-
-        st.markdown("---")
-
-        # -----------------------------
-        # FILE UPLOAD
-        # -----------------------------
-        st.markdown("### 📤 Upload CSV")
-
-        uploaded_file = st.file_uploader("Upload New Customer Data", type=["csv"])
+        uploaded_file = st.file_uploader("Upload CSV file", type=["csv"])
 
         if uploaded_file is not None:
 
             new_df = pd.read_csv(uploaded_file)
 
-            st.markdown("### 📄 Uploaded Data")
-            st.dataframe(new_df, use_container_width=True)
+            st.markdown("### 📄 Uploaded Preview")
+            st.dataframe(new_df.head(), use_container_width=True)
 
             st.markdown("---")
 
             # -----------------------------
-            # Combine for preprocessing
+            # Preprocess
             # -----------------------------
             combined_df = pd.concat([df, new_df], ignore_index=True)
-
             processed_df, _ = preprocess(combined_df)
 
             train_df = processed_df.iloc[:len(df)]
             new_processed = processed_df.iloc[len(df):]
 
-            # -----------------------------
-            # Train model
-            # -----------------------------
             X = train_df.drop('Purchase_Intent', axis=1)
             y = (train_df['Purchase_Intent'] > 3).astype(int)
 
             model = RandomForestClassifier(random_state=42)
             model.fit(X, y)
 
-            # -----------------------------
-            # FIX: Align columns
-            # -----------------------------
+            # Fix column alignment
             new_processed = new_processed[X.columns]
-
-            # -----------------------------
-            # Predict
-            # -----------------------------
-            st.info("Running predictions...")
 
             preds = model.predict_proba(new_processed)[:, 1]
             new_df['Purchase_Probability'] = preds.round(2)
 
             # -----------------------------
-            # Segment Logic
+            # Segment + Recommendation
             # -----------------------------
             def assign_segment(row):
                 if row['Awareness'] >= 4 and row['Price_Sensitivity'] <= 2:
@@ -89,113 +61,95 @@ def show(df):
                 else:
                     return "Occasional Buyer"
 
-            new_df['Segment'] = new_df.apply(assign_segment, axis=1)
-
-            # -----------------------------
-            # Recommendation Engine
-            # -----------------------------
             def recommend(segment):
                 if segment == "Eco Enthusiast":
-                    return "Promote premium sustainable products"
+                    return "Promote premium products"
                 elif segment == "Price-Conscious Green":
-                    return "Offer discounts and bundles"
+                    return "Offer discounts"
                 elif segment == "Unaware User":
-                    return "Show educational content"
+                    return "Educate user"
                 else:
-                    return "Use retargeting and reminders"
+                    return "Retarget user"
 
+            new_df['Segment'] = new_df.apply(assign_segment, axis=1)
             new_df['Recommendation'] = new_df['Segment'].apply(recommend)
 
             # -----------------------------
-            # 🎯 PREMIUM OUTPUT STARTS HERE
+            # 🎯 EXECUTIVE SUMMARY (LIKE MUSE)
             # -----------------------------
-            st.markdown("### 📊 Prediction Summary")
+            st.markdown("### 🧠 Summary")
 
-            # KPI Cards
             avg_prob = new_df['Purchase_Probability'].mean()
-            high_intent = (new_df['Purchase_Probability'] > 0.7).sum()
+            high_users = (new_df['Purchase_Probability'] > 0.7).sum()
 
-            col1, col2 = st.columns(2)
-
-            col1.metric("Avg Purchase Probability", f"{avg_prob:.2f}")
-            col2.metric("High Intent Users", high_intent)
-
-            st.markdown("---")
-
-            # Top Users
-            st.markdown("### 🌟 Top High-Intent Customers")
-
-            top_users = new_df.sort_values(
-                by="Purchase_Probability",
-                ascending=False
-            ).head(5)
-
-            st.dataframe(
-                top_users.style.highlight_max(
-                    axis=0,
-                    subset=['Purchase_Probability']
-                ),
-                use_container_width=True
-            )
+            st.markdown(f"""
+- Average purchase likelihood: **{avg_prob:.2f}**  
+- High intent users: **{high_users} users**  
+- Majority segment: **{new_df['Segment'].mode()[0]}**
+""")
 
             st.markdown("---")
 
-            # Distribution Chart
-            st.markdown("### 📈 Probability Distribution")
+            # -----------------------------
+            # 🌟 TOP USERS
+            # -----------------------------
+            st.markdown("### 🌟 High-Value Customers")
 
-            fig = px.histogram(
-                new_df,
-                x="Purchase_Probability",
-                nbins=10
-            )
+            top = new_df.sort_values(by="Purchase_Probability", ascending=False).head(3)
 
-            fig.update_layout(
-                template="simple_white",
-                margin=dict(l=10, r=10, t=30, b=10)
-            )
+            for i, row in top.iterrows():
+                st.info(f"""
+**User {i+1}**
+- Probability: {row['Purchase_Probability']}
+- Segment: {row['Segment']}
+- Strategy: {row['Recommendation']}
+""")
+
+            st.markdown("---")
+
+            # -----------------------------
+            # 📈 VISUAL (CLEAN)
+            # -----------------------------
+            st.markdown("### 📊 Distribution")
+
+            fig = px.histogram(new_df, x="Purchase_Probability")
+
+            fig.update_layout(template="simple_white")
 
             st.plotly_chart(fig, use_container_width=True)
 
             st.markdown("---")
 
-            # Clean Table
-            st.markdown("### 📋 All Customers")
+            # -----------------------------
+            # 📋 OPTIONAL TABLE
+            # -----------------------------
+            with st.expander("View Full Data"):
+                st.dataframe(new_df, use_container_width=True)
 
-            st.dataframe(
-                new_df.sort_values(
-                    by="Purchase_Probability",
-                    ascending=False
-                ),
-                use_container_width=True
-            )
-
-            st.markdown("---")
-
-            # Download Results
+            # -----------------------------
+            # Download
+            # -----------------------------
             csv = new_df.to_csv(index=False).encode('utf-8')
 
             st.download_button(
                 label="📥 Download Results",
                 data=csv,
-                file_name="customer_predictions.csv",
+                file_name="predictions.csv",
                 mime="text/csv"
             )
 
             st.markdown("---")
 
-            # Final Insight
+            # -----------------------------
+            # FINAL INSIGHT
+            # -----------------------------
             st.success("""
-This system enables:
-
-• Identification of high-value customers  
-• Personalized marketing strategies  
-• Improved conversion rates  
-
-👉 Transforms raw data into actionable business decisions
+Focus on **high probability + price-sensitive users**  
+→ They give highest conversion uplift with offers
 """)
 
         else:
-            st.info("Upload a CSV file to start predictions")
+            st.info("Upload a CSV file to begin")
 
     except Exception as e:
         st.error("Error in scorer page")

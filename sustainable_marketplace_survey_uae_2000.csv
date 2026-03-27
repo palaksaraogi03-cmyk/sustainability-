@@ -1,0 +1,2001 @@
+Age,Gender,Income,Occupation,Awareness,Purchase_Frequency,Environmental_Concern,Health_Concern,Social_Influence,Price_Sensitivity,Availability_Issue,Preferred_Category,Certification_Importance,Reviews_Importance,Brand_Story_Importance,UI_Expectation,Delivery_Expectation,Purchase_Intent
+24,Female,High,Student,2,Rarely,2,3,2,5,4,Personal Care,5,4,2,3,2,1.0983997297720693
+37,Female,Low,Student,3,Occasionally,3,4,2,1,2,Fashion,5,3,4,5,5,1.0
+32,Male,High,Working Professional,2,Occasionally,4,4,1,3,2,Fashion,5,5,4,5,3,1.629161190625271
+28,Male,Medium,Working Professional,2,Occasionally,2,3,4,2,3,Food,5,5,2,3,4,1.0
+25,Female,Medium,Student,1,Rarely,2,3,2,5,4,Personal Care,3,2,4,3,2,1.0
+38,Male,Medium,Student,1,Frequently,2,2,4,1,1,Food,4,5,4,5,3,1.0
+24,Female,High,Student,3,Rarely,3,5,1,5,3,Personal Care,5,3,4,4,4,1.0
+43,Male,Medium,Student,5,Rarely,5,2,1,1,2,Personal Care,2,4,4,3,5,2.8895499935409568
+36,Male,Medium,Working Professional,3,Occasionally,2,4,4,2,2,Home Products,4,5,3,3,5,2.13132609434321
+40,Male,Medium,Working Professional,4,Rarely,2,3,3,1,4,Fashion,5,4,4,4,2,3.250420397092026
+28,Male,Low,Working Professional,2,Rarely,2,4,1,1,1,Personal Care,5,2,4,5,4,3.999173127662499
+28,Female,Low,Working Professional,2,Rarely,5,2,1,2,1,Personal Care,3,3,4,5,3,1.0
+41,Male,Medium,Student,1,Occasionally,5,4,1,5,3,Food,3,5,3,4,5,1.0
+38,Female,Medium,Working Professional,5,Frequently,2,4,1,5,2,Home Products,3,4,1,3,3,1.5892936012714807
+21,Female,Medium,Student,1,Frequently,2,5,4,4,3,Personal Care,5,3,4,4,3,1.2382699999991273
+25,Female,Medium,Student,4,Occasionally,4,4,4,5,3,Personal Care,3,4,1,3,3,2.5645381124292363
+41,Male,Medium,Student,3,Rarely,5,2,4,5,3,Home Products,5,2,1,5,2,1.1898774597725832
+20,Female,Medium,Student,3,Occasionally,4,5,4,1,1,Fashion,4,3,2,3,3,1.0
+39,Female,Medium,Student,5,Occasionally,2,4,3,4,2,Fashion,4,3,2,3,2,3.1346043541956945
+38,Male,High,Student,1,Rarely,2,2,4,2,3,Personal Care,5,2,1,3,2,1.402665455172853
+19,Male,Medium,Working Professional,1,Rarely,2,3,4,2,2,Home Products,2,2,3,3,4,1.8132333141794197
+41,Female,Medium,Student,4,Rarely,2,5,1,3,2,Personal Care,5,5,4,3,5,1.9853480654168778
+29,Other,Low,Student,3,Occasionally,3,4,3,4,3,Home Products,4,2,4,5,3,2.1511620078149645
+23,Male,Medium,Student,1,Rarely,3,4,1,1,3,Home Products,4,2,4,4,4,1.0
+19,Female,Medium,Working Professional,5,Frequently,3,5,3,3,4,Food,5,4,2,5,4,1.7296268566423951
+38,Female,Medium,Student,3,Rarely,4,2,2,3,1,Home Products,5,3,2,3,4,3.09425740439952
+18,Female,Medium,Working Professional,4,Rarely,5,4,3,2,2,Personal Care,5,4,4,4,4,3.130913882374933
+29,Other,High,Working Professional,5,Occasionally,2,2,3,5,3,Home Products,4,2,1,3,4,3.369281286987412
+43,Female,Low,Student,2,Occasionally,5,5,1,1,3,Food,2,5,2,5,3,1.925294217807211
+39,Male,Medium,Working Professional,4,Rarely,3,4,3,4,2,Personal Care,5,4,4,5,4,4.652147100583807
+29,Male,Medium,Student,5,Rarely,2,3,3,3,3,Personal Care,4,4,1,3,5,4.795378139261392
+42,Male,Low,Student,1,Rarely,2,3,1,1,4,Fashion,5,3,4,3,2,1.0
+34,Female,Low,Working Professional,2,Rarely,4,3,2,2,2,Food,4,3,2,4,2,1.5455665207305513
+44,Female,Medium,Student,4,Rarely,5,5,2,5,3,Fashion,5,3,3,4,5,4.352001912941718
+44,Male,Low,Student,1,Frequently,4,4,2,3,2,Fashion,4,5,3,3,3,1.137222809973099
+27,Female,Low,Student,2,Occasionally,3,5,3,2,3,Home Products,5,5,2,4,2,1.8343927567117793
+33,Female,Low,Student,3,Occasionally,5,4,1,2,3,Food,3,2,1,3,5,2.0667955554073956
+32,Female,Medium,Working Professional,1,Rarely,3,3,2,2,1,Personal Care,5,2,4,3,5,1.0
+32,Male,Medium,Student,5,Rarely,4,3,2,1,2,Home Products,4,3,2,3,4,3.2179660582314416
+36,Female,Medium,Working Professional,4,Rarely,4,2,2,1,1,Food,5,4,1,5,2,2.3263830378514196
+29,Male,High,Student,2,Occasionally,2,5,2,1,3,Personal Care,2,3,4,3,4,1.0
+40,Male,Medium,Working Professional,1,Occasionally,5,5,1,5,2,Home Products,5,2,4,3,3,3.2410884637357413
+37,Male,Medium,Student,2,Rarely,5,2,2,3,2,Home Products,5,4,2,3,2,3.799344912751498
+42,Male,High,Student,4,Occasionally,2,3,3,1,4,Food,5,2,4,4,2,2.7123959670739466
+20,Male,Medium,Working Professional,4,Occasionally,5,3,3,5,4,Home Products,2,5,3,3,5,2.425762581226059
+22,Female,Medium,Student,1,Rarely,3,5,1,3,3,Food,2,3,3,5,2,1.0
+36,Male,Medium,Student,3,Rarely,3,4,4,1,3,Fashion,2,3,4,5,3,1.93813578183022
+24,Female,Low,Student,2,Occasionally,4,3,2,2,3,Personal Care,3,4,2,3,3,3.089159144601772
+38,Male,Medium,Working Professional,1,Occasionally,3,2,2,4,3,Fashion,2,3,4,3,2,1.3979198567937416
+26,Female,Medium,Student,2,Rarely,5,2,3,1,4,Personal Care,3,2,2,3,5,2.7552813833759564
+24,Other,Medium,Working Professional,4,Rarely,2,2,1,4,2,Food,5,2,2,5,3,1.897781205679702
+35,Male,Low,Student,2,Occasionally,4,5,4,1,1,Personal Care,3,5,3,4,4,3.662492304498355
+21,Male,High,Student,3,Rarely,2,5,3,2,2,Fashion,5,2,3,4,3,3.0124909265467212
+42,Male,Medium,Working Professional,5,Occasionally,4,5,4,4,2,Fashion,3,4,1,3,2,3.589405670932965
+31,Female,Medium,Working Professional,3,Occasionally,4,5,1,5,4,Personal Care,2,2,2,4,4,1.7517518052249874
+35,Female,High,Working Professional,2,Rarely,2,2,1,2,2,Fashion,2,5,4,5,2,2.884377452121667
+43,Male,Medium,Working Professional,1,Rarely,3,2,1,4,2,Personal Care,3,5,2,3,2,1.0
+26,Female,High,Student,4,Occasionally,3,5,3,4,3,Food,3,3,3,4,2,1.4312390425818171
+43,Male,Medium,Student,5,Rarely,3,5,1,2,1,Personal Care,2,4,2,3,5,2.4362128999450237
+38,Male,Low,Student,1,Rarely,3,2,3,2,2,Home Products,5,2,1,3,5,1.0
+19,Female,Medium,Working Professional,1,Occasionally,2,5,3,2,2,Home Products,5,5,4,5,3,2.0835759154856968
+37,Male,Medium,Working Professional,3,Rarely,5,5,2,3,1,Home Products,5,2,2,5,2,2.7864368373998634
+32,Female,Medium,Student,2,Occasionally,4,5,3,5,3,Fashion,5,5,4,4,4,2.9286502288535834
+24,Male,High,Student,3,Rarely,2,5,3,1,4,Food,4,3,4,5,4,1.0
+29,Other,Medium,Student,2,Occasionally,3,3,2,4,4,Home Products,5,5,3,3,4,1.5108950565346242
+25,Male,Medium,Working Professional,3,Rarely,3,5,4,1,2,Personal Care,4,3,2,5,5,2.3431261924096556
+32,Male,High,Student,1,Frequently,2,2,2,2,3,Fashion,4,4,4,4,5,1.0
+20,Female,Medium,Student,4,Occasionally,4,2,2,5,4,Fashion,2,2,3,4,2,1.0
+31,Male,Medium,Student,2,Rarely,2,2,1,5,4,Home Products,2,2,1,4,4,1.0
+34,Other,High,Working Professional,5,Occasionally,2,2,1,3,4,Home Products,3,3,1,5,4,1.1352887652022186
+21,Female,Low,Working Professional,5,Rarely,5,5,2,2,4,Personal Care,5,4,2,5,5,5.0
+35,Female,Medium,Working Professional,1,Occasionally,2,3,1,4,4,Personal Care,5,3,4,5,5,1.3270658410707852
+25,Female,High,Student,3,Frequently,5,4,2,3,2,Food,2,5,2,5,4,3.581429553118569
+21,Other,Medium,Student,3,Occasionally,4,4,1,2,4,Food,2,3,4,5,4,1.0
+19,Female,Medium,Working Professional,1,Rarely,2,4,3,3,2,Home Products,2,4,3,4,3,1.9856393271982573
+23,Female,Medium,Working Professional,5,Occasionally,2,4,1,1,1,Home Products,3,5,1,4,5,3.491382733288837
+39,Female,Medium,Student,5,Rarely,3,2,1,2,1,Food,5,2,1,5,2,1.9936813265641562
+27,Male,High,Student,3,Occasionally,2,5,3,4,3,Home Products,3,2,1,3,2,1.513561520814164
+21,Male,Low,Student,2,Occasionally,3,5,2,4,2,Personal Care,4,2,1,4,4,1.0
+39,Female,Low,Student,4,Rarely,3,4,1,2,3,Fashion,4,4,2,3,5,2.192438673484442
+35,Male,Low,Working Professional,2,Rarely,3,4,1,3,1,Home Products,5,4,4,3,2,2.2646256365079
+43,Male,Medium,Student,5,Occasionally,4,3,3,5,1,Fashion,2,4,2,4,5,1.6306582085252173
+29,Male,Medium,Student,2,Occasionally,5,3,3,2,1,Fashion,2,4,3,3,4,2.336115903772451
+19,Male,High,Student,4,Rarely,3,3,3,4,1,Food,3,4,1,3,4,4.445625195779034
+27,Female,Medium,Student,2,Rarely,2,2,4,1,4,Home Products,4,5,4,4,4,1.0
+21,Female,Medium,Student,2,Occasionally,2,5,3,4,1,Food,4,3,2,4,5,1.7321363356834862
+31,Male,Low,Student,2,Rarely,3,2,2,5,4,Personal Care,5,2,4,5,2,1.0
+33,Female,Medium,Student,2,Rarely,3,2,1,4,4,Food,4,4,2,4,3,1.0
+32,Female,Medium,Working Professional,1,Rarely,2,5,1,5,3,Personal Care,2,2,4,3,2,1.6992945658019305
+25,Male,Low,Student,5,Rarely,3,3,4,2,4,Home Products,2,4,4,4,5,2.193127640170044
+31,Female,Low,Student,4,Occasionally,5,5,1,4,3,Personal Care,2,2,1,5,2,4.499378530031584
+40,Male,Low,Working Professional,5,Frequently,5,4,1,3,4,Fashion,5,3,2,4,3,3.767863384743695
+42,Male,Low,Working Professional,1,Occasionally,4,3,2,3,4,Personal Care,3,2,3,3,2,1.0
+25,Other,Medium,Working Professional,1,Rarely,3,5,1,4,1,Home Products,4,2,4,4,3,1.0
+38,Male,Low,Student,1,Occasionally,4,2,2,4,2,Fashion,5,4,3,3,5,1.8206080101570798
+33,Female,Medium,Student,1,Occasionally,4,5,4,1,4,Home Products,3,5,1,4,4,1.2470925875309566
+30,Female,High,Student,2,Rarely,4,3,2,4,2,Fashion,5,5,3,5,3,1.0
+35,Male,Medium,Student,5,Frequently,3,4,3,1,2,Fashion,4,2,4,5,5,1.2807931721105967
+32,Female,High,Student,3,Occasionally,4,2,3,1,2,Home Products,2,5,4,4,4,2.923388714775541
+38,Other,Medium,Working Professional,4,Frequently,5,4,4,1,4,Food,3,3,4,3,3,2.4903768823747527
+41,Male,Medium,Student,1,Occasionally,4,4,1,1,2,Personal Care,3,3,2,5,4,2.459716229612659
+43,Female,High,Student,5,Occasionally,5,2,2,2,4,Home Products,5,5,3,3,2,1.6977547044043082
+42,Female,Low,Student,1,Rarely,5,5,3,3,1,Food,5,5,2,4,5,1.0
+30,Female,High,Student,1,Occasionally,3,5,2,1,4,Home Products,2,3,4,5,5,2.719770172816877
+26,Female,Low,Working Professional,1,Rarely,4,4,3,3,3,Home Products,5,5,4,5,5,1.5414869955300576
+32,Male,Medium,Student,1,Frequently,3,5,2,1,1,Fashion,4,5,1,3,5,1.321797181916458
+30,Female,Low,Working Professional,1,Occasionally,5,3,1,3,2,Personal Care,4,4,1,5,3,1.3135458702221272
+18,Female,Medium,Working Professional,4,Frequently,2,4,4,4,2,Personal Care,4,4,4,3,2,1.3171106549188971
+42,Female,Medium,Student,5,Occasionally,4,4,1,4,3,Personal Care,4,5,2,3,4,4.73426857113447
+24,Female,Medium,Student,1,Frequently,3,4,2,3,1,Food,2,5,2,4,5,1.6654316560998508
+26,Female,Medium,Working Professional,1,Rarely,2,3,3,1,3,Personal Care,2,4,4,3,5,1.4389925068539322
+41,Male,Medium,Working Professional,1,Occasionally,4,4,3,2,2,Fashion,2,4,3,5,3,1.146513375900093
+18,Female,Low,Student,1,Occasionally,4,5,4,3,4,Food,5,5,2,3,3,2.6868114989746656
+29,Female,Medium,Working Professional,3,Occasionally,3,5,1,5,2,Home Products,2,4,4,5,3,1.0
+25,Female,High,Student,2,Occasionally,2,5,1,2,3,Food,3,3,1,3,2,2.3186848952994024
+41,Female,Medium,Working Professional,3,Rarely,3,5,1,5,4,Home Products,3,2,4,4,4,2.3240948603857765
+28,Male,High,Student,1,Rarely,4,4,3,3,4,Fashion,3,3,2,4,2,2.7175387312417185
+36,Male,High,Student,3,Frequently,4,3,4,1,2,Home Products,5,4,4,3,5,1.0
+34,Male,Medium,Working Professional,4,Occasionally,5,2,3,5,4,Home Products,5,3,3,3,3,3.2272443424924564
+25,Male,Medium,Student,3,Rarely,4,5,1,3,1,Fashion,2,2,3,3,5,2.8538087884384074
+20,Female,Low,Student,5,Occasionally,4,2,2,2,2,Personal Care,4,4,2,4,4,1.9456835338731393
+20,Female,Low,Student,2,Frequently,2,2,3,1,2,Personal Care,3,3,4,3,4,1.0
+18,Female,Low,Working Professional,2,Rarely,2,4,4,5,1,Home Products,5,3,3,3,2,1.0
+44,Male,Medium,Working Professional,1,Frequently,5,5,1,3,2,Personal Care,3,2,3,5,2,2.386828794492185
+22,Female,Medium,Working Professional,1,Frequently,5,5,2,1,3,Home Products,2,4,1,4,3,1.0798502772555123
+27,Male,Medium,Student,4,Frequently,5,5,3,1,3,Fashion,5,5,2,4,3,2.648998391892605
+24,Male,Medium,Working Professional,4,Frequently,3,2,2,4,2,Personal Care,4,4,1,3,5,1.0
+43,Female,Medium,Student,5,Occasionally,3,5,2,5,1,Fashion,4,2,1,3,3,2.7652364234978557
+26,Female,Medium,Student,1,Rarely,5,5,4,3,4,Fashion,5,2,3,5,3,1.1117299405266243
+24,Male,Medium,Working Professional,1,Rarely,3,3,3,2,1,Personal Care,4,2,4,3,5,3.5702567170535877
+26,Male,Low,Student,4,Rarely,4,4,4,4,3,Personal Care,2,2,1,4,4,3.2636860694169716
+25,Male,Low,Student,4,Occasionally,5,5,1,3,2,Personal Care,4,5,2,5,3,1.9944318004822508
+29,Male,Medium,Student,4,Rarely,5,5,2,3,1,Food,3,4,2,4,3,2.1400613854517614
+19,Female,Medium,Student,2,Rarely,3,4,4,3,4,Home Products,3,4,4,3,5,1.0
+18,Male,Medium,Working Professional,3,Rarely,2,4,4,5,4,Home Products,3,3,2,5,5,1.1496708485336713
+33,Female,Medium,Student,3,Rarely,5,2,1,5,4,Food,5,5,1,4,5,3.5751642101565535
+40,Male,Medium,Working Professional,1,Frequently,3,2,3,2,4,Food,5,5,4,4,5,2.3973522679398567
+40,Male,Low,Student,2,Rarely,3,2,4,3,1,Food,5,3,2,4,5,1.4980267728553986
+41,Male,Low,Student,4,Occasionally,2,4,2,5,4,Fashion,5,3,2,3,3,1.305818108137443
+22,Male,Medium,Student,1,Occasionally,5,3,2,5,3,Home Products,5,4,1,3,2,1.9514417084565507
+20,Male,Medium,Working Professional,2,Rarely,2,5,2,5,4,Food,2,4,1,3,2,1.4798162437940743
+29,Male,Medium,Working Professional,5,Frequently,4,4,2,5,3,Food,5,4,1,3,2,3.5329509187663275
+25,Female,High,Working Professional,2,Occasionally,2,3,4,2,1,Home Products,4,5,1,4,3,1.5973714424410284
+39,Male,Medium,Working Professional,1,Rarely,2,4,2,3,3,Fashion,2,5,4,5,4,1.5448109583884952
+44,Other,Medium,Student,3,Rarely,3,3,4,4,1,Food,5,3,4,3,3,1.0
+20,Male,Medium,Working Professional,4,Rarely,2,4,3,3,4,Personal Care,4,2,4,5,2,1.879669287224966
+18,Female,Medium,Working Professional,5,Rarely,4,4,2,5,2,Personal Care,2,2,3,4,2,2.733519956678334
+20,Female,Medium,Working Professional,2,Rarely,3,3,3,5,3,Personal Care,3,2,1,3,5,1.0
+22,Female,Medium,Student,1,Occasionally,4,3,4,1,3,Personal Care,2,2,1,4,5,1.0
+32,Female,Medium,Student,1,Frequently,2,3,1,3,2,Fashion,5,2,4,3,5,1.0
+31,Female,Low,Working Professional,4,Occasionally,4,3,3,5,1,Personal Care,2,4,2,3,3,5.0
+20,Female,Medium,Working Professional,1,Rarely,4,3,2,5,1,Food,2,3,2,5,4,1.0
+18,Female,High,Student,1,Rarely,2,3,1,4,4,Personal Care,3,2,1,4,4,1.0
+22,Female,High,Working Professional,4,Occasionally,2,3,3,1,3,Home Products,2,2,1,4,5,3.461385458082872
+43,Male,Medium,Working Professional,5,Rarely,3,3,4,3,1,Food,2,2,4,4,4,4.173124336569971
+40,Male,Medium,Student,3,Rarely,3,4,4,2,4,Home Products,3,4,1,5,2,1.6167103974057238
+31,Female,Medium,Working Professional,3,Frequently,5,3,4,3,1,Personal Care,5,2,2,5,2,3.36461531395274
+24,Female,Medium,Student,5,Rarely,3,3,3,3,2,Home Products,4,3,2,4,5,2.2912519296727507
+44,Female,Low,Student,5,Frequently,2,4,4,4,2,Fashion,2,4,1,4,5,1.5936722845620575
+26,Female,Medium,Student,2,Rarely,4,4,3,3,2,Fashion,3,4,4,3,5,2.6249589715349106
+32,Other,Medium,Student,3,Frequently,4,2,2,4,4,Home Products,2,5,4,3,4,1.5269284501224425
+32,Male,High,Working Professional,4,Occasionally,3,2,2,4,3,Food,5,5,2,5,3,1.0732233325862137
+43,Male,Medium,Student,1,Occasionally,3,3,3,5,2,Home Products,5,4,4,3,5,2.519065502910365
+27,Male,Medium,Student,3,Rarely,2,3,3,2,2,Fashion,3,2,2,4,4,2.3493318100548395
+30,Male,Medium,Student,5,Frequently,4,2,1,4,1,Personal Care,4,2,1,4,5,1.0
+36,Female,Medium,Student,3,Frequently,5,2,4,1,2,Fashion,4,2,2,3,3,2.4722785597826546
+24,Male,Medium,Student,5,Occasionally,5,5,2,1,3,Home Products,2,2,1,3,5,3.2805114850439154
+34,Female,Low,Working Professional,5,Occasionally,3,5,2,2,4,Fashion,3,5,4,5,2,2.789352932686766
+37,Male,Medium,Student,5,Occasionally,5,3,1,4,2,Food,4,3,3,3,5,3.315956828740867
+21,Female,High,Working Professional,2,Rarely,2,5,3,2,4,Fashion,5,4,3,5,2,2.093405310582237
+22,Female,Medium,Working Professional,4,Occasionally,5,2,3,5,4,Fashion,4,2,3,3,2,3.5340753978705117
+40,Male,Low,Student,3,Frequently,3,3,1,1,3,Personal Care,3,5,2,3,4,3.4218503820413373
+24,Female,Medium,Working Professional,4,Rarely,2,4,4,3,1,Fashion,5,3,3,3,4,1.0
+30,Male,High,Student,1,Rarely,4,4,3,1,1,Home Products,2,4,2,3,2,2.001686217735388
+32,Male,Low,Student,3,Occasionally,2,2,3,4,4,Food,5,4,4,4,2,1.0
+28,Male,Medium,Student,4,Occasionally,3,5,4,2,2,Fashion,4,4,1,4,5,1.7033128897146645
+21,Male,High,Student,4,Rarely,3,4,4,1,4,Personal Care,4,2,3,4,5,1.0
+30,Male,Medium,Student,1,Rarely,5,5,1,3,1,Food,4,4,2,3,2,1.0
+24,Female,High,Working Professional,5,Rarely,5,4,1,3,2,Home Products,2,2,4,5,4,4.600103063715785
+44,Female,Medium,Student,3,Occasionally,4,5,1,2,1,Food,4,3,4,3,5,3.4527085161984465
+36,Female,Medium,Working Professional,3,Rarely,4,4,3,2,3,Fashion,3,5,3,4,5,3.117059918371079
+39,Male,Medium,Student,1,Occasionally,3,4,1,1,1,Fashion,2,5,4,5,5,2.9753377129586775
+19,Female,Low,Working Professional,5,Rarely,3,3,3,4,2,Fashion,5,5,4,5,4,2.812705966739795
+27,Male,Low,Student,3,Occasionally,3,3,2,5,2,Personal Care,4,4,4,4,2,1.3152264304278836
+30,Male,Medium,Student,3,Frequently,4,2,4,3,4,Home Products,3,5,2,3,5,1.3106607419116707
+42,Female,Low,Student,3,Rarely,3,4,4,2,2,Fashion,3,3,4,5,4,3.895648612830721
+38,Male,Medium,Student,5,Rarely,4,5,2,5,3,Home Products,2,2,4,5,4,4.006385565420025
+23,Female,High,Student,1,Frequently,3,4,1,5,1,Personal Care,3,5,4,4,4,1.0
+29,Female,High,Working Professional,3,Rarely,2,5,3,5,4,Food,2,2,4,5,4,2.263863150647535
+29,Male,Medium,Student,4,Rarely,2,5,3,4,4,Fashion,2,2,4,5,5,1.0
+37,Male,High,Working Professional,5,Frequently,3,4,3,2,2,Fashion,2,5,2,5,2,3.6142326145738055
+28,Male,Medium,Working Professional,2,Frequently,2,5,4,3,3,Home Products,5,5,4,3,2,1.0992107002030984
+43,Female,Medium,Working Professional,1,Occasionally,4,2,1,2,4,Fashion,5,5,4,3,4,4.21248594669531
+40,Male,Low,Student,4,Rarely,5,3,3,1,3,Personal Care,3,4,1,4,2,4.250622868673746
+42,Male,Medium,Student,3,Rarely,2,5,3,3,3,Personal Care,5,5,4,3,5,1.0
+24,Male,Medium,Working Professional,2,Rarely,5,4,3,2,1,Food,2,4,4,5,2,1.7887001034503012
+18,Female,Medium,Working Professional,5,Occasionally,2,3,2,3,1,Home Products,2,3,2,3,2,1.0
+18,Male,Medium,Student,5,Occasionally,4,2,3,1,1,Home Products,5,2,4,5,3,2.8575613429952993
+42,Male,Low,Student,2,Frequently,2,5,2,3,3,Food,3,3,2,5,2,1.51239427119956
+44,Female,Medium,Student,2,Rarely,2,5,3,5,1,Food,2,5,3,3,2,2.184731728456119
+42,Female,High,Student,4,Occasionally,3,3,3,4,4,Home Products,5,2,4,3,4,1.3592222623570502
+37,Male,Medium,Working Professional,1,Rarely,5,5,3,1,4,Home Products,4,5,1,3,4,2.5276687199964396
+30,Male,High,Student,4,Rarely,5,4,2,3,2,Home Products,3,5,2,3,3,4.426072099631673
+26,Male,High,Student,4,Occasionally,4,3,3,1,3,Personal Care,3,2,3,4,5,4.342219423146413
+20,Female,High,Student,3,Rarely,4,3,1,5,1,Food,3,3,1,3,3,2.677738235568157
+24,Male,High,Student,5,Occasionally,5,5,3,4,4,Home Products,4,5,2,4,2,2.8502728989748465
+23,Female,High,Working Professional,2,Occasionally,3,2,2,1,3,Personal Care,2,2,3,5,2,1.0
+25,Female,Medium,Working Professional,1,Frequently,3,2,2,5,3,Fashion,3,3,1,4,5,1.0
+44,Female,Low,Student,5,Occasionally,5,2,1,5,1,Fashion,5,4,4,5,5,2.428451735975226
+26,Male,Medium,Working Professional,5,Frequently,2,2,4,5,3,Fashion,3,3,1,4,4,1.4646715205688976
+22,Female,Medium,Student,1,Occasionally,5,3,1,3,1,Fashion,5,3,1,4,2,2.356295573699647
+18,Female,Medium,Student,5,Rarely,2,3,1,2,1,Personal Care,3,2,1,5,2,2.660666314929992
+36,Female,Medium,Student,2,Occasionally,5,5,2,1,1,Fashion,5,3,2,4,2,3.518907291787186
+27,Male,High,Student,5,Occasionally,2,2,3,2,3,Home Products,5,4,4,5,2,1.6332559972802276
+29,Other,High,Student,3,Occasionally,3,2,3,5,3,Fashion,5,4,4,3,2,1.0
+41,Male,High,Student,2,Occasionally,5,5,4,2,1,Fashion,4,5,2,5,2,3.3946421181486532
+32,Male,Medium,Working Professional,5,Rarely,4,5,4,5,3,Personal Care,4,4,1,4,2,1.8606911031332132
+44,Male,Low,Student,4,Rarely,2,5,4,5,1,Food,4,5,4,3,2,2.2088103741296363
+39,Female,Low,Working Professional,3,Rarely,3,4,4,4,2,Personal Care,2,4,1,4,4,2.236722334884671
+41,Male,Medium,Student,2,Occasionally,4,5,1,4,3,Personal Care,5,3,4,3,3,1.0
+26,Male,Low,Working Professional,5,Occasionally,3,5,1,2,3,Home Products,2,5,2,5,2,4.721511165662398
+37,Male,Low,Working Professional,1,Occasionally,2,4,3,1,2,Personal Care,4,4,3,3,4,1.0
+34,Male,High,Student,1,Rarely,5,2,1,2,2,Personal Care,5,3,1,3,2,3.173944570221174
+34,Female,Medium,Working Professional,3,Rarely,3,3,3,1,2,Fashion,2,3,4,3,5,2.624656253352545
+43,Female,Medium,Student,4,Occasionally,5,2,3,2,1,Home Products,4,5,4,4,2,1.6214291419681277
+37,Male,Low,Working Professional,5,Occasionally,5,3,3,3,1,Home Products,2,2,4,3,3,2.292361429215716
+29,Male,Medium,Student,3,Occasionally,3,3,3,3,4,Home Products,2,3,2,5,4,1.110877284537378
+24,Female,Low,Working Professional,1,Occasionally,3,5,2,1,2,Personal Care,4,3,2,5,5,1.3683900058734157
+19,Male,High,Working Professional,3,Rarely,3,5,3,4,4,Home Products,5,2,3,5,5,1.0
+20,Male,Medium,Student,5,Occasionally,5,4,1,5,1,Personal Care,3,5,2,3,2,2.801538083718158
+34,Other,Medium,Student,2,Frequently,4,2,1,2,3,Fashion,3,4,1,5,3,2.767381840997457
+22,Female,Medium,Working Professional,5,Occasionally,2,2,1,5,2,Personal Care,2,4,2,4,3,2.569755601215846
+34,Male,Low,Student,2,Occasionally,4,3,1,3,3,Home Products,2,3,4,5,2,1.123742143291377
+41,Female,Medium,Student,2,Occasionally,5,5,2,5,1,Fashion,2,2,1,3,2,1.0
+34,Male,Medium,Student,3,Occasionally,3,5,4,3,2,Home Products,5,3,2,5,4,2.530918434809733
+44,Female,Medium,Student,3,Occasionally,3,2,4,2,4,Food,2,5,1,3,4,1.0
+34,Male,Low,Working Professional,1,Occasionally,2,4,3,3,4,Personal Care,2,3,1,3,2,1.0
+19,Male,Medium,Student,3,Occasionally,2,5,3,1,1,Personal Care,2,4,2,5,2,2.0171660835936356
+19,Male,Medium,Student,1,Rarely,4,4,1,5,3,Fashion,4,2,1,4,5,1.0
+39,Female,High,Working Professional,5,Frequently,4,2,1,5,1,Personal Care,3,5,4,4,3,1.3102460932522502
+40,Female,Medium,Working Professional,4,Occasionally,2,2,4,2,3,Fashion,3,3,4,5,4,1.100603228017941
+22,Male,Medium,Student,5,Rarely,5,4,4,5,1,Food,4,4,2,3,2,2.2980602954756484
+18,Male,Medium,Student,3,Occasionally,4,5,1,2,4,Personal Care,5,3,2,5,2,1.9860122862025982
+18,Female,Medium,Working Professional,3,Rarely,3,2,3,4,3,Home Products,5,4,4,3,4,1.0
+36,Male,Medium,Working Professional,1,Rarely,3,3,2,1,1,Fashion,5,2,2,3,5,1.2942700446797062
+19,Male,Medium,Student,3,Rarely,5,2,2,3,2,Food,4,5,4,3,5,2.5533573144563
+38,Other,Medium,Student,2,Occasionally,2,5,4,3,4,Food,3,3,1,4,2,1.8490527303406894
+29,Male,High,Student,3,Frequently,4,3,4,3,4,Home Products,3,5,2,4,3,1.5578294469735163
+43,Female,Medium,Student,1,Occasionally,3,2,4,4,2,Food,2,2,3,5,3,1.0
+23,Other,High,Student,1,Occasionally,2,5,2,1,1,Fashion,3,4,4,4,2,3.0443490834259
+40,Male,Medium,Working Professional,2,Occasionally,4,5,2,5,3,Personal Care,5,2,4,3,4,2.786633770076255
+21,Male,High,Student,1,Rarely,5,2,1,5,4,Home Products,5,2,1,3,3,1.7482180855255454
+40,Male,High,Working Professional,4,Rarely,3,5,3,1,1,Home Products,2,5,3,5,4,1.128668161942612
+28,Female,Medium,Student,5,Occasionally,5,4,4,1,2,Food,2,2,3,3,4,3.707050529853328
+41,Female,High,Working Professional,3,Frequently,5,3,1,3,3,Fashion,3,3,3,5,4,1.724527654751009
+44,Female,Low,Working Professional,4,Occasionally,5,4,2,5,1,Fashion,2,4,4,5,5,1.5434886878836993
+34,Male,High,Student,3,Occasionally,4,2,1,1,1,Personal Care,2,2,4,3,3,1.9403116638001345
+23,Female,Medium,Student,4,Frequently,5,4,2,5,4,Food,4,3,3,4,5,3.5470750617689664
+41,Female,Low,Student,3,Rarely,4,2,3,1,4,Food,3,4,2,3,3,3.188277691655304
+22,Female,Medium,Working Professional,2,Occasionally,4,2,2,2,3,Home Products,5,5,3,3,2,1.1804858406739234
+37,Female,High,Working Professional,1,Occasionally,5,5,1,3,1,Home Products,4,4,1,5,4,2.2846203229116564
+19,Female,Low,Student,1,Occasionally,5,5,3,1,2,Home Products,5,5,3,4,3,2.1784399666445444
+23,Female,Medium,Student,2,Rarely,2,2,2,4,2,Home Products,2,4,3,5,3,1.0
+39,Female,Medium,Student,4,Occasionally,3,3,4,1,3,Fashion,2,2,3,3,2,3.497555891885199
+28,Male,High,Working Professional,5,Occasionally,2,3,2,2,1,Home Products,5,5,2,5,5,2.236845002692336
+33,Male,Medium,Student,4,Rarely,3,3,3,4,4,Personal Care,4,5,3,5,3,1.0
+33,Female,Low,Student,1,Occasionally,3,4,1,4,1,Home Products,4,5,3,3,3,1.3386896248620324
+18,Male,Low,Student,5,Rarely,2,2,3,1,4,Fashion,4,2,4,5,5,4.116368812026224
+26,Female,Medium,Student,3,Frequently,2,5,1,2,2,Home Products,2,2,3,3,5,1.4000012602461682
+44,Other,Medium,Working Professional,5,Occasionally,3,4,2,4,3,Food,3,4,1,5,3,3.9485425721742335
+23,Female,High,Student,4,Frequently,3,4,2,3,3,Home Products,2,4,4,4,5,2.9174648205071465
+33,Male,Low,Working Professional,2,Rarely,3,5,3,3,3,Home Products,5,2,2,3,2,3.0762603423229797
+20,Male,Medium,Student,3,Rarely,4,2,4,5,4,Home Products,4,2,4,4,2,2.3754420543693553
+37,Male,Low,Student,4,Rarely,3,4,2,5,2,Home Products,3,5,2,5,4,2.0777947294315373
+44,Female,Low,Working Professional,3,Rarely,5,2,4,2,2,Personal Care,4,4,2,4,3,1.7867555219106679
+21,Female,Medium,Working Professional,5,Rarely,5,2,4,4,3,Home Products,2,4,1,4,2,2.7756743320393658
+36,Female,Medium,Working Professional,1,Occasionally,5,2,3,3,3,Personal Care,3,5,3,4,2,1.8331819509809593
+43,Male,Medium,Student,4,Rarely,2,5,2,3,4,Home Products,3,5,1,5,2,3.171559613545971
+20,Female,High,Student,2,Occasionally,2,2,4,2,4,Home Products,2,5,4,3,4,1.0
+36,Female,Medium,Working Professional,5,Rarely,2,4,2,4,1,Home Products,4,3,2,5,5,1.0
+37,Male,High,Student,4,Occasionally,3,5,1,2,4,Home Products,4,3,4,5,4,2.9363033237364156
+24,Female,High,Student,2,Occasionally,5,5,4,1,1,Home Products,4,2,2,5,4,3.232730491090537
+37,Male,Medium,Working Professional,4,Occasionally,3,4,3,3,3,Food,2,4,4,3,4,1.4327743915921445
+26,Male,High,Working Professional,5,Frequently,4,5,3,2,2,Personal Care,5,5,2,5,4,3.6572779137634055
+18,Female,Medium,Working Professional,4,Rarely,4,4,4,2,4,Food,5,5,1,5,3,3.478355709905633
+25,Male,Low,Working Professional,3,Occasionally,2,3,2,1,2,Home Products,4,4,2,3,3,1.7052910997648794
+24,Female,Medium,Working Professional,5,Occasionally,4,4,1,5,4,Fashion,3,3,3,3,2,3.9295557130065113
+35,Female,Low,Student,4,Occasionally,5,5,1,3,4,Food,5,4,1,3,4,4.716444422031381
+25,Female,Medium,Student,1,Occasionally,4,4,3,2,1,Home Products,4,2,3,4,4,2.0217847785929735
+18,Male,Medium,Student,4,Occasionally,2,3,3,3,4,Food,5,3,4,3,2,2.640872409699562
+28,Female,Low,Student,3,Occasionally,3,2,2,5,3,Home Products,4,4,4,4,5,1.0
+42,Female,Low,Student,2,Occasionally,4,2,3,2,2,Fashion,5,4,2,4,3,2.8733713190145096
+42,Female,High,Student,2,Frequently,5,2,2,1,4,Personal Care,5,2,2,5,4,3.76598617263657
+35,Male,Medium,Student,2,Frequently,5,5,4,3,2,Home Products,3,4,4,4,5,1.4845967026164277
+40,Male,Low,Student,1,Rarely,5,3,1,1,2,Food,3,3,1,5,5,2.8167223569130164
+27,Female,Medium,Student,3,Rarely,3,4,4,5,2,Home Products,5,5,3,4,4,1.0
+20,Male,Medium,Student,5,Frequently,5,4,3,5,4,Personal Care,4,5,4,3,4,2.0132271382457994
+24,Female,Medium,Student,2,Frequently,2,4,1,3,1,Home Products,3,5,1,5,5,1.0
+33,Female,High,Working Professional,3,Rarely,2,4,1,5,2,Home Products,2,3,3,4,3,1.0
+43,Female,Medium,Student,4,Rarely,5,5,4,4,2,Fashion,3,4,2,5,3,2.662009691169258
+33,Female,Medium,Student,1,Frequently,4,5,2,3,4,Fashion,5,4,1,3,4,1.5960383722112716
+42,Other,High,Working Professional,3,Occasionally,5,3,1,4,4,Personal Care,5,4,1,4,4,2.8167768567167277
+37,Female,High,Student,3,Rarely,2,4,2,5,3,Fashion,2,4,4,4,2,1.0
+34,Female,Low,Student,5,Occasionally,2,2,4,3,3,Fashion,3,5,3,3,2,2.5233427547977847
+19,Female,Low,Student,3,Frequently,2,5,4,4,1,Fashion,5,3,4,4,3,1.0
+18,Male,Low,Student,5,Frequently,4,3,2,5,1,Food,2,2,2,4,2,1.0214884987277912
+33,Male,Medium,Working Professional,1,Occasionally,4,3,4,2,1,Personal Care,2,3,2,5,5,1.5036082601365925
+29,Female,Medium,Student,1,Occasionally,4,5,1,2,1,Personal Care,4,4,3,4,5,2.852743109225092
+22,Male,Medium,Working Professional,4,Rarely,2,2,4,1,2,Fashion,3,4,3,3,5,1.5157903821837353
+22,Male,High,Student,5,Frequently,3,2,4,2,4,Personal Care,3,3,3,4,5,2.913905929537262
+44,Male,Medium,Student,5,Rarely,5,4,1,4,3,Home Products,3,3,4,5,4,3.2789064006383675
+40,Female,Low,Student,2,Frequently,5,5,2,2,2,Fashion,5,5,3,4,5,5.0
+26,Female,Medium,Student,2,Rarely,2,2,4,3,4,Home Products,2,4,3,5,3,1.0
+26,Female,Medium,Student,4,Frequently,4,5,2,3,4,Home Products,4,3,4,4,2,2.6335094543903232
+20,Female,Medium,Student,1,Rarely,3,3,1,3,2,Personal Care,3,4,2,5,3,2.307922547516924
+36,Female,Medium,Student,2,Occasionally,3,3,2,2,2,Home Products,4,3,2,5,4,1.6482887005373288
+33,Male,High,Working Professional,3,Rarely,4,3,2,2,3,Home Products,4,4,1,4,2,2.5509863685807406
+33,Female,Medium,Student,1,Occasionally,5,5,3,1,1,Fashion,2,3,2,3,2,1.0
+20,Male,Medium,Working Professional,3,Frequently,5,4,3,5,1,Home Products,3,4,3,3,2,2.0780842403777484
+37,Other,Medium,Working Professional,5,Occasionally,3,4,4,1,3,Food,4,2,2,4,5,2.2949025142712474
+41,Female,Medium,Student,1,Occasionally,3,2,3,4,3,Home Products,3,5,4,4,4,1.0
+39,Male,Low,Student,4,Rarely,4,5,3,3,1,Personal Care,3,2,2,4,3,3.0565387089057654
+41,Male,Medium,Student,5,Frequently,5,4,3,2,2,Food,3,5,2,4,5,3.3450908700437347
+18,Male,Low,Working Professional,5,Occasionally,3,5,2,5,1,Personal Care,4,5,1,4,2,3.172162367913692
+41,Male,High,Student,3,Occasionally,5,4,2,5,4,Personal Care,2,3,1,3,3,3.1539838098062902
+37,Male,Low,Working Professional,5,Occasionally,3,3,3,2,4,Personal Care,2,2,3,5,3,2.4227992693166556
+28,Female,Medium,Student,1,Occasionally,4,3,1,1,3,Home Products,4,5,4,5,3,2.49948045492492
+34,Female,Medium,Working Professional,1,Occasionally,5,2,3,5,1,Food,5,4,3,3,4,1.0
+25,Female,High,Student,2,Occasionally,3,3,1,1,1,Personal Care,3,3,4,3,5,2.214580364154104
+21,Female,Low,Working Professional,3,Occasionally,3,4,2,2,4,Fashion,3,3,4,5,4,3.253012406422425
+23,Female,Low,Student,3,Frequently,3,2,1,1,1,Home Products,2,4,1,3,2,1.0902483262858793
+25,Female,Low,Student,1,Frequently,3,2,2,3,3,Food,4,4,2,4,2,1.7555095749795004
+37,Male,Low,Student,5,Rarely,4,3,1,2,3,Fashion,4,5,2,3,3,2.4480263613872606
+20,Female,Low,Student,4,Rarely,5,5,2,2,4,Food,5,4,1,3,3,2.7233141754251045
+33,Male,Medium,Working Professional,3,Rarely,5,3,2,5,1,Personal Care,5,3,3,3,3,3.4241878100827314
+42,Other,Low,Student,1,Rarely,2,3,3,5,1,Home Products,2,4,2,3,4,1.0
+20,Female,Low,Student,4,Occasionally,5,2,4,5,4,Home Products,5,2,3,5,5,2.9668157461306386
+42,Female,High,Student,5,Frequently,2,3,4,5,2,Personal Care,5,3,2,5,4,1.0
+35,Male,Medium,Student,3,Rarely,3,4,2,3,2,Home Products,4,4,3,5,2,1.390163279327778
+31,Female,Medium,Student,1,Occasionally,4,2,3,4,1,Food,4,3,4,5,3,1.811596803100144
+35,Female,Medium,Working Professional,1,Frequently,4,3,4,2,3,Personal Care,5,5,4,4,3,1.8244094582576567
+19,Male,High,Student,1,Frequently,3,5,4,5,2,Personal Care,2,2,2,4,4,1.0161333510917334
+39,Male,Low,Working Professional,3,Occasionally,2,4,3,2,1,Fashion,5,5,3,5,2,2.503977692284219
+20,Female,High,Student,4,Occasionally,3,5,3,1,2,Fashion,2,2,3,5,5,2.068644698264892
+33,Male,Medium,Student,1,Occasionally,4,4,4,3,4,Home Products,5,4,4,5,3,2.9172409175324647
+26,Female,Low,Working Professional,5,Rarely,4,5,4,4,2,Fashion,4,3,3,3,3,2.687419760009272
+21,Male,High,Working Professional,1,Rarely,5,3,1,1,2,Home Products,4,4,1,4,2,1.3842608281364641
+18,Male,Low,Student,4,Rarely,2,4,1,2,4,Personal Care,2,5,3,4,3,1.4499351835481744
+21,Female,Low,Working Professional,3,Rarely,5,2,2,3,3,Food,5,3,4,3,5,2.1184501138343634
+18,Male,High,Student,1,Frequently,4,2,4,5,1,Fashion,5,4,1,3,4,1.0
+31,Female,Medium,Student,1,Occasionally,4,5,3,1,3,Fashion,2,4,1,3,2,2.826159390451
+38,Male,Medium,Working Professional,5,Occasionally,5,5,3,3,3,Fashion,5,3,3,4,3,3.3536304483859527
+33,Male,Low,Student,5,Occasionally,5,5,4,2,2,Food,3,3,4,3,3,3.244017902672506
+37,Female,Medium,Student,1,Rarely,4,4,2,2,1,Personal Care,4,5,4,3,5,2.2533935053933436
+41,Female,Medium,Working Professional,1,Occasionally,5,2,3,1,2,Fashion,4,2,4,3,4,1.4704585480607641
+25,Female,Medium,Working Professional,5,Frequently,5,3,4,1,4,Food,2,2,1,5,5,3.891333966783161
+24,Female,Medium,Student,4,Rarely,2,4,4,1,3,Food,5,3,4,3,4,2.7263928195689093
+20,Female,Low,Student,2,Rarely,4,5,2,4,3,Food,2,2,1,5,5,2.2852428105435543
+34,Male,Low,Student,2,Occasionally,3,2,4,5,4,Fashion,3,5,1,4,4,1.0
+18,Male,High,Working Professional,1,Occasionally,2,5,3,3,1,Personal Care,5,2,2,4,3,1.0
+33,Female,Medium,Working Professional,5,Occasionally,3,3,1,2,3,Home Products,3,3,3,4,3,3.4087074715828316
+29,Female,High,Student,3,Occasionally,5,3,2,2,3,Personal Care,2,5,4,5,3,3.21405431029093
+44,Female,Medium,Student,3,Occasionally,5,2,4,5,1,Fashion,4,3,1,3,2,1.0
+36,Male,Medium,Student,2,Rarely,3,4,2,1,2,Fashion,3,5,3,4,4,1.667172235031644
+39,Male,Low,Working Professional,4,Rarely,5,3,4,1,4,Food,5,5,1,3,2,4.439710303961876
+40,Female,Medium,Working Professional,2,Occasionally,5,3,1,2,1,Fashion,2,3,3,5,4,3.2840075133154096
+39,Female,Low,Working Professional,1,Frequently,2,3,2,5,4,Home Products,2,4,1,4,3,1.0
+31,Female,Medium,Working Professional,4,Frequently,3,3,4,2,4,Personal Care,2,3,4,3,2,2.3118889144215435
+23,Female,Medium,Student,3,Frequently,2,5,1,1,3,Home Products,4,5,2,3,2,2.7190046004179003
+23,Female,High,Student,5,Occasionally,3,5,3,3,1,Home Products,2,3,2,4,5,3.793636303933161
+30,Male,Medium,Student,5,Occasionally,2,4,4,1,4,Personal Care,2,3,2,3,4,2.827121945068994
+36,Male,Low,Student,1,Occasionally,4,2,1,3,2,Personal Care,4,5,1,5,5,1.783860600200843
+39,Male,Low,Student,2,Frequently,4,2,1,4,4,Home Products,2,2,3,4,2,2.331343683681784
+25,Male,Low,Student,1,Rarely,3,2,2,5,3,Personal Care,2,5,4,4,2,1.665694145203539
+44,Female,Medium,Working Professional,5,Occasionally,4,3,4,4,2,Home Products,3,3,4,4,3,2.319231645991254
+44,Male,Medium,Working Professional,3,Occasionally,2,5,3,1,2,Home Products,2,5,1,4,5,2.345558777467104
+19,Female,High,Student,5,Occasionally,3,5,4,5,1,Home Products,4,5,2,5,5,1.6419477191162002
+38,Male,Low,Student,4,Rarely,4,4,1,1,2,Personal Care,3,2,1,5,5,2.7268708548445786
+18,Male,Medium,Student,5,Occasionally,4,2,3,5,1,Fashion,2,4,3,3,4,1.692587581338759
+32,Male,Medium,Working Professional,5,Occasionally,3,5,1,5,1,Home Products,4,3,2,5,2,2.2113808971706703
+18,Male,Medium,Working Professional,4,Occasionally,4,4,2,1,2,Fashion,5,3,1,3,5,2.9057537898868766
+22,Female,Medium,Student,2,Occasionally,4,2,4,1,1,Food,2,2,3,3,3,2.8133615797272125
+33,Male,Medium,Student,5,Rarely,3,3,1,5,1,Food,5,5,2,4,2,2.349322814525393
+36,Female,Medium,Student,1,Frequently,4,5,1,5,2,Fashion,3,4,4,3,3,1.0
+21,Male,Low,Student,5,Occasionally,4,5,4,1,3,Fashion,4,3,3,4,2,4.0503925077291125
+20,Male,Medium,Student,1,Occasionally,4,2,3,1,4,Personal Care,3,4,4,3,3,1.1512187774033256
+34,Male,Low,Working Professional,4,Rarely,4,3,1,2,1,Food,5,4,3,5,5,1.5105986013893316
+34,Female,Medium,Working Professional,5,Rarely,5,3,4,2,1,Personal Care,5,5,2,4,5,2.0577378920032197
+29,Female,Medium,Student,4,Occasionally,3,5,2,2,2,Personal Care,5,5,1,3,3,2.8697780702693865
+31,Male,Medium,Working Professional,4,Occasionally,5,2,2,4,4,Home Products,4,5,1,5,4,3.360920556887401
+38,Male,High,Working Professional,2,Occasionally,5,4,4,5,4,Fashion,5,3,1,5,3,1.6891899413107487
+23,Female,High,Student,5,Rarely,2,5,1,3,1,Personal Care,5,4,1,4,2,3.4372670543278305
+20,Male,High,Student,1,Frequently,5,3,4,4,2,Personal Care,4,4,3,4,3,1.685673421765321
+26,Male,Medium,Working Professional,1,Occasionally,5,4,4,5,3,Home Products,5,3,1,4,3,1.0
+22,Female,Medium,Student,5,Rarely,2,2,1,3,4,Fashion,2,2,1,3,2,2.51214875436608
+41,Female,Medium,Working Professional,2,Occasionally,4,3,3,2,3,Home Products,5,5,3,4,5,1.4578250771250838
+34,Male,High,Working Professional,2,Frequently,4,4,3,3,2,Food,4,3,3,5,2,1.1894624388873103
+31,Female,Medium,Working Professional,2,Occasionally,5,5,2,1,3,Home Products,5,5,2,5,3,3.5178910065626474
+38,Female,High,Working Professional,1,Rarely,2,3,3,1,2,Home Products,4,4,3,4,2,1.4338598744336226
+20,Male,High,Working Professional,4,Occasionally,4,2,4,5,1,Fashion,5,3,4,4,3,1.7327321441306394
+18,Female,Medium,Working Professional,2,Rarely,2,3,1,4,3,Personal Care,2,2,2,5,5,1.0970523629104214
+37,Female,Low,Student,1,Rarely,3,5,2,2,1,Fashion,4,5,2,3,3,1.0
+38,Male,Low,Student,1,Rarely,3,2,3,5,1,Home Products,4,4,1,5,3,2.3699608714096794
+40,Male,High,Student,4,Occasionally,3,5,4,2,2,Personal Care,4,4,1,5,5,2.8725749477957834
+18,Male,Low,Working Professional,5,Rarely,3,4,2,1,3,Personal Care,4,2,4,5,2,3.1586398998733167
+20,Female,High,Student,5,Frequently,5,3,1,4,4,Fashion,5,2,1,4,4,2.712952509917217
+35,Male,Medium,Student,2,Rarely,3,5,3,4,3,Personal Care,5,5,3,3,4,1.0
+42,Female,Medium,Student,2,Rarely,3,4,4,1,4,Home Products,2,4,3,3,3,1.4254344404586319
+27,Female,High,Working Professional,4,Occasionally,2,2,1,3,1,Home Products,2,2,1,4,3,1.0
+39,Male,Medium,Working Professional,2,Rarely,4,2,4,4,1,Fashion,5,3,1,5,5,1.0
+43,Female,Medium,Working Professional,4,Occasionally,2,4,4,3,2,Home Products,3,2,3,4,2,1.0
+20,Male,Medium,Student,1,Rarely,5,4,4,2,4,Personal Care,4,3,2,4,4,1.5647914734581985
+25,Female,Medium,Working Professional,2,Rarely,3,2,1,4,3,Home Products,5,4,4,3,4,1.1204836494955646
+31,Female,Medium,Working Professional,1,Rarely,4,5,2,1,2,Food,2,5,4,3,5,1.0
+41,Male,Low,Student,3,Occasionally,4,4,4,3,2,Personal Care,4,4,2,4,5,2.9998434843787263
+35,Male,High,Student,4,Rarely,3,5,2,2,2,Fashion,2,4,4,4,4,2.99745914812613
+32,Male,High,Student,3,Occasionally,3,2,2,2,3,Home Products,3,4,1,3,2,1.568291176184574
+39,Male,Medium,Working Professional,2,Occasionally,5,5,3,4,2,Food,4,4,1,3,2,4.462093195101913
+40,Male,Medium,Student,1,Occasionally,5,5,3,4,3,Home Products,3,5,1,5,2,1.7594016424890488
+19,Male,Medium,Student,2,Occasionally,3,4,2,5,2,Food,3,2,4,4,3,2.0982104078035837
+44,Other,Medium,Working Professional,3,Occasionally,3,5,3,5,4,Home Products,3,5,2,5,2,2.0094658311746794
+27,Male,High,Student,3,Frequently,3,5,3,4,1,Home Products,5,5,1,5,3,3.1387374024804737
+19,Male,Low,Student,5,Rarely,3,5,2,5,4,Home Products,2,5,2,5,3,3.4845847873412774
+43,Female,Low,Working Professional,3,Rarely,4,2,1,1,4,Personal Care,4,5,3,3,5,1.999998683935842
+34,Male,Medium,Student,2,Rarely,5,2,3,1,2,Home Products,5,2,3,5,3,2.0363190542036746
+25,Other,Medium,Working Professional,1,Rarely,3,3,3,5,4,Home Products,2,4,3,3,3,1.0
+18,Female,Medium,Student,2,Rarely,3,2,1,4,4,Home Products,5,2,4,3,5,1.215954750480004
+26,Female,Medium,Working Professional,5,Occasionally,4,2,1,1,4,Personal Care,2,2,4,3,2,2.3546407274555774
+28,Male,Medium,Working Professional,5,Occasionally,2,3,1,2,2,Fashion,4,4,1,4,2,2.2381280221839863
+39,Male,Medium,Student,2,Frequently,3,3,2,4,3,Home Products,4,2,3,5,4,2.7006060613377603
+33,Male,Low,Student,5,Rarely,4,4,1,3,1,Home Products,4,5,2,3,4,3.0451115891314795
+24,Female,Medium,Working Professional,3,Rarely,4,4,2,3,1,Food,4,5,4,4,3,3.5474109126383873
+27,Male,Low,Working Professional,1,Frequently,2,2,4,4,3,Personal Care,2,4,2,4,4,1.0
+40,Male,Low,Working Professional,3,Frequently,5,5,4,5,3,Fashion,5,4,2,4,5,1.2404626128145806
+43,Other,Medium,Working Professional,1,Occasionally,5,4,1,1,4,Fashion,4,4,1,3,4,1.7750098150364866
+20,Male,Low,Student,5,Occasionally,5,4,1,1,1,Home Products,4,5,1,3,4,3.5678014940683584
+35,Male,Low,Student,4,Frequently,3,2,4,4,3,Fashion,4,4,2,3,3,1.0
+42,Male,Low,Working Professional,2,Occasionally,5,5,2,2,4,Food,3,2,2,4,5,1.0449338854901382
+41,Other,High,Student,5,Rarely,3,3,2,5,1,Personal Care,4,2,2,3,4,1.0
+30,Male,High,Student,1,Frequently,3,3,1,2,2,Food,4,3,2,5,2,2.4139076142251374
+43,Female,Medium,Student,1,Occasionally,4,2,1,4,2,Home Products,2,3,3,3,5,1.485332840972053
+24,Female,High,Student,1,Rarely,5,2,1,4,1,Food,3,4,2,3,5,1.6756585083853017
+42,Male,Medium,Student,1,Occasionally,5,5,4,2,1,Fashion,2,3,4,5,3,2.5683569342791457
+21,Female,Medium,Working Professional,2,Occasionally,5,2,3,3,2,Home Products,5,5,1,3,5,1.3525650311683735
+30,Male,Low,Student,3,Frequently,3,2,1,4,2,Fashion,3,5,4,3,5,2.1943336930664117
+37,Male,Medium,Student,4,Rarely,3,2,2,5,1,Fashion,2,2,1,3,5,1.0
+18,Female,Medium,Working Professional,2,Frequently,5,5,3,2,4,Personal Care,2,2,1,3,5,1.0
+25,Female,Medium,Working Professional,1,Occasionally,3,2,2,3,3,Home Products,5,3,1,4,5,1.0
+31,Female,Medium,Student,2,Occasionally,3,4,3,2,3,Fashion,5,3,4,3,5,2.0296981678920214
+33,Female,Medium,Student,5,Rarely,2,5,4,3,1,Food,4,5,1,5,5,1.6158858248490704
+31,Male,Medium,Working Professional,1,Occasionally,2,4,3,3,3,Fashion,4,2,2,5,2,1.0
+29,Male,High,Working Professional,4,Frequently,5,5,2,5,2,Personal Care,3,3,2,4,5,3.290665193120664
+36,Male,Medium,Working Professional,1,Rarely,5,4,3,5,2,Fashion,3,5,3,3,3,1.3885712968926618
+40,Male,Medium,Working Professional,4,Rarely,2,5,4,3,3,Home Products,5,2,3,5,2,2.8940884647937275
+32,Male,Medium,Working Professional,4,Occasionally,3,3,2,4,1,Fashion,3,5,3,4,5,3.205704910216756
+19,Male,Medium,Student,3,Occasionally,3,2,1,5,2,Food,4,5,2,3,4,1.0
+19,Male,Medium,Working Professional,3,Rarely,4,2,3,4,4,Home Products,5,2,4,4,3,1.9133181236711787
+40,Male,Low,Student,2,Occasionally,5,5,2,1,4,Food,2,5,3,3,2,3.14959309735858
+39,Female,Medium,Working Professional,2,Occasionally,5,4,3,3,2,Personal Care,5,3,2,4,3,3.0444256906671
+36,Female,Low,Working Professional,4,Rarely,5,3,4,5,2,Personal Care,3,5,1,4,2,1.7665873967596204
+42,Male,Medium,Student,1,Occasionally,4,4,2,2,3,Home Products,4,3,4,5,4,1.9558306934214433
+43,Female,Medium,Student,5,Rarely,4,2,1,5,1,Food,4,4,4,5,3,2.833667778579033
+39,Female,Medium,Student,5,Occasionally,3,2,1,5,3,Personal Care,2,4,2,4,3,2.6377508808361796
+43,Male,Low,Student,1,Occasionally,2,4,3,5,1,Food,2,4,2,3,2,2.2589475318321446
+43,Female,Medium,Working Professional,1,Occasionally,2,5,4,2,4,Fashion,5,5,1,3,2,1.0
+39,Female,Low,Student,3,Rarely,2,5,4,1,4,Home Products,4,4,1,3,4,2.5070244557640144
+34,Female,High,Working Professional,5,Rarely,3,4,3,3,1,Personal Care,2,4,1,3,5,2.5137168481033814
+37,Male,High,Student,4,Frequently,2,2,2,3,3,Fashion,2,5,4,3,2,1.3934841262257334
+27,Female,High,Working Professional,2,Occasionally,4,4,2,5,2,Personal Care,5,2,4,5,2,2.188138749600448
+23,Male,Medium,Working Professional,3,Occasionally,4,2,3,4,1,Food,5,5,3,4,2,1.8156445727925818
+32,Female,Medium,Working Professional,5,Occasionally,5,4,2,4,3,Food,4,3,3,5,4,1.9340497180629082
+39,Female,Low,Student,1,Occasionally,2,5,2,2,4,Personal Care,3,5,3,3,5,2.4527075752575866
+28,Female,Medium,Working Professional,5,Rarely,4,3,2,1,2,Food,3,2,4,4,5,3.690259515372651
+22,Female,Medium,Student,4,Rarely,5,2,3,1,4,Home Products,4,4,1,3,4,4.374690936278801
+18,Female,Medium,Student,3,Rarely,2,3,1,5,1,Home Products,3,5,3,3,5,1.8271195957641049
+25,Male,High,Student,3,Occasionally,2,5,4,5,4,Fashion,4,4,1,4,3,1.0
+38,Male,Low,Student,4,Rarely,4,4,1,4,4,Home Products,4,3,1,3,4,2.194133218629625
+29,Female,High,Working Professional,2,Rarely,5,5,2,1,1,Fashion,2,2,1,5,2,3.935800831169921
+29,Male,Medium,Student,5,Occasionally,5,3,3,5,2,Personal Care,3,4,3,5,5,2.0328880119314925
+22,Male,Medium,Working Professional,4,Rarely,4,5,4,1,1,Home Products,4,4,3,5,3,2.2951127259107666
+24,Male,Low,Working Professional,4,Occasionally,4,5,2,2,3,Food,3,4,1,3,4,3.2203758058376097
+21,Male,Low,Student,1,Rarely,4,4,4,2,1,Home Products,3,4,3,5,4,1.0
+23,Other,Medium,Working Professional,2,Rarely,2,3,4,5,1,Food,5,5,2,3,2,1.1487053469273731
+30,Female,Medium,Student,4,Occasionally,4,3,1,4,2,Food,3,2,3,3,2,2.6696850850084917
+37,Female,Low,Student,3,Rarely,4,3,2,3,3,Fashion,4,2,1,5,4,1.8536061641848465
+32,Female,Medium,Student,4,Frequently,3,2,4,4,4,Personal Care,2,4,1,5,3,3.108041616704449
+20,Male,High,Working Professional,5,Occasionally,4,5,1,2,4,Home Products,3,2,4,3,2,4.427972309291797
+40,Male,High,Working Professional,3,Rarely,4,3,3,2,4,Food,4,4,4,3,4,1.5217881396076944
+25,Female,High,Student,3,Rarely,2,5,4,5,4,Food,5,3,1,3,4,2.1557618989188954
+37,Male,Medium,Student,4,Occasionally,5,4,2,3,2,Home Products,3,3,2,3,2,3.8845415159449397
+33,Female,Medium,Working Professional,1,Rarely,2,4,3,1,3,Home Products,2,3,4,5,5,1.582768681264738
+30,Female,Medium,Student,3,Rarely,3,2,4,3,2,Home Products,3,2,1,3,3,1.1681885361437845
+35,Male,Medium,Working Professional,5,Occasionally,4,2,4,3,1,Personal Care,4,4,4,3,5,1.3912127663114195
+27,Other,Low,Student,1,Frequently,4,4,2,3,3,Personal Care,3,5,4,3,5,1.1417722706552533
+36,Female,Low,Student,1,Occasionally,4,3,4,5,3,Home Products,3,5,1,3,3,1.0
+34,Female,Medium,Working Professional,1,Occasionally,4,4,2,2,4,Food,5,3,3,3,3,2.8124661401841355
+41,Male,Low,Student,3,Frequently,4,5,2,1,4,Food,3,3,2,4,2,2.6448597154056537
+36,Male,Medium,Working Professional,1,Rarely,4,2,2,3,4,Personal Care,2,2,3,4,2,1.8216517809784945
+43,Female,Low,Working Professional,4,Frequently,3,2,2,1,4,Home Products,3,5,1,4,2,3.560301885876115
+40,Male,Low,Student,1,Occasionally,4,4,4,3,1,Food,5,2,1,5,3,1.9121788952692378
+43,Male,Medium,Student,5,Rarely,4,3,3,2,4,Home Products,4,3,2,3,5,4.077074864067444
+22,Female,Medium,Working Professional,2,Frequently,4,3,3,1,2,Personal Care,3,4,1,5,3,1.849440883077415
+43,Male,Medium,Working Professional,5,Rarely,3,5,1,4,3,Home Products,3,4,4,3,2,2.986455879740146
+38,Female,Low,Student,1,Rarely,4,2,2,2,1,Home Products,5,4,2,4,5,2.305406941200997
+40,Female,Low,Working Professional,1,Occasionally,3,4,4,1,1,Home Products,5,3,3,3,2,1.0984842854547128
+26,Female,Medium,Student,1,Occasionally,2,4,4,3,3,Home Products,5,2,2,5,5,1.0
+29,Male,Medium,Student,4,Rarely,4,2,1,3,3,Food,3,4,3,5,2,3.615189178800871
+38,Female,Medium,Working Professional,1,Rarely,5,4,3,2,3,Fashion,2,5,1,3,3,1.8551294902002025
+18,Male,Medium,Student,5,Occasionally,3,2,4,2,1,Personal Care,5,5,3,5,4,1.0
+43,Male,High,Working Professional,3,Occasionally,2,3,1,3,2,Home Products,4,3,3,4,4,1.1537636407693377
+43,Female,Medium,Student,2,Occasionally,3,3,3,1,2,Personal Care,3,5,3,3,5,1.1470705503880934
+18,Male,Medium,Working Professional,1,Frequently,3,4,4,4,3,Food,4,5,2,4,3,1.6559227989870482
+32,Male,Medium,Student,2,Rarely,2,3,2,5,1,Personal Care,4,3,4,4,2,1.4147938326118452
+19,Female,Medium,Student,1,Rarely,4,3,1,5,4,Personal Care,2,2,3,5,5,2.058128919557145
+39,Male,Medium,Working Professional,3,Occasionally,4,5,4,3,1,Food,4,4,2,3,5,2.0905239294701063
+33,Male,Medium,Student,5,Occasionally,3,2,1,1,3,Fashion,5,3,2,4,2,2.659183833298291
+42,Male,Medium,Student,3,Rarely,2,2,1,5,1,Food,5,5,4,4,2,1.18472845085911
+25,Female,Low,Student,2,Rarely,4,4,1,1,1,Home Products,3,4,2,3,2,1.0
+30,Female,Low,Student,1,Frequently,3,2,2,2,1,Fashion,2,4,1,5,3,1.0878980372589884
+38,Male,Medium,Working Professional,2,Frequently,5,5,3,3,4,Food,2,4,1,4,4,5.0
+18,Male,High,Student,5,Occasionally,2,4,3,1,3,Fashion,4,3,1,3,5,1.6707492968770075
+33,Male,Low,Student,3,Rarely,5,4,4,3,3,Home Products,2,4,4,3,5,1.0
+24,Male,High,Student,2,Frequently,5,2,2,1,3,Fashion,4,2,2,4,4,3.723943380764008
+22,Female,Medium,Student,2,Frequently,3,3,3,2,2,Fashion,4,5,1,4,5,2.1486535714516086
+39,Male,High,Student,5,Occasionally,2,3,4,5,2,Food,2,3,3,4,3,1.997940471165609
+40,Male,High,Student,1,Frequently,4,3,4,5,3,Home Products,3,3,2,5,2,1.0
+20,Female,Medium,Student,2,Frequently,4,3,1,4,1,Fashion,4,4,1,5,4,1.82625294014945
+29,Female,Low,Working Professional,5,Frequently,3,5,2,4,1,Home Products,5,5,2,3,3,2.651767589625
+43,Female,Low,Working Professional,1,Frequently,4,4,3,3,3,Home Products,5,4,1,3,2,3.010766667768777
+33,Male,Low,Student,1,Occasionally,4,3,2,1,4,Food,2,4,3,4,4,2.816952075058821
+36,Male,Medium,Student,3,Occasionally,5,5,2,4,4,Personal Care,2,3,2,3,3,3.2022391451329137
+22,Male,Low,Student,5,Occasionally,5,4,3,2,1,Food,4,2,1,5,4,2.71728105043003
+39,Male,Medium,Student,1,Occasionally,2,2,3,5,1,Home Products,4,5,1,3,4,1.0
+42,Female,Medium,Student,3,Occasionally,5,2,2,1,2,Home Products,5,5,3,3,3,1.9845857523902388
+31,Female,High,Student,4,Frequently,4,5,4,5,4,Food,4,5,3,4,5,3.6284675090355094
+22,Female,Low,Student,5,Occasionally,2,4,2,1,1,Fashion,5,5,1,4,3,1.9850175418663702
+32,Female,Low,Student,4,Occasionally,2,3,3,4,1,Fashion,4,2,1,5,4,1.465489317060678
+34,Male,Low,Student,1,Occasionally,3,4,2,4,3,Personal Care,3,3,4,3,4,1.0
+31,Female,High,Student,5,Occasionally,5,3,3,3,2,Fashion,3,2,4,3,3,2.501864901816499
+37,Male,Medium,Student,3,Occasionally,2,5,4,1,4,Personal Care,5,4,2,3,2,1.7905702743466403
+22,Female,Low,Student,1,Rarely,4,3,2,2,4,Home Products,3,3,2,4,2,1.5472807629417236
+29,Male,Low,Student,5,Occasionally,2,5,4,4,2,Personal Care,3,2,4,5,2,1.4003712715644903
+33,Male,Low,Student,5,Rarely,2,4,2,3,1,Personal Care,2,5,1,3,2,3.5156286924490807
+43,Male,Low,Student,4,Rarely,3,4,2,4,4,Personal Care,4,5,3,3,3,1.9129350333275337
+43,Other,High,Student,1,Occasionally,4,3,3,5,4,Fashion,2,3,2,3,5,1.0
+33,Male,Medium,Student,3,Rarely,4,4,1,4,4,Personal Care,5,2,1,3,2,2.8696867435620126
+38,Male,Medium,Student,3,Rarely,5,3,3,1,3,Home Products,2,3,3,5,4,4.962398989690154
+24,Male,High,Student,1,Rarely,4,4,2,3,2,Fashion,5,5,3,5,2,1.2957640724236898
+21,Female,Low,Student,1,Rarely,2,2,1,1,4,Food,3,2,1,5,5,1.0
+18,Female,Medium,Working Professional,2,Occasionally,4,3,1,2,2,Personal Care,2,5,1,4,3,1.261706450361216
+22,Female,High,Student,4,Occasionally,4,5,4,2,1,Food,3,3,2,3,5,3.6620284355962163
+40,Male,Medium,Student,1,Frequently,2,2,2,4,2,Fashion,4,3,4,3,5,1.4553716055126624
+43,Female,Medium,Working Professional,1,Rarely,3,5,3,3,3,Home Products,3,3,1,3,5,1.5536219730462968
+27,Male,Low,Student,2,Rarely,5,4,1,3,3,Home Products,4,3,4,3,2,1.8616328423890276
+39,Female,Low,Student,2,Rarely,5,2,1,3,2,Food,3,3,2,5,2,2.4339602215589897
+22,Female,Low,Working Professional,5,Occasionally,3,4,3,3,3,Home Products,2,4,4,4,5,3.3396700330628226
+21,Male,Medium,Working Professional,1,Occasionally,2,3,3,4,4,Food,2,3,4,4,3,2.8540424668685818
+19,Male,Medium,Student,4,Frequently,5,5,1,1,3,Home Products,3,3,3,3,2,2.917466778471747
+37,Male,High,Student,5,Occasionally,3,4,3,4,1,Home Products,5,5,2,5,3,3.252335683074265
+27,Male,Medium,Student,1,Occasionally,3,5,4,1,2,Food,5,3,1,4,2,2.1057819856505664
+43,Male,High,Student,2,Occasionally,3,5,1,5,2,Home Products,4,2,4,4,3,1.0
+36,Female,High,Student,3,Frequently,5,4,4,5,1,Home Products,4,3,2,3,2,3.7222046321218096
+43,Male,Low,Student,5,Rarely,5,3,2,1,1,Personal Care,3,4,3,4,5,3.6974803436271655
+18,Male,Medium,Student,3,Rarely,5,5,4,5,1,Food,2,3,3,3,4,3.206804058422642
+41,Male,Low,Working Professional,2,Occasionally,5,4,3,2,1,Personal Care,4,5,4,5,4,3.44631751656272
+22,Male,Medium,Working Professional,5,Occasionally,4,3,1,4,4,Home Products,3,2,4,3,3,3.096056209046104
+30,Female,High,Student,5,Frequently,3,4,4,2,3,Fashion,4,2,1,4,3,1.8330074301451957
+21,Male,Low,Working Professional,3,Occasionally,4,3,3,4,3,Personal Care,2,3,2,3,5,2.574678740833673
+33,Female,Medium,Student,2,Rarely,3,5,3,3,4,Home Products,4,3,1,3,5,2.3966305587001493
+41,Female,Medium,Working Professional,1,Frequently,5,2,4,3,1,Home Products,3,3,1,3,3,1.0
+33,Female,Medium,Student,5,Frequently,5,4,1,5,2,Personal Care,4,3,3,3,4,4.466037246897548
+40,Female,Medium,Student,1,Rarely,4,5,4,5,2,Fashion,5,5,2,3,5,1.1226754841298212
+19,Male,Medium,Student,2,Frequently,2,4,2,1,2,Personal Care,4,5,1,3,3,2.795567613613335
+34,Other,Low,Student,5,Rarely,5,4,4,2,1,Home Products,2,2,3,4,5,3.06399971790493
+44,Male,Low,Student,5,Rarely,2,3,4,3,4,Fashion,2,3,4,3,5,1.566788546466183
+37,Male,Low,Working Professional,1,Frequently,3,4,1,4,4,Home Products,2,5,1,4,2,1.1210780918714602
+41,Female,Medium,Working Professional,4,Occasionally,4,3,4,1,4,Home Products,2,5,4,3,5,4.92172455559396
+29,Female,Low,Student,1,Rarely,2,5,3,4,3,Food,3,2,2,5,3,3.1129433797649746
+35,Female,High,Student,1,Rarely,2,4,1,3,3,Fashion,4,2,1,3,5,1.0
+20,Male,Medium,Student,4,Occasionally,5,5,3,3,3,Fashion,4,4,4,4,3,4.347342134664602
+18,Male,Medium,Working Professional,2,Rarely,2,2,1,3,3,Home Products,4,5,4,4,2,1.0233673005855957
+18,Female,Medium,Working Professional,2,Occasionally,2,5,2,3,2,Home Products,4,2,2,5,2,3.618314904305884
+36,Male,Medium,Working Professional,5,Occasionally,3,4,2,4,2,Fashion,3,5,3,3,4,3.552870954889572
+28,Female,High,Working Professional,3,Rarely,4,2,2,1,4,Food,2,5,3,5,2,2.5790554474608123
+22,Female,Low,Student,3,Occasionally,5,3,4,3,3,Personal Care,4,3,1,3,2,2.481382055226233
+29,Male,Low,Student,5,Frequently,5,2,2,5,4,Personal Care,4,3,4,3,3,3.0083896021684184
+20,Male,Medium,Student,3,Occasionally,2,4,1,1,1,Personal Care,2,3,3,4,4,2.5835067266813105
+18,Male,Low,Working Professional,1,Rarely,3,4,2,5,3,Food,5,3,1,5,2,1.0
+18,Male,Low,Student,1,Rarely,2,5,1,4,3,Fashion,5,5,4,5,5,1.30781339088578
+25,Female,Medium,Student,4,Occasionally,2,3,3,3,4,Fashion,2,4,1,4,4,1.148318807509229
+27,Male,Low,Working Professional,4,Frequently,5,4,4,1,4,Fashion,4,4,2,4,2,2.7703061642150324
+28,Female,Medium,Student,5,Rarely,2,4,3,3,1,Home Products,2,4,1,5,4,3.4145521953192297
+29,Male,Low,Student,5,Rarely,2,3,3,3,4,Food,4,5,2,4,2,2.3037487781529644
+30,Other,High,Working Professional,5,Occasionally,3,3,2,1,3,Personal Care,4,4,4,3,3,2.3454798453657966
+29,Male,Medium,Student,1,Occasionally,5,5,2,3,2,Fashion,5,5,4,5,4,1.0
+31,Male,Medium,Student,3,Rarely,4,2,2,3,1,Fashion,5,2,4,5,4,1.1239538374016016
+19,Male,Medium,Working Professional,5,Frequently,3,3,3,2,1,Home Products,4,4,1,4,2,2.540557342845411
+36,Female,High,Working Professional,5,Rarely,3,4,4,2,3,Fashion,4,5,4,3,4,4.485859231336932
+35,Female,Low,Working Professional,1,Occasionally,3,3,4,1,2,Food,4,2,4,5,2,1.0
+20,Female,High,Student,1,Occasionally,5,4,3,1,4,Fashion,5,3,2,5,5,2.6947642919753743
+40,Male,Medium,Student,1,Occasionally,2,5,4,3,4,Fashion,4,2,4,3,4,1.7071193004341583
+34,Male,Medium,Working Professional,3,Rarely,4,2,3,5,2,Fashion,2,2,4,4,4,2.722639251928968
+43,Female,Medium,Student,5,Occasionally,5,5,3,5,2,Food,3,4,4,4,3,3.924877658457566
+25,Male,Low,Student,2,Rarely,2,3,4,3,3,Home Products,3,3,3,4,3,1.6079775449185603
+43,Male,Medium,Working Professional,2,Rarely,3,4,1,5,4,Food,4,3,4,4,4,2.482098744665283
+27,Other,Medium,Student,5,Occasionally,5,3,1,2,3,Personal Care,2,4,1,3,3,2.422936296970601
+43,Other,Low,Student,5,Occasionally,2,3,2,1,4,Fashion,4,2,2,3,4,3.291205549852833
+19,Female,Medium,Student,5,Rarely,4,3,4,3,4,Home Products,2,5,4,5,2,1.3060309588185763
+36,Female,Low,Student,5,Rarely,4,3,2,2,2,Home Products,5,4,1,5,4,2.9641938384568376
+26,Male,Low,Student,3,Frequently,2,2,3,4,3,Home Products,5,2,2,3,4,1.0
+24,Male,Low,Student,2,Frequently,5,4,1,2,2,Personal Care,4,5,2,5,5,1.777899532921439
+21,Female,Low,Working Professional,4,Rarely,3,3,4,3,3,Fashion,5,4,1,3,3,3.072393209424738
+43,Female,Medium,Working Professional,2,Occasionally,2,4,4,5,4,Fashion,4,4,1,4,3,2.0285119083349095
+38,Male,Low,Student,2,Occasionally,3,2,4,4,1,Home Products,3,3,3,3,5,2.1690273953698265
+35,Male,High,Student,1,Occasionally,4,4,1,4,1,Home Products,2,3,3,3,2,1.8797406503419818
+30,Male,Medium,Student,5,Frequently,2,4,2,4,3,Food,2,3,4,5,2,1.0
+28,Female,Low,Student,5,Rarely,4,2,1,1,3,Personal Care,3,5,3,3,2,2.5710247528512635
+41,Female,Medium,Working Professional,5,Occasionally,3,3,2,3,2,Food,3,4,1,4,5,3.4058805023236607
+21,Female,High,Working Professional,1,Occasionally,3,4,3,4,4,Personal Care,3,3,3,4,4,2.1926885081259666
+42,Male,Medium,Working Professional,3,Occasionally,2,5,3,2,1,Fashion,3,3,2,5,2,3.296694782794419
+38,Other,Low,Student,3,Occasionally,2,4,2,5,2,Food,5,4,1,5,2,1.6140910312005337
+42,Female,High,Student,4,Frequently,2,3,3,3,3,Home Products,2,5,4,3,5,1.6180727364703147
+21,Male,Medium,Student,3,Rarely,4,5,3,2,4,Home Products,2,3,2,5,3,1.0
+27,Male,Low,Student,3,Rarely,3,3,4,1,2,Home Products,3,2,2,4,5,3.0626472844452604
+22,Male,Low,Working Professional,5,Rarely,3,4,4,4,2,Personal Care,4,5,2,5,3,2.3008545741144513
+26,Male,Medium,Working Professional,2,Frequently,4,2,1,2,3,Home Products,4,3,1,5,2,1.0
+41,Other,Low,Student,3,Occasionally,2,3,1,3,4,Food,4,2,1,4,2,2.262728045374647
+20,Male,High,Working Professional,3,Occasionally,5,3,1,2,1,Personal Care,4,3,4,3,4,4.019553459647886
+34,Female,Medium,Student,1,Rarely,2,2,4,1,2,Home Products,5,5,3,3,4,1.9672701456500195
+20,Male,High,Student,4,Frequently,5,4,1,5,3,Home Products,2,4,3,5,3,3.1749225344428735
+33,Male,Medium,Student,1,Frequently,5,3,1,4,2,Fashion,2,4,3,4,2,2.5334043045215497
+21,Male,Low,Student,5,Occasionally,4,4,4,3,3,Personal Care,2,5,3,4,2,1.0
+35,Male,Low,Student,2,Rarely,3,4,2,4,3,Fashion,4,3,2,4,5,3.2211612446841134
+34,Male,Medium,Working Professional,4,Rarely,3,4,4,4,3,Home Products,3,5,1,3,2,1.3082630938595357
+24,Female,Medium,Working Professional,1,Occasionally,3,2,2,4,4,Food,4,2,3,4,2,1.0
+41,Female,Medium,Student,3,Occasionally,3,4,4,2,1,Home Products,2,3,2,4,5,1.7288974369868266
+40,Female,Low,Student,3,Rarely,4,4,1,2,4,Fashion,4,5,1,3,5,2.14323535380934
+22,Male,Low,Working Professional,5,Occasionally,5,5,3,5,1,Home Products,3,4,1,4,2,4.2004077301953
+29,Male,Low,Working Professional,3,Rarely,3,5,3,1,3,Food,3,5,1,3,4,3.1438331667430304
+34,Male,Medium,Working Professional,1,Occasionally,5,5,2,3,1,Personal Care,4,3,2,5,4,1.5214958262245735
+40,Female,Low,Student,1,Occasionally,4,3,2,2,4,Food,2,5,3,5,2,1.1728475424076112
+30,Male,Medium,Working Professional,3,Rarely,2,3,2,4,2,Home Products,5,4,1,5,4,3.7943697075532308
+40,Male,Medium,Student,3,Occasionally,4,5,3,1,4,Fashion,2,2,2,5,5,3.253035326110899
+42,Female,High,Working Professional,5,Rarely,3,2,2,3,4,Fashion,5,5,1,5,4,1.768175719551405
+20,Male,Medium,Student,2,Rarely,2,2,4,3,4,Home Products,2,5,4,3,2,1.0
+26,Male,Low,Working Professional,4,Frequently,4,5,4,3,4,Home Products,4,2,4,3,4,1.1243058309628189
+34,Male,Medium,Student,1,Rarely,4,3,3,3,4,Food,5,5,2,3,2,1.0
+34,Female,Medium,Student,4,Rarely,5,3,4,5,1,Home Products,2,4,3,4,4,2.395837877965425
+37,Female,Medium,Student,3,Rarely,4,2,2,3,1,Personal Care,4,2,3,5,2,3.609413982149168
+33,Male,High,Student,1,Rarely,2,4,3,1,2,Fashion,2,4,1,4,2,2.116074445091739
+42,Male,High,Working Professional,5,Rarely,4,2,2,2,4,Home Products,3,4,3,4,4,3.874061046421575
+39,Other,Low,Working Professional,5,Rarely,3,4,4,1,4,Fashion,3,4,3,4,4,3.5657745681915642
+30,Female,Low,Working Professional,4,Occasionally,5,3,2,4,2,Home Products,2,3,4,5,5,1.0
+44,Male,Medium,Student,4,Rarely,2,3,3,5,2,Fashion,4,2,2,4,3,1.8248560773823195
+36,Female,Medium,Working Professional,3,Occasionally,2,5,2,5,3,Fashion,2,3,4,5,2,2.2676230044314694
+34,Male,Low,Working Professional,3,Rarely,4,3,4,4,2,Personal Care,4,3,2,5,2,1.779901547091699
+21,Female,Medium,Student,4,Rarely,3,4,1,1,2,Personal Care,5,5,1,5,2,2.3940243857183496
+29,Female,Medium,Student,3,Rarely,5,2,3,1,2,Home Products,3,2,4,4,2,2.4517324777146157
+26,Male,Low,Working Professional,1,Frequently,2,5,2,4,3,Fashion,5,5,2,5,4,1.0
+36,Other,Medium,Working Professional,5,Occasionally,5,4,3,3,1,Food,4,3,3,5,4,1.8678354126039147
+29,Female,High,Working Professional,5,Occasionally,4,2,2,3,3,Home Products,2,5,2,3,3,5.0
+26,Female,Low,Student,4,Rarely,3,2,1,2,1,Personal Care,3,4,3,4,2,1.0
+24,Male,Medium,Student,2,Frequently,4,2,4,1,2,Personal Care,4,3,1,3,3,1.0
+31,Male,Medium,Student,5,Rarely,5,3,2,1,3,Home Products,4,4,3,3,5,2.679666469672144
+37,Male,High,Working Professional,3,Rarely,4,2,2,4,3,Fashion,3,2,2,4,3,2.159128463373285
+36,Female,High,Working Professional,1,Occasionally,5,3,1,4,1,Food,2,5,4,3,3,2.4611852419412075
+43,Male,Medium,Student,2,Rarely,2,2,3,3,3,Home Products,3,3,2,5,5,1.0
+32,Female,Medium,Working Professional,5,Frequently,2,2,4,1,3,Fashion,2,2,4,3,5,2.3965823346920794
+33,Female,Medium,Student,5,Rarely,4,3,2,1,4,Home Products,2,4,2,3,3,2.555394179234322
+38,Male,Medium,Working Professional,5,Frequently,2,3,2,5,1,Personal Care,4,5,2,5,5,1.8902922789921193
+22,Female,Low,Student,3,Occasionally,5,4,4,2,3,Fashion,2,5,1,3,3,2.5067414532043264
+20,Male,Low,Student,2,Occasionally,2,2,1,2,3,Food,2,3,3,5,4,1.0
+29,Other,Low,Student,4,Rarely,3,3,3,3,2,Fashion,3,5,2,4,4,1.45086839616737
+42,Male,Medium,Student,3,Rarely,3,4,4,1,4,Home Products,3,5,4,3,3,1.0
+37,Male,Low,Student,4,Frequently,4,4,3,5,4,Food,2,4,3,4,5,1.0784666979107902
+44,Male,High,Student,5,Rarely,4,3,1,1,2,Fashion,4,4,1,3,5,3.0235643799616847
+38,Male,Low,Student,2,Occasionally,4,2,1,4,2,Personal Care,3,4,3,5,4,1.0
+21,Female,Low,Working Professional,3,Frequently,4,4,4,3,2,Fashion,5,2,2,3,4,1.9632946791207122
+38,Female,Medium,Student,1,Rarely,5,2,2,2,2,Fashion,4,2,4,4,5,1.5447428740475417
+40,Female,Medium,Student,3,Occasionally,5,2,1,1,4,Fashion,3,5,4,5,5,1.0
+33,Male,Low,Student,3,Occasionally,3,4,1,3,3,Food,3,2,3,5,5,1.2284666211082937
+42,Male,Medium,Working Professional,4,Rarely,5,3,4,2,3,Food,5,3,4,4,5,2.0969845608832216
+24,Male,High,Student,4,Rarely,2,2,4,1,2,Home Products,2,4,2,4,3,2.1797388047357225
+30,Female,Low,Working Professional,3,Occasionally,3,5,4,5,1,Personal Care,3,2,4,3,5,3.0452242922663433
+38,Female,Medium,Working Professional,1,Rarely,4,3,1,3,2,Food,5,5,4,3,4,1.5472140841986028
+27,Male,High,Student,2,Occasionally,4,4,3,1,3,Home Products,5,4,4,5,4,3.5595875737502025
+43,Male,Low,Student,2,Rarely,5,5,1,2,1,Personal Care,3,2,2,4,2,2.4775273576703247
+24,Female,Medium,Student,5,Frequently,3,2,4,2,2,Personal Care,4,4,1,4,5,2.771242209181607
+31,Female,Medium,Student,5,Rarely,5,3,2,5,1,Fashion,3,2,4,3,3,2.666797145782504
+43,Female,Medium,Working Professional,2,Occasionally,5,5,2,3,2,Food,5,5,1,3,2,4.911438914040573
+22,Female,Low,Working Professional,3,Occasionally,5,3,4,3,4,Home Products,3,2,3,5,2,2.2476489900588255
+20,Male,Low,Student,3,Rarely,3,2,2,1,3,Home Products,4,2,3,4,3,2.7824785968570582
+40,Male,Medium,Student,3,Rarely,4,3,1,2,2,Home Products,2,2,2,4,2,2.8027240028633784
+28,Female,Low,Working Professional,4,Occasionally,2,5,3,2,1,Home Products,2,4,2,4,2,3.525614152071383
+28,Female,Medium,Working Professional,5,Frequently,4,3,1,5,3,Fashion,3,2,2,4,4,2.9321474350412884
+35,Male,Medium,Student,2,Rarely,3,4,4,5,2,Home Products,3,2,2,3,2,1.6407398437940441
+32,Female,Medium,Student,3,Occasionally,4,4,1,3,2,Food,5,2,1,3,3,1.1583503369876496
+29,Female,High,Student,2,Rarely,4,5,2,2,2,Fashion,4,4,2,3,5,1.346449823469545
+26,Female,Medium,Working Professional,1,Rarely,2,3,1,1,2,Food,5,5,1,5,5,1.0
+27,Female,Low,Student,2,Occasionally,4,5,3,4,4,Personal Care,5,5,4,4,5,1.7074856766895672
+43,Male,High,Student,1,Frequently,4,3,2,1,3,Personal Care,2,5,4,3,4,2.01114624892778
+29,Female,Low,Working Professional,4,Rarely,4,2,3,5,4,Home Products,5,2,3,4,4,1.186268636946473
+34,Female,Low,Working Professional,4,Frequently,5,4,3,1,3,Food,5,4,3,3,4,1.3227981887456537
+23,Female,Medium,Working Professional,5,Rarely,3,2,3,2,2,Personal Care,2,5,1,5,3,3.427375261178408
+24,Female,Medium,Student,2,Occasionally,3,3,1,3,3,Home Products,2,5,2,3,5,1.9473047433152018
+31,Female,Medium,Student,2,Occasionally,2,2,1,4,1,Personal Care,4,5,3,5,3,1.0
+30,Male,Low,Working Professional,1,Occasionally,5,5,1,3,3,Home Products,4,3,1,4,3,3.453858319514411
+25,Female,Medium,Student,4,Occasionally,5,5,1,4,1,Fashion,4,4,3,3,2,2.0963388761618726
+27,Female,Low,Student,1,Rarely,4,3,2,4,1,Fashion,3,3,2,3,5,1.1691000853793403
+26,Female,High,Student,4,Occasionally,3,4,1,2,4,Fashion,2,2,1,3,2,2.659542730104831
+35,Female,Low,Student,2,Occasionally,2,5,2,2,3,Personal Care,3,5,3,4,4,1.0848306518364663
+44,Female,High,Student,4,Rarely,5,4,3,5,2,Personal Care,3,2,2,5,4,1.7043361318718189
+43,Male,Medium,Working Professional,1,Frequently,4,3,2,5,3,Home Products,4,4,1,5,3,1.9747699901289242
+19,Female,High,Working Professional,5,Rarely,2,4,4,4,4,Personal Care,2,2,1,3,3,2.084008819132155
+22,Male,Medium,Working Professional,1,Occasionally,5,3,1,5,1,Fashion,3,2,1,4,2,2.024016105433433
+22,Male,Medium,Student,2,Rarely,2,2,4,2,1,Fashion,5,5,4,5,2,1.0
+23,Female,Medium,Student,5,Rarely,5,3,2,5,4,Fashion,5,4,1,5,3,3.4299788488789846
+36,Female,Low,Student,1,Rarely,2,2,1,4,4,Personal Care,2,2,3,5,5,1.0
+25,Male,Low,Working Professional,5,Occasionally,5,3,4,3,3,Fashion,3,3,1,5,3,3.247219522260609
+33,Male,High,Student,2,Occasionally,5,5,1,1,1,Personal Care,4,5,1,5,5,4.879588009773103
+30,Female,High,Working Professional,2,Rarely,2,5,2,5,4,Personal Care,3,3,1,3,2,2.0520780663440266
+18,Male,Medium,Working Professional,4,Rarely,5,4,4,2,3,Home Products,5,5,1,3,4,3.439219318015735
+39,Male,Low,Student,5,Rarely,5,3,2,3,3,Home Products,5,2,1,3,4,4.350495750613998
+37,Male,Medium,Student,3,Occasionally,5,3,4,2,2,Personal Care,4,5,4,5,2,2.0303387519812284
+34,Male,Medium,Working Professional,4,Occasionally,2,3,3,5,1,Fashion,2,2,2,5,2,1.8906455403729832
+24,Male,Medium,Working Professional,5,Rarely,2,4,3,4,3,Personal Care,3,3,4,5,4,1.268148436215078
+42,Male,Medium,Student,1,Rarely,5,5,3,1,4,Fashion,5,2,3,3,5,2.2382532468359946
+30,Male,High,Student,1,Occasionally,5,3,3,1,1,Fashion,3,5,2,5,2,3.790716196856158
+21,Female,Low,Working Professional,2,Rarely,2,4,3,3,4,Home Products,4,5,3,3,5,1.6736644514929648
+21,Female,Medium,Student,3,Rarely,4,3,2,5,4,Fashion,4,5,1,5,5,3.9071663054830377
+23,Female,Medium,Student,1,Rarely,5,2,3,4,3,Food,2,3,3,3,4,1.2973923130760756
+36,Male,Medium,Student,5,Occasionally,4,3,2,2,3,Fashion,4,4,4,4,5,4.1208025977402585
+29,Male,Low,Student,5,Occasionally,2,2,3,4,2,Home Products,2,3,4,5,4,1.7517270113625303
+39,Female,Low,Student,1,Occasionally,5,4,1,3,4,Home Products,3,2,1,5,2,2.1337837653076024
+24,Male,High,Student,5,Rarely,4,4,3,3,3,Personal Care,5,2,1,3,3,2.924191495536512
+44,Male,Medium,Student,5,Occasionally,2,5,1,1,2,Personal Care,5,3,2,5,3,3.2605741523214826
+27,Female,Medium,Student,2,Rarely,4,3,2,4,1,Home Products,2,3,4,3,3,1.3411308446425023
+43,Female,High,Working Professional,3,Frequently,3,4,3,2,2,Food,5,2,4,3,3,1.0
+36,Male,Medium,Working Professional,5,Occasionally,2,5,4,4,2,Personal Care,2,2,2,4,3,1.3642900324756109
+24,Male,Low,Working Professional,3,Occasionally,3,3,2,2,4,Fashion,2,2,4,4,3,2.1324075386427834
+20,Female,Medium,Working Professional,5,Rarely,2,4,3,2,1,Personal Care,3,4,2,5,5,4.13486643543509
+30,Male,Medium,Student,3,Rarely,2,2,2,4,4,Fashion,3,4,4,5,5,1.0
+30,Female,Medium,Student,5,Occasionally,5,4,4,5,4,Food,4,3,3,3,3,4.417353400843101
+35,Female,Medium,Working Professional,5,Occasionally,3,2,3,4,2,Home Products,2,3,3,3,2,3.048266038910654
+43,Other,Medium,Student,2,Rarely,3,5,4,2,2,Fashion,3,4,2,3,2,2.7856162422128525
+37,Male,Medium,Student,2,Frequently,3,5,3,3,3,Personal Care,2,5,2,3,5,2.0542495631858353
+25,Female,High,Working Professional,4,Frequently,2,3,1,3,2,Fashion,2,4,1,5,5,1.0
+26,Female,Low,Student,1,Occasionally,3,3,2,1,3,Food,2,3,4,4,3,3.550816508694874
+24,Male,Low,Student,4,Frequently,3,3,4,3,4,Food,3,4,3,5,2,3.3346419122167834
+18,Male,Medium,Working Professional,4,Rarely,5,5,2,5,2,Fashion,2,5,1,5,4,2.9507778667291227
+20,Female,Low,Working Professional,3,Rarely,4,2,4,2,1,Personal Care,2,3,4,5,3,2.385665143105088
+30,Male,Low,Student,5,Rarely,4,3,2,4,1,Food,4,2,3,4,5,2.3911848069274226
+42,Male,High,Working Professional,5,Occasionally,3,3,2,4,4,Fashion,2,3,4,5,5,2.7943986430210743
+34,Male,High,Working Professional,5,Rarely,3,5,2,5,4,Personal Care,4,4,2,4,5,2.3556454559074282
+42,Female,Medium,Working Professional,1,Frequently,3,2,1,3,2,Personal Care,2,4,3,3,4,1.3079015711101163
+41,Female,Low,Student,3,Rarely,3,4,3,2,3,Fashion,4,5,3,5,2,2.6379985914318533
+18,Female,Low,Student,3,Rarely,4,3,1,3,2,Fashion,3,4,1,3,5,4.5303034135313
+23,Male,Low,Working Professional,5,Frequently,5,4,2,1,3,Food,3,5,4,3,3,2.689816598684799
+38,Male,Low,Working Professional,4,Rarely,2,4,4,5,2,Home Products,5,3,2,3,4,2.159974490252009
+23,Female,High,Working Professional,1,Rarely,3,3,2,1,1,Personal Care,2,4,2,5,2,2.8274452091146127
+43,Male,Low,Student,4,Occasionally,3,5,3,4,1,Personal Care,5,3,4,3,3,3.12667660122023
+29,Male,Medium,Student,2,Rarely,4,3,1,2,3,Home Products,5,2,4,5,3,2.677445787072166
+30,Female,Low,Working Professional,3,Rarely,3,2,3,1,2,Personal Care,4,2,2,3,4,5.0
+30,Other,High,Student,3,Rarely,5,2,4,3,4,Fashion,3,5,4,5,4,3.2879084936474214
+32,Female,Medium,Student,4,Occasionally,5,3,3,3,3,Fashion,2,4,1,5,4,2.075232790691033
+38,Female,High,Student,1,Frequently,3,4,1,4,1,Home Products,2,3,4,5,5,1.0
+33,Other,Medium,Student,3,Frequently,4,2,4,5,3,Fashion,4,3,1,3,2,1.4616665278115224
+39,Male,Medium,Working Professional,4,Rarely,3,2,3,5,2,Fashion,5,4,1,5,5,1.0637686700506892
+38,Female,Low,Working Professional,1,Rarely,3,3,1,3,4,Personal Care,4,3,4,3,4,1.279340762765849
+28,Other,Medium,Student,4,Occasionally,4,3,1,5,4,Fashion,5,4,3,4,4,2.3379981206959357
+22,Male,Medium,Student,1,Frequently,5,5,2,2,3,Food,2,4,3,3,4,2.673383433570556
+21,Female,Medium,Working Professional,5,Rarely,2,3,3,5,2,Home Products,4,2,1,3,5,1.0
+20,Female,Low,Student,1,Rarely,3,3,4,2,2,Fashion,5,4,4,5,3,1.0
+36,Female,Low,Student,2,Occasionally,5,2,2,3,4,Fashion,4,3,1,3,4,2.6160123205149963
+37,Female,Medium,Working Professional,5,Frequently,3,2,3,3,1,Home Products,3,4,4,4,5,3.843631355346747
+42,Female,Medium,Student,4,Rarely,2,2,3,3,2,Personal Care,4,2,4,5,4,1.1962942238810417
+35,Female,Medium,Working Professional,5,Rarely,4,4,4,4,4,Home Products,2,2,2,3,5,2.301155875922538
+32,Male,Low,Student,5,Rarely,5,2,2,5,4,Home Products,4,5,3,3,2,2.3108508856910066
+26,Female,Medium,Student,4,Rarely,2,2,2,1,2,Personal Care,2,3,3,5,2,3.7246546756400862
+34,Male,Low,Student,4,Occasionally,3,3,4,1,2,Food,2,4,2,5,5,2.553716174339233
+31,Male,Low,Working Professional,1,Occasionally,2,5,2,3,3,Personal Care,4,3,2,3,4,1.0
+32,Male,Medium,Student,4,Occasionally,5,2,1,5,1,Personal Care,4,3,2,3,5,3.887638904716993
+18,Male,Low,Student,3,Rarely,4,5,4,2,3,Home Products,4,4,1,5,2,3.391638705037868
+38,Male,Low,Working Professional,3,Rarely,3,2,3,1,3,Food,3,2,1,5,5,1.0
+39,Female,Medium,Student,2,Rarely,4,2,4,3,4,Home Products,3,3,1,4,2,1.0888073652290453
+39,Female,Low,Student,1,Rarely,4,5,1,1,4,Home Products,5,5,1,4,2,1.5044161332769377
+20,Female,Low,Student,1,Occasionally,2,3,4,1,1,Personal Care,4,3,1,4,3,1.0910542271122805
+33,Male,Low,Working Professional,3,Rarely,2,2,3,1,3,Personal Care,5,2,3,5,4,3.187107937933394
+40,Female,Low,Student,4,Rarely,5,5,3,3,3,Fashion,5,5,3,5,5,1.232956955373949
+42,Female,Low,Student,2,Rarely,5,2,4,3,4,Home Products,2,5,4,5,4,1.5565915565891943
+28,Female,Medium,Student,1,Occasionally,4,4,4,4,4,Fashion,5,5,3,3,4,1.6111502783488056
+29,Male,Low,Student,3,Occasionally,5,4,1,4,2,Fashion,4,5,2,5,2,1.730588848343356
+27,Male,Low,Working Professional,5,Frequently,4,4,1,4,3,Food,3,4,3,3,2,1.9033027535102702
+33,Male,Medium,Working Professional,3,Rarely,3,4,3,1,1,Personal Care,5,4,2,5,5,3.589931045551778
+25,Male,Medium,Working Professional,4,Occasionally,4,3,2,5,3,Fashion,5,4,3,5,5,1.8412117204297855
+23,Male,High,Working Professional,2,Rarely,5,4,2,3,4,Personal Care,3,5,1,3,5,2.012792120213946
+29,Female,Medium,Working Professional,1,Rarely,5,5,2,4,2,Personal Care,5,2,3,5,2,2.3461493115500476
+41,Male,Medium,Student,5,Frequently,4,2,2,5,3,Personal Care,4,3,4,5,3,1.8197153920205704
+38,Male,Medium,Working Professional,3,Rarely,2,5,3,4,1,Fashion,5,5,1,5,5,1.1463092695859316
+25,Male,Medium,Student,3,Occasionally,4,4,2,4,4,Fashion,2,2,1,4,2,1.1744808515721066
+43,Male,Medium,Student,2,Rarely,4,3,2,5,2,Personal Care,5,3,4,5,3,3.590061259041962
+21,Male,Low,Working Professional,1,Occasionally,2,4,4,4,3,Personal Care,2,5,3,3,4,1.6932473812483
+43,Male,Low,Student,2,Occasionally,3,4,2,1,1,Fashion,3,3,3,3,2,1.7176806546910355
+25,Male,Low,Working Professional,4,Frequently,2,3,4,1,4,Personal Care,3,4,4,3,5,2.871350257158812
+43,Female,High,Student,5,Frequently,5,3,3,1,1,Personal Care,5,4,1,5,5,3.9234790540937814
+35,Other,Medium,Working Professional,3,Occasionally,2,3,4,2,3,Fashion,5,4,4,3,3,1.738513116285277
+22,Male,Medium,Student,4,Rarely,5,3,1,4,4,Food,3,2,2,4,3,1.4709473112260048
+26,Male,Medium,Working Professional,3,Occasionally,5,3,4,2,3,Food,2,4,2,3,2,1.7722085835333852
+21,Female,Medium,Working Professional,3,Occasionally,4,3,2,3,2,Fashion,3,2,3,5,3,3.0684744231672676
+44,Male,Low,Student,5,Rarely,4,2,4,5,3,Fashion,3,4,1,4,2,2.8522414078026204
+39,Male,Low,Student,4,Occasionally,3,4,4,3,2,Home Products,2,4,2,3,3,1.0
+34,Female,High,Student,1,Frequently,5,4,3,2,3,Home Products,3,4,4,4,4,1.7923430315368096
+26,Male,Medium,Student,4,Occasionally,4,3,3,1,1,Food,5,2,3,3,5,3.4799595493962023
+18,Female,Medium,Working Professional,1,Rarely,5,5,2,4,1,Personal Care,5,3,3,5,5,3.1123989832626435
+38,Female,High,Working Professional,4,Frequently,3,3,1,4,4,Home Products,3,2,1,4,4,2.41442745502268
+37,Male,Low,Student,2,Rarely,5,2,1,1,1,Food,5,5,2,3,5,1.8436719470648908
+30,Male,High,Working Professional,4,Rarely,3,5,4,4,1,Personal Care,4,5,3,3,5,2.536003031280398
+33,Female,Medium,Working Professional,5,Occasionally,3,2,1,5,2,Fashion,3,2,4,4,5,1.5892241987531093
+30,Male,Medium,Student,1,Rarely,3,5,3,5,1,Personal Care,4,2,2,4,5,1.5819951729034685
+31,Male,Medium,Working Professional,3,Occasionally,4,5,2,5,2,Fashion,3,3,3,4,4,3.5780948188375716
+20,Female,Low,Working Professional,5,Rarely,2,3,2,3,2,Fashion,3,2,3,4,2,1.3177664823556872
+23,Female,Low,Student,1,Rarely,2,2,3,1,2,Home Products,4,4,2,3,5,1.3809920106994005
+35,Male,Medium,Student,1,Rarely,4,5,2,5,3,Fashion,3,3,2,3,4,1.4032667688301428
+36,Female,High,Student,3,Frequently,5,2,4,2,2,Fashion,5,2,1,3,5,2.1371860833404988
+22,Male,Medium,Working Professional,2,Occasionally,4,3,2,5,3,Food,4,2,4,5,4,1.2601649635061922
+32,Female,Low,Working Professional,5,Rarely,5,3,1,3,2,Personal Care,3,5,1,4,4,4.313591883483983
+42,Female,Medium,Working Professional,3,Rarely,3,3,2,2,3,Fashion,5,3,1,3,2,2.5795205413682822
+19,Female,Low,Student,1,Rarely,4,3,2,1,4,Personal Care,4,5,4,4,3,2.0208507889576666
+27,Male,Low,Student,2,Occasionally,2,4,3,1,4,Fashion,4,2,4,4,2,2.449634357531034
+41,Other,Medium,Student,5,Rarely,5,5,3,5,3,Fashion,5,3,1,3,2,2.4412153285712903
+35,Male,Medium,Student,3,Occasionally,4,4,1,2,4,Food,3,4,2,4,5,1.0
+44,Female,Low,Working Professional,2,Occasionally,4,3,3,2,1,Fashion,3,2,4,4,4,1.0
+30,Male,Low,Working Professional,5,Occasionally,5,5,1,5,2,Home Products,4,2,1,4,3,3.500782256516991
+22,Male,High,Working Professional,4,Occasionally,3,5,4,5,3,Fashion,2,5,2,4,4,1.8155787715018163
+40,Male,Low,Working Professional,1,Occasionally,3,2,1,5,4,Food,3,4,3,4,5,1.797444159673896
+41,Female,Medium,Student,2,Rarely,3,3,2,4,4,Home Products,3,2,2,3,4,1.6871224186212546
+18,Other,Medium,Student,1,Occasionally,3,4,1,5,1,Food,5,5,1,3,5,1.2605316145415668
+39,Male,Low,Student,4,Occasionally,5,2,4,3,2,Personal Care,2,5,4,4,2,2.0491049210732157
+18,Male,Low,Working Professional,3,Rarely,2,5,2,4,1,Food,2,2,2,4,2,2.2216441831576894
+35,Female,Medium,Working Professional,3,Frequently,4,4,1,5,3,Food,4,3,2,4,5,3.4517724977430873
+32,Male,Medium,Student,5,Rarely,4,3,3,2,4,Home Products,5,2,2,5,2,1.0
+34,Male,Medium,Student,2,Rarely,3,4,3,4,4,Fashion,5,4,4,4,4,1.3502080752097663
+28,Female,Medium,Student,2,Rarely,5,4,3,3,4,Fashion,3,2,4,5,3,3.645182391290051
+38,Female,High,Student,5,Frequently,2,4,1,1,1,Fashion,4,3,2,5,3,1.5545146841000341
+43,Other,Medium,Student,5,Occasionally,2,2,1,2,1,Fashion,3,5,2,5,4,1.03351017185489
+42,Male,Medium,Student,3,Occasionally,4,5,4,3,2,Home Products,2,4,1,3,3,1.8166706661722682
+39,Male,Medium,Student,3,Rarely,3,4,2,3,3,Home Products,5,4,4,5,4,1.7323842589150213
+44,Female,Medium,Working Professional,2,Occasionally,4,5,2,3,2,Home Products,4,4,2,4,5,1.0
+44,Female,Medium,Student,2,Rarely,4,2,2,2,2,Personal Care,3,4,4,4,3,2.7847321638273206
+34,Female,Medium,Student,5,Frequently,2,3,2,3,4,Fashion,3,3,4,3,5,2.2505969666152894
+30,Female,Medium,Student,4,Rarely,5,3,1,1,1,Fashion,2,3,4,3,5,1.6555862132683643
+18,Male,Low,Student,1,Rarely,2,4,1,4,3,Personal Care,5,3,1,4,4,1.3186214615540897
+19,Female,Medium,Student,2,Rarely,4,2,4,2,2,Home Products,2,3,3,3,3,2.6080008931955785
+26,Male,Low,Student,4,Frequently,3,3,2,3,3,Personal Care,3,5,4,3,2,1.4111748029989224
+20,Male,Low,Student,2,Occasionally,3,2,1,5,4,Home Products,5,2,4,5,2,2.8681991323542047
+18,Female,Low,Student,2,Occasionally,5,2,1,4,2,Personal Care,5,3,2,5,2,2.21609604296293
+38,Male,Medium,Working Professional,2,Occasionally,5,4,1,2,1,Food,2,2,4,3,2,3.790220315205107
+33,Male,Medium,Student,4,Frequently,5,4,1,5,2,Fashion,5,4,3,4,4,2.338870520773545
+40,Female,Low,Working Professional,1,Frequently,4,2,2,5,4,Personal Care,2,5,4,5,5,1.0
+23,Male,Medium,Student,2,Occasionally,4,2,2,3,2,Fashion,5,5,1,4,3,1.0
+34,Female,Medium,Student,3,Rarely,5,4,1,2,4,Personal Care,5,2,2,3,4,1.7861222306112412
+22,Male,Low,Student,1,Rarely,3,2,3,3,2,Home Products,4,2,3,4,2,2.3478720646926465
+22,Female,Medium,Student,3,Frequently,3,4,4,1,3,Home Products,5,2,1,4,3,1.8901560107014148
+23,Male,Medium,Working Professional,1,Occasionally,3,5,2,5,1,Fashion,3,5,3,4,4,2.2411979357532816
+20,Male,Medium,Working Professional,2,Rarely,4,2,2,1,4,Fashion,4,3,2,4,5,1.0
+38,Other,Medium,Working Professional,5,Occasionally,2,4,3,3,3,Home Products,2,5,4,3,2,1.6374167067729544
+40,Female,Medium,Working Professional,2,Frequently,3,2,2,4,4,Personal Care,3,3,2,3,3,1.0
+22,Male,Low,Working Professional,4,Rarely,3,4,3,5,2,Personal Care,2,4,2,5,3,2.125157082263989
+38,Male,Low,Student,4,Occasionally,3,2,3,5,4,Food,2,3,4,5,2,1.0
+22,Female,Low,Student,1,Frequently,5,3,1,2,4,Personal Care,3,2,1,5,5,1.2056295001289663
+27,Female,High,Working Professional,4,Occasionally,4,3,2,5,1,Home Products,2,3,3,5,2,1.7668491368963304
+27,Female,Low,Working Professional,2,Rarely,5,2,4,1,3,Home Products,4,3,1,4,5,1.0
+36,Female,Low,Student,3,Frequently,5,3,3,4,2,Food,3,5,4,5,3,1.0
+34,Male,High,Working Professional,2,Frequently,2,2,4,2,1,Home Products,2,2,3,5,2,1.2285621336646602
+38,Male,High,Student,1,Frequently,5,2,1,5,4,Fashion,2,4,4,4,5,1.0
+31,Female,Medium,Student,4,Occasionally,2,5,2,2,1,Personal Care,5,3,1,3,5,3.614604766158216
+26,Male,Low,Student,3,Rarely,5,5,1,1,4,Food,5,4,2,5,4,4.442100115040855
+31,Male,Low,Working Professional,5,Frequently,3,3,1,5,2,Fashion,2,2,3,3,5,1.4165613513249697
+18,Female,Medium,Working Professional,3,Rarely,4,5,4,2,4,Home Products,3,3,4,5,2,3.302018472557503
+36,Female,Low,Student,3,Frequently,5,5,4,3,1,Food,4,5,3,3,2,2.869035000891182
+30,Female,Low,Student,2,Frequently,2,2,3,5,1,Home Products,2,4,3,5,5,1.6678033498221823
+30,Female,Medium,Student,5,Occasionally,4,4,2,5,4,Personal Care,2,5,1,3,2,2.041732487472789
+21,Female,High,Working Professional,1,Frequently,2,2,1,5,3,Fashion,2,4,2,3,3,1.0
+18,Male,Medium,Student,1,Occasionally,3,5,3,5,1,Personal Care,5,2,3,5,3,1.5117865539176474
+34,Male,Medium,Student,3,Rarely,5,2,3,3,3,Fashion,3,3,1,3,2,2.4608098519135977
+25,Male,Medium,Student,4,Occasionally,4,3,1,1,3,Food,2,4,3,5,5,1.8840958505102863
+19,Male,Low,Student,4,Rarely,3,4,1,3,3,Home Products,5,5,2,5,3,3.4857072745572206
+25,Female,Medium,Student,5,Occasionally,5,5,3,3,3,Home Products,2,4,3,4,5,2.9920382809306956
+24,Male,Low,Working Professional,3,Rarely,5,5,1,2,1,Personal Care,2,4,2,5,2,2.5858783299846766
+43,Male,Low,Student,4,Occasionally,2,2,1,4,1,Fashion,3,4,1,5,4,1.0
+43,Male,Medium,Working Professional,5,Frequently,2,2,4,4,3,Personal Care,5,4,1,5,3,1.0402244404549301
+19,Male,Low,Student,1,Frequently,3,2,2,2,1,Personal Care,4,4,2,5,2,1.0
+39,Male,High,Student,4,Rarely,2,2,3,3,3,Personal Care,3,4,2,4,3,2.049749371181105
+39,Male,Low,Student,5,Occasionally,3,5,1,2,3,Personal Care,4,5,1,4,5,3.783353347821255
+20,Male,Medium,Working Professional,4,Occasionally,3,2,3,5,3,Personal Care,5,4,2,4,4,1.628639349182536
+44,Male,Medium,Working Professional,3,Frequently,3,5,2,2,4,Personal Care,5,4,2,4,4,3.816271905483857
+35,Male,Low,Working Professional,2,Occasionally,2,2,3,2,2,Food,4,4,4,3,2,1.3176713977791592
+29,Female,Low,Student,1,Occasionally,4,4,3,5,1,Personal Care,5,3,3,5,3,1.0
+18,Male,Medium,Student,3,Frequently,3,4,3,4,1,Home Products,3,2,1,4,4,1.0
+39,Male,High,Working Professional,3,Rarely,4,2,4,5,3,Fashion,2,2,1,5,3,2.2000211266589753
+29,Female,High,Working Professional,5,Frequently,5,2,2,1,4,Personal Care,4,2,4,4,5,2.874642493435952
+22,Male,Medium,Student,4,Frequently,2,3,2,2,4,Fashion,2,5,2,5,5,1.6062594770191199
+44,Female,Medium,Working Professional,1,Frequently,2,4,3,2,1,Home Products,4,5,2,3,2,1.0
+42,Female,Medium,Student,3,Rarely,4,5,3,4,3,Personal Care,2,5,2,4,4,1.8997443687131679
+34,Male,Medium,Student,5,Occasionally,5,4,2,3,1,Fashion,2,4,1,3,4,2.8145889872732623
+33,Female,Medium,Student,1,Frequently,5,5,1,5,3,Food,3,2,4,3,3,2.29059785679575
+32,Male,Medium,Student,4,Rarely,3,2,4,3,3,Fashion,2,4,3,5,5,1.655366468316707
+40,Female,High,Student,3,Occasionally,2,4,2,5,2,Personal Care,4,3,4,4,4,3.3765010038676815
+32,Male,Medium,Student,3,Rarely,5,4,3,5,3,Personal Care,2,2,1,3,2,1.545050296196369
+22,Female,High,Student,3,Rarely,5,3,1,1,2,Personal Care,5,3,3,5,2,3.00443210987133
+38,Male,Medium,Student,1,Occasionally,3,3,1,1,1,Home Products,2,3,2,5,4,1.0
+31,Female,Low,Student,1,Occasionally,3,4,1,1,1,Home Products,2,4,4,5,2,2.4589859917785875
+19,Female,Low,Working Professional,1,Rarely,4,4,4,5,4,Personal Care,5,2,4,3,4,1.0
+28,Male,Medium,Student,1,Occasionally,2,4,4,5,2,Fashion,5,3,1,5,4,1.270025450047024
+36,Male,Medium,Student,5,Occasionally,5,5,2,4,1,Home Products,4,2,4,5,4,1.359362795312737
+24,Female,High,Student,2,Occasionally,4,2,2,5,2,Personal Care,5,3,3,5,4,1.0
+23,Female,Low,Working Professional,5,Occasionally,2,3,2,3,1,Food,5,3,4,3,3,2.93787322824539
+19,Male,High,Student,3,Occasionally,4,2,2,3,2,Personal Care,4,4,1,5,4,3.4643243397148082
+23,Female,High,Student,5,Occasionally,2,3,3,1,2,Home Products,4,2,4,3,2,1.0
+35,Other,Low,Student,4,Rarely,2,3,4,5,3,Food,2,4,3,5,5,1.0
+19,Female,High,Working Professional,3,Occasionally,5,3,1,5,1,Home Products,3,4,3,3,3,3.2295398967904534
+35,Male,High,Student,4,Occasionally,2,4,3,1,4,Personal Care,4,4,1,3,5,2.542019661301053
+32,Female,Medium,Student,4,Occasionally,3,3,2,2,3,Home Products,5,4,2,4,5,1.2678625137303463
+44,Male,Medium,Student,2,Rarely,5,2,2,3,4,Home Products,2,4,1,4,5,3.677029363885729
+36,Other,High,Student,1,Occasionally,3,3,3,5,2,Home Products,5,3,2,4,5,1.585420441007114
+19,Male,Medium,Working Professional,3,Rarely,4,2,1,2,3,Fashion,4,2,3,3,5,2.5100187150425413
+37,Male,Medium,Working Professional,3,Frequently,4,3,4,5,2,Home Products,3,2,4,5,2,1.0
+42,Female,High,Working Professional,1,Rarely,2,3,4,1,1,Fashion,2,4,4,5,4,3.395987290468793
+23,Male,Medium,Working Professional,2,Frequently,2,4,1,3,1,Fashion,4,2,3,3,2,1.662380962860064
+18,Other,Medium,Student,3,Occasionally,3,2,4,1,4,Home Products,4,3,1,5,3,1.6903403213454065
+41,Other,Low,Student,5,Occasionally,3,3,2,5,1,Fashion,5,4,4,3,2,3.4617421210814645
+32,Female,Medium,Working Professional,1,Rarely,3,3,2,1,4,Home Products,3,5,1,5,3,1.0
+40,Male,Low,Student,4,Rarely,4,2,2,3,2,Food,4,5,4,3,4,1.10644452406969
+27,Female,High,Working Professional,5,Rarely,3,3,2,1,3,Food,5,3,2,4,5,1.5267812316345788
+36,Male,Medium,Student,5,Rarely,5,5,1,3,1,Home Products,2,3,4,4,4,3.0200901010648193
+34,Male,Low,Student,1,Occasionally,5,4,4,1,2,Personal Care,5,5,2,5,2,3.626770732755035
+22,Female,Medium,Working Professional,4,Rarely,4,2,4,1,3,Personal Care,2,4,4,5,2,3.240141173992297
+21,Male,Low,Working Professional,1,Occasionally,3,4,3,3,2,Personal Care,5,3,4,5,4,1.0
+27,Male,Medium,Working Professional,3,Rarely,3,5,1,1,4,Fashion,3,5,4,5,4,2.9032853373302268
+41,Other,High,Student,5,Frequently,2,5,4,2,2,Personal Care,5,4,4,4,2,2.0974398225529187
+34,Male,High,Working Professional,5,Occasionally,5,5,4,4,4,Home Products,3,3,4,4,4,3.09197106383146
+27,Male,Low,Student,5,Rarely,4,2,3,2,4,Fashion,3,2,1,3,3,3.9091439440651117
+34,Female,Low,Student,2,Occasionally,3,5,2,4,1,Personal Care,2,2,2,5,3,2.1928576247158458
+37,Male,High,Working Professional,1,Rarely,2,2,4,2,4,Home Products,5,2,2,4,2,1.4761069193999332
+41,Female,High,Working Professional,1,Rarely,4,2,2,4,4,Fashion,5,4,4,3,2,1.0
+22,Other,Medium,Student,1,Occasionally,4,3,3,1,2,Fashion,5,3,1,3,4,3.8254701150204102
+19,Female,Medium,Working Professional,1,Occasionally,5,2,4,3,4,Fashion,3,5,1,3,4,2.2720808406014696
+23,Female,Medium,Student,1,Frequently,3,5,2,3,4,Home Products,4,3,3,4,5,1.1751891636530272
+38,Male,High,Student,4,Occasionally,4,2,1,5,2,Home Products,5,2,3,3,3,2.9410913292265066
+19,Male,Medium,Student,5,Frequently,2,2,2,4,3,Home Products,5,2,1,5,2,2.268945018482935
+30,Female,Low,Working Professional,4,Frequently,2,4,2,5,1,Fashion,4,4,3,3,2,1.0
+28,Female,Low,Student,5,Frequently,4,5,2,5,2,Home Products,2,5,2,3,2,2.000024565941669
+28,Female,High,Working Professional,3,Occasionally,2,2,2,4,4,Home Products,5,4,1,4,2,1.0
+33,Male,Low,Student,5,Rarely,4,3,1,3,2,Personal Care,4,5,3,3,5,1.0
+28,Male,Medium,Working Professional,2,Rarely,2,2,3,4,3,Personal Care,5,3,1,4,3,1.0
+36,Male,Medium,Student,4,Occasionally,4,2,2,1,2,Home Products,3,4,3,4,5,3.73403827764814
+32,Female,Low,Working Professional,3,Occasionally,4,4,2,5,2,Personal Care,4,4,1,5,3,3.3743582288951863
+42,Male,Low,Student,2,Rarely,4,5,4,5,2,Home Products,3,4,4,3,2,1.289275383683976
+40,Female,High,Working Professional,5,Occasionally,2,5,4,4,2,Fashion,4,2,2,5,3,1.4145880911563087
+40,Female,High,Working Professional,2,Rarely,4,3,1,5,4,Home Products,2,2,3,5,2,2.796135305778577
+33,Male,High,Working Professional,3,Occasionally,5,3,1,3,2,Personal Care,3,5,4,3,5,3.3706498539513627
+28,Female,High,Student,3,Rarely,4,3,1,5,3,Personal Care,5,3,1,3,3,2.1894724960451586
+39,Male,Medium,Working Professional,2,Occasionally,3,2,4,4,2,Personal Care,4,4,4,4,4,1.2394763952690306
+33,Female,High,Student,4,Occasionally,3,2,2,3,2,Food,5,2,2,3,3,2.6247840071748287
+25,Female,Medium,Working Professional,5,Rarely,5,3,4,3,4,Food,2,4,3,4,2,2.970148152762271
+21,Female,Medium,Working Professional,4,Occasionally,4,5,3,5,4,Home Products,4,5,3,5,4,3.9295137363015376
+25,Female,High,Student,4,Occasionally,3,5,1,4,2,Home Products,2,5,1,5,2,2.180453233790231
+21,Male,Low,Student,5,Rarely,4,3,1,5,4,Fashion,4,3,2,4,4,2.16459506883485
+41,Male,Medium,Student,4,Rarely,3,4,1,1,4,Home Products,3,5,4,3,4,1.0
+42,Female,Medium,Student,5,Rarely,2,5,3,1,2,Personal Care,5,4,1,3,3,3.958096840678735
+20,Male,Low,Working Professional,5,Occasionally,2,5,2,3,4,Personal Care,3,3,3,4,3,1.537263769328473
+20,Male,Low,Student,5,Occasionally,5,3,2,5,1,Fashion,3,3,4,5,4,1.0
+44,Male,High,Student,2,Rarely,5,5,2,1,1,Fashion,3,2,1,4,4,2.7211200283898784
+35,Female,High,Student,3,Occasionally,4,2,1,2,1,Fashion,3,4,4,3,4,1.7617309935328365
+43,Male,Medium,Student,2,Rarely,5,2,2,1,4,Fashion,4,5,4,3,2,2.7498491463856003
+36,Female,Low,Student,5,Frequently,4,5,4,5,1,Fashion,5,2,1,4,3,3.349137988045609
+36,Other,Low,Working Professional,3,Rarely,2,2,1,5,3,Home Products,4,4,4,3,2,1.0
+38,Male,High,Student,3,Frequently,2,4,3,1,1,Fashion,4,4,4,5,3,4.819912142667452
+22,Male,Medium,Working Professional,5,Occasionally,3,5,3,5,3,Personal Care,4,3,2,4,5,2.198664116781335
+35,Male,Medium,Student,3,Occasionally,4,3,2,5,4,Food,3,3,2,5,2,1.0
+27,Female,Medium,Student,3,Occasionally,2,2,1,2,1,Fashion,2,4,3,5,3,3.08281691582083
+39,Male,Medium,Working Professional,2,Occasionally,2,4,4,3,3,Food,3,2,2,4,4,2.12840706571004
+38,Male,Medium,Student,3,Rarely,4,4,4,5,4,Home Products,4,3,1,4,4,2.308862013832129
+23,Male,High,Student,5,Occasionally,3,2,1,4,1,Personal Care,3,3,4,3,3,1.5646959621223464
+18,Female,Medium,Student,1,Occasionally,3,4,2,3,2,Fashion,5,4,3,3,4,1.4458231160176542
+22,Male,Medium,Student,1,Occasionally,3,5,3,3,1,Fashion,5,4,2,4,4,1.0
+26,Female,Medium,Student,1,Occasionally,3,4,3,4,1,Personal Care,3,3,4,4,5,1.0
+29,Female,Medium,Student,5,Frequently,2,2,4,1,1,Fashion,3,2,1,3,5,4.756783772024123
+43,Male,Medium,Student,1,Occasionally,4,4,4,2,2,Personal Care,2,3,4,3,5,1.0
+31,Female,Low,Student,1,Rarely,4,2,4,5,3,Fashion,3,4,1,3,2,1.37677281473673
+19,Male,Medium,Student,5,Occasionally,2,2,3,1,3,Home Products,3,3,4,4,5,1.0
+34,Female,Low,Student,5,Occasionally,2,4,4,4,2,Fashion,2,4,3,4,5,1.5792987451060005
+31,Female,High,Student,5,Frequently,2,2,3,2,1,Home Products,3,3,3,3,5,1.0
+43,Female,Medium,Student,3,Frequently,5,2,3,2,1,Fashion,3,4,2,5,3,2.8273201871002502
+30,Male,High,Working Professional,3,Occasionally,4,3,2,2,1,Home Products,3,4,2,5,4,2.515832777644751
+44,Male,Low,Student,3,Rarely,4,5,2,4,3,Fashion,3,2,4,3,3,1.0
+26,Male,Medium,Working Professional,4,Occasionally,4,2,2,1,3,Home Products,3,4,4,4,5,2.688285648338145
+43,Male,Medium,Student,2,Occasionally,3,5,4,5,2,Personal Care,4,3,2,4,2,1.6237627572332038
+42,Male,Medium,Working Professional,5,Frequently,2,3,3,2,4,Home Products,3,4,2,5,3,2.474922744410649
+32,Male,Medium,Student,5,Rarely,2,3,4,2,2,Fashion,2,5,4,3,5,3.1539301783068407
+42,Male,Medium,Working Professional,3,Rarely,2,3,3,1,3,Personal Care,3,3,4,5,2,3.4650442145473948
+39,Male,Medium,Working Professional,5,Rarely,5,3,2,2,1,Fashion,4,2,4,5,2,2.5861549291290427
+32,Female,Low,Student,5,Occasionally,4,5,2,2,1,Personal Care,2,3,3,3,2,2.9936446794562186
+41,Male,Low,Working Professional,1,Frequently,2,4,4,4,1,Fashion,2,2,1,5,4,1.0
+28,Male,Medium,Student,5,Rarely,5,4,3,3,1,Personal Care,3,5,1,4,2,1.8978941110402228
+33,Male,Medium,Student,4,Occasionally,2,5,4,1,4,Fashion,5,2,2,5,5,1.592206290146377
+34,Male,Low,Working Professional,3,Occasionally,3,2,1,1,2,Fashion,4,4,3,3,3,2.563241939894925
+43,Other,Low,Working Professional,2,Occasionally,4,5,4,1,2,Home Products,5,5,4,4,3,4.524955795102733
+21,Male,Low,Student,2,Rarely,5,2,2,4,3,Food,3,5,4,4,5,1.0
+18,Female,Medium,Student,1,Frequently,2,2,3,4,2,Personal Care,4,2,2,5,4,2.7932057632140337
+25,Other,Medium,Working Professional,2,Rarely,4,4,3,5,4,Home Products,5,3,2,4,4,1.0336464853017122
+34,Female,High,Working Professional,2,Occasionally,5,3,4,4,4,Home Products,4,2,3,3,2,3.1119007738552744
+20,Female,High,Working Professional,3,Rarely,4,4,2,1,4,Personal Care,3,2,1,5,5,3.1293703838779514
+37,Female,Medium,Working Professional,3,Occasionally,4,4,1,5,1,Fashion,4,5,1,4,2,2.0947750631259834
+32,Other,Low,Student,4,Frequently,3,5,4,5,3,Fashion,3,4,4,3,2,2.0729918786946544
+32,Female,Low,Working Professional,1,Rarely,4,5,3,2,4,Food,5,3,2,5,5,2.115844667710382
+41,Female,Low,Student,2,Rarely,5,2,2,2,2,Personal Care,4,2,3,3,4,1.3890819141570057
+39,Female,High,Student,4,Occasionally,4,5,3,5,2,Home Products,2,4,4,4,4,3.345674847951212
+31,Female,Medium,Student,1,Occasionally,5,2,3,3,2,Home Products,3,4,1,5,3,2.717863813566776
+43,Female,Low,Student,2,Occasionally,4,2,3,2,4,Personal Care,4,3,1,5,5,1.1495004670474178
+40,Male,Medium,Student,2,Rarely,2,3,3,5,4,Personal Care,2,4,3,4,2,1.0
+31,Male,Medium,Working Professional,3,Rarely,3,3,1,4,2,Home Products,2,2,4,3,5,1.2721510526792559
+41,Male,Medium,Student,5,Occasionally,2,4,2,1,4,Fashion,2,5,3,4,2,4.688456478506093
+19,Male,Low,Student,1,Rarely,3,3,4,3,2,Personal Care,2,4,4,5,3,1.4319557716063842
+30,Male,High,Working Professional,2,Frequently,5,2,2,2,1,Personal Care,3,5,1,5,3,3.2534562056465655
+43,Male,Medium,Student,1,Rarely,3,5,2,1,4,Food,4,3,2,4,3,1.0721934371469315
+31,Female,Low,Student,4,Occasionally,4,3,2,5,1,Personal Care,2,3,2,3,3,1.5137945867882376
+44,Male,High,Student,4,Rarely,4,3,4,2,1,Home Products,4,4,1,4,2,2.2892753085467445
+41,Female,Low,Working Professional,5,Rarely,2,3,2,1,4,Fashion,4,5,2,3,4,1.3289021811512696
+36,Male,High,Student,2,Occasionally,3,3,4,4,2,Fashion,5,2,2,3,2,1.4668567057932684
+24,Male,High,Student,3,Occasionally,5,2,4,3,3,Food,4,5,4,5,3,1.381578638525676
+20,Female,Medium,Student,2,Rarely,5,2,1,5,1,Home Products,3,4,3,3,4,2.4489420515473626
+32,Female,Medium,Student,1,Rarely,4,4,3,2,4,Personal Care,3,5,4,5,5,1.989209232441017
+40,Male,Medium,Student,4,Rarely,5,5,4,4,1,Home Products,2,5,3,3,2,4.380883591296067
+31,Female,High,Student,1,Occasionally,4,4,3,3,2,Fashion,4,3,3,3,5,1.0
+28,Female,Medium,Student,5,Occasionally,4,4,2,3,4,Home Products,3,4,2,5,3,2.3689181979954075
+32,Male,Medium,Working Professional,4,Rarely,4,3,3,4,3,Fashion,3,5,3,3,5,1.7925838953051128
+30,Male,High,Student,3,Occasionally,2,5,3,2,4,Home Products,3,4,3,4,4,2.5632143003161563
+35,Other,High,Student,4,Occasionally,2,3,3,3,1,Home Products,2,2,1,3,4,1.377975605941745
+43,Female,High,Student,2,Frequently,4,2,2,5,4,Personal Care,3,4,3,5,4,2.922413923135265
+23,Female,Medium,Student,2,Frequently,4,4,2,1,4,Food,4,2,1,5,2,2.2159045629125798
+20,Female,High,Working Professional,4,Rarely,4,5,4,5,1,Food,3,4,4,4,5,1.494582945249638
+36,Male,Medium,Student,5,Rarely,5,2,4,3,3,Personal Care,3,4,2,3,5,2.639065057684956
+32,Male,High,Student,2,Rarely,4,4,1,1,2,Food,2,5,3,4,5,2.0743667678188795
+42,Male,Medium,Working Professional,2,Occasionally,4,5,2,4,4,Home Products,4,5,1,3,3,2.928247810136217
+40,Female,Medium,Student,3,Frequently,3,4,1,1,3,Home Products,3,2,4,4,2,1.988192313413669
+22,Female,Medium,Student,4,Occasionally,3,5,2,1,2,Food,4,2,4,5,2,1.3795961520007833
+27,Female,Medium,Student,2,Rarely,3,4,3,1,1,Personal Care,4,3,4,5,5,2.2775200649524927
+24,Male,Medium,Student,5,Occasionally,3,3,1,3,3,Home Products,3,5,1,4,2,1.7491496986018724
+42,Male,Medium,Student,1,Rarely,4,4,1,2,3,Food,2,2,1,3,5,1.0
+34,Male,Medium,Student,4,Rarely,3,4,1,3,4,Personal Care,4,5,2,3,5,2.3225818251187285
+24,Female,Medium,Student,3,Occasionally,5,5,2,2,1,Personal Care,5,4,3,5,5,2.8678829438253435
+39,Female,High,Working Professional,2,Rarely,5,5,4,4,4,Personal Care,3,3,4,3,4,2.079663974064282
+43,Male,Medium,Student,5,Rarely,3,3,1,4,1,Home Products,4,5,2,4,3,2.46042246112405
+29,Female,Low,Student,4,Occasionally,2,5,4,4,2,Home Products,4,5,1,4,2,1.4211130851435558
+42,Male,Low,Student,5,Rarely,5,4,2,4,4,Personal Care,4,5,2,3,3,3.115938303882167
+34,Other,Low,Student,5,Rarely,5,5,1,4,1,Personal Care,3,5,4,5,4,2.6104130215517585
+30,Male,Medium,Student,3,Rarely,3,5,2,5,1,Fashion,5,2,4,5,2,2.6222484242869704
+37,Female,Low,Working Professional,4,Frequently,3,5,4,3,3,Fashion,4,2,2,5,5,2.4762398131169125
+42,Male,Low,Working Professional,2,Occasionally,4,3,4,2,4,Home Products,4,3,4,5,3,3.749760970775021
+21,Female,High,Working Professional,3,Rarely,5,3,1,4,4,Personal Care,2,4,1,5,4,1.705115765058896
+27,Male,High,Working Professional,2,Occasionally,3,2,4,5,2,Home Products,3,4,4,4,2,1.2571574988214786
+20,Male,Medium,Student,1,Rarely,3,3,3,5,1,Home Products,3,3,3,3,2,1.9297089402160703
+26,Male,High,Student,5,Occasionally,4,3,3,5,3,Food,4,4,3,4,3,2.8362207916736115
+30,Male,Low,Student,1,Occasionally,5,3,1,3,1,Fashion,2,2,4,5,3,1.9404415273436055
+35,Male,Medium,Student,5,Frequently,3,4,2,4,1,Food,4,5,2,5,2,2.7360568910516325
+32,Female,Medium,Working Professional,3,Occasionally,4,2,2,5,1,Personal Care,4,4,4,3,2,2.0075302569449325
+21,Male,Medium,Student,2,Frequently,3,4,2,5,4,Home Products,3,5,3,3,4,1.5978672541103336
+32,Female,Medium,Working Professional,2,Frequently,2,3,3,4,1,Home Products,2,5,1,3,5,1.0
+39,Female,Medium,Student,3,Frequently,2,3,4,3,2,Personal Care,4,2,3,4,5,2.237146808959271
+19,Female,Medium,Working Professional,4,Occasionally,3,2,3,5,3,Fashion,3,5,4,3,4,1.4152502849592956
+32,Male,Medium,Working Professional,1,Rarely,5,2,4,2,3,Fashion,4,4,4,4,2,1.0
+25,Male,Low,Working Professional,1,Rarely,2,5,3,1,1,Home Products,4,2,2,5,3,3.7584437972256115
+25,Female,Low,Working Professional,2,Rarely,4,3,2,1,3,Personal Care,2,3,4,4,3,3.077457112064694
+34,Other,Low,Student,2,Rarely,3,3,2,1,1,Food,2,2,4,3,2,1.0
+29,Male,Low,Working Professional,2,Occasionally,4,4,2,3,4,Personal Care,2,4,1,4,4,1.7556147635040666
+36,Male,Medium,Working Professional,3,Occasionally,2,5,1,5,3,Food,4,2,1,4,2,1.0
+27,Male,Low,Working Professional,4,Frequently,5,3,1,1,4,Fashion,5,4,1,4,3,2.6018811726451485
+26,Other,High,Working Professional,1,Rarely,4,4,4,5,4,Fashion,2,4,2,3,2,2.9671104020229144
+22,Male,Low,Working Professional,5,Rarely,2,2,1,4,2,Personal Care,5,2,2,4,2,1.3683760537891456
+23,Male,Low,Working Professional,3,Occasionally,2,4,3,5,2,Food,5,4,3,3,4,3.2160964262049117
+37,Female,Medium,Student,1,Rarely,2,3,3,5,3,Home Products,5,3,2,4,5,1.0
+43,Male,Low,Working Professional,4,Rarely,4,4,4,4,1,Fashion,3,4,1,4,3,2.3703195757090003
+19,Male,Medium,Student,3,Frequently,2,4,4,5,1,Fashion,4,3,2,4,3,1.0
+44,Female,Medium,Student,1,Occasionally,3,5,2,2,1,Personal Care,2,3,4,3,2,2.127472852251579
+41,Female,Low,Student,3,Occasionally,2,5,1,3,1,Home Products,4,4,2,3,3,2.347420008205687
+44,Male,Low,Student,1,Frequently,3,2,2,4,2,Personal Care,4,5,4,3,3,1.6990252279474554
+30,Male,Medium,Student,1,Occasionally,5,5,1,1,1,Home Products,3,3,3,5,5,1.372997535955454
+23,Male,Low,Student,4,Occasionally,3,4,1,5,1,Home Products,3,3,4,3,3,2.331388368923317
+22,Male,Low,Student,5,Frequently,5,5,4,2,4,Food,3,2,1,4,3,2.726531810335863
+42,Female,Low,Student,4,Rarely,5,3,2,2,1,Home Products,4,3,3,5,4,2.9957976060769838
+18,Male,Low,Student,1,Occasionally,3,4,2,3,1,Personal Care,5,3,3,3,4,1.0
+38,Male,Medium,Working Professional,3,Rarely,5,4,1,2,2,Food,4,3,3,3,4,1.5354567738187297
+39,Male,Medium,Working Professional,4,Rarely,3,4,1,5,3,Personal Care,3,3,1,5,4,2.6222907278251486
+38,Female,Medium,Working Professional,5,Frequently,4,3,4,5,4,Personal Care,4,5,4,5,4,2.041429032457476
+23,Female,Low,Working Professional,1,Occasionally,5,4,3,2,4,Food,3,3,3,3,5,3.057599534509877
+23,Female,Low,Working Professional,4,Occasionally,3,5,2,5,3,Fashion,3,4,1,5,3,3.0290147248610158
+40,Male,High,Student,4,Frequently,5,3,2,5,4,Personal Care,2,5,3,4,2,3.6113296415159146
+33,Female,Medium,Working Professional,4,Frequently,2,4,4,1,1,Fashion,5,3,3,4,5,1.893197348976988
+21,Female,High,Working Professional,4,Frequently,3,5,4,4,1,Fashion,3,4,1,4,2,1.3710882635864907
+28,Male,Medium,Student,3,Occasionally,2,5,2,5,3,Fashion,2,4,2,3,4,2.700665440810028
+41,Male,Medium,Student,5,Rarely,5,2,2,5,2,Fashion,5,5,3,4,3,2.502819241117068
+40,Male,Medium,Working Professional,5,Rarely,5,5,1,3,2,Personal Care,3,5,2,5,4,4.748862531136956
+26,Male,Medium,Student,1,Occasionally,4,5,3,4,4,Food,5,4,3,4,5,1.0
+40,Male,Medium,Working Professional,2,Rarely,3,2,2,4,2,Home Products,5,5,2,5,2,1.7886766050070138
+20,Male,Medium,Student,3,Occasionally,2,2,4,4,2,Home Products,4,5,4,4,3,1.1431053242283349
+36,Male,Low,Student,1,Occasionally,4,3,1,2,2,Home Products,2,2,2,5,5,1.658544649187999
+25,Female,Medium,Student,1,Frequently,5,5,1,1,2,Food,5,5,2,4,5,2.2783808524229308
+22,Male,Medium,Student,4,Occasionally,5,3,4,1,2,Food,4,2,2,4,3,1.9894406165539764
+21,Female,High,Student,2,Occasionally,4,3,4,3,2,Food,5,5,2,4,3,2.463795632003911
+41,Female,Medium,Working Professional,2,Rarely,2,4,1,4,2,Food,4,5,4,5,5,1.0
+23,Female,Medium,Working Professional,3,Rarely,5,3,4,4,4,Fashion,3,4,1,5,2,2.411463522390218
+19,Female,Low,Working Professional,2,Rarely,5,3,1,5,1,Home Products,3,2,2,4,2,3.632417812409086
+37,Male,Medium,Student,1,Occasionally,3,3,4,2,2,Home Products,4,5,1,5,5,1.0
+28,Female,Medium,Working Professional,2,Rarely,4,3,1,2,1,Home Products,3,3,3,5,5,1.7022908537800316
+21,Male,High,Student,2,Occasionally,5,2,2,3,3,Personal Care,3,5,1,3,4,1.7370574856261414
+32,Male,Medium,Student,5,Occasionally,2,5,2,1,1,Fashion,3,4,2,4,4,2.50570410996431
+23,Female,Medium,Student,1,Rarely,3,4,4,4,3,Fashion,5,4,1,5,2,1.0
+39,Male,Medium,Student,2,Rarely,4,2,3,3,4,Food,4,4,4,5,4,2.2977081146371825
+34,Male,High,Student,2,Occasionally,2,4,2,2,1,Home Products,2,2,4,5,2,2.9233640593707406
+41,Female,Medium,Student,4,Occasionally,5,4,1,2,3,Personal Care,2,2,2,5,3,3.2298795417679553
+23,Female,Medium,Working Professional,2,Occasionally,4,2,3,2,1,Personal Care,4,2,1,3,4,2.5398626583744757
+36,Female,High,Working Professional,2,Occasionally,4,3,1,4,4,Home Products,5,3,3,5,2,1.4272182104406261
+42,Male,Low,Student,5,Occasionally,2,2,1,4,1,Personal Care,3,2,4,5,2,1.502015630593341
+19,Female,High,Student,1,Frequently,4,4,2,4,3,Personal Care,3,4,2,3,5,1.1001267276356241
+32,Male,Low,Student,3,Occasionally,2,4,4,5,2,Fashion,5,2,4,4,2,1.0
+28,Female,Medium,Student,1,Frequently,5,3,4,1,2,Fashion,2,2,2,4,4,3.436387437658809
+25,Other,Medium,Working Professional,4,Rarely,3,2,1,2,2,Personal Care,4,5,1,3,5,1.598082902616973
+43,Female,Medium,Student,3,Occasionally,2,5,2,2,4,Home Products,4,2,1,4,5,2.1110468728321856
+36,Female,High,Working Professional,2,Rarely,3,4,1,5,2,Fashion,5,5,1,4,4,1.0
+30,Male,Low,Working Professional,3,Rarely,4,2,3,2,4,Personal Care,3,2,1,3,3,2.445876480076727
+29,Female,Low,Student,1,Rarely,2,3,1,2,2,Home Products,3,5,1,5,4,1.0991946413330929
+22,Female,Medium,Working Professional,4,Occasionally,5,3,2,4,4,Home Products,3,4,2,3,4,1.6709195371602015
+23,Male,Medium,Student,3,Rarely,2,5,1,4,4,Fashion,4,2,4,3,5,1.3532607588048737
+43,Female,Medium,Student,1,Rarely,2,4,2,1,1,Home Products,2,4,3,3,4,1.0
+39,Male,Low,Student,2,Frequently,2,5,4,2,2,Food,4,2,4,3,3,1.8167662774210116
+21,Female,Low,Student,4,Frequently,3,5,2,3,1,Food,5,3,1,3,3,1.0
+36,Female,Low,Student,5,Occasionally,3,5,3,5,3,Home Products,4,3,4,5,3,2.942235290644441
+37,Female,Low,Student,4,Occasionally,4,5,2,2,2,Home Products,5,4,4,4,5,3.6509350032530206
+18,Male,Medium,Working Professional,5,Frequently,4,3,3,1,2,Fashion,4,4,2,3,4,3.087039115711095
+37,Female,Medium,Working Professional,3,Occasionally,4,4,3,3,2,Home Products,2,3,3,5,2,1.2997948138606912
+34,Female,High,Working Professional,3,Rarely,4,5,1,2,2,Home Products,5,3,3,3,4,2.0507010971842474
+29,Female,High,Student,5,Frequently,2,4,3,3,1,Personal Care,3,5,1,5,3,3.5081535767980934
+32,Male,Low,Working Professional,3,Occasionally,3,3,2,4,1,Personal Care,3,2,2,4,4,1.7581997223153452
+18,Male,Medium,Working Professional,4,Occasionally,3,3,4,4,4,Home Products,4,3,2,5,5,2.744582332031459
+43,Female,Low,Working Professional,2,Occasionally,3,2,2,3,1,Food,4,4,2,5,4,2.2426910313571606
+31,Male,Low,Working Professional,5,Occasionally,3,2,4,2,4,Personal Care,2,4,2,4,5,1.9542689900866257
+23,Female,Medium,Working Professional,4,Frequently,4,4,3,3,3,Fashion,2,3,2,4,2,1.5983884760648024
+22,Female,Low,Student,5,Rarely,2,2,1,3,1,Home Products,3,4,3,5,2,1.346077976311678
+28,Female,Low,Working Professional,4,Frequently,3,5,3,4,4,Fashion,4,2,3,3,5,1.44278514718651
+21,Female,High,Student,3,Frequently,5,4,3,5,2,Home Products,5,5,4,3,4,2.009567903985317
+30,Female,Medium,Working Professional,2,Occasionally,2,3,4,5,3,Fashion,2,2,3,4,3,1.0
+28,Male,Medium,Student,3,Occasionally,5,3,2,5,4,Personal Care,5,5,2,3,5,1.4488169144891572
+20,Male,Low,Student,4,Rarely,2,5,1,4,3,Home Products,5,5,4,4,4,1.0
+18,Male,Low,Student,1,Rarely,2,2,1,2,2,Fashion,2,3,3,5,4,1.0
+23,Male,High,Working Professional,3,Rarely,2,4,1,2,2,Fashion,4,4,4,5,4,2.908738686188978
+35,Female,Low,Student,4,Occasionally,5,4,1,4,4,Personal Care,5,5,3,3,3,2.6187249129479113
+41,Female,Medium,Student,4,Occasionally,3,5,2,2,4,Personal Care,4,3,1,4,3,3.432708970896452
+27,Female,Low,Working Professional,2,Rarely,3,2,1,1,2,Home Products,5,4,3,3,3,1.0
+22,Female,Medium,Working Professional,3,Rarely,5,4,4,5,4,Home Products,4,4,4,3,5,1.0881959142882967
+40,Other,Low,Student,1,Frequently,3,5,4,1,2,Personal Care,4,5,1,5,5,2.7220573893687385
+27,Female,High,Student,2,Rarely,4,4,1,1,1,Personal Care,4,4,2,3,3,3.6964697470102568
+29,Female,High,Working Professional,4,Frequently,3,3,1,1,4,Fashion,4,2,4,5,5,1.6273039677585521
+19,Female,Medium,Working Professional,2,Rarely,4,4,2,4,3,Home Products,2,4,2,4,3,2.817767775039041
+30,Male,Low,Student,2,Occasionally,4,4,2,1,2,Fashion,5,2,2,3,5,1.4235914586050602
+25,Male,High,Working Professional,5,Rarely,4,4,1,3,1,Food,4,4,4,5,4,1.2630418117927322
+19,Male,Medium,Student,2,Occasionally,5,2,2,2,4,Home Products,3,5,2,3,3,2.685846630448811
+37,Female,Medium,Working Professional,2,Occasionally,3,2,3,4,2,Home Products,5,5,4,4,5,1.0
+18,Female,Medium,Working Professional,3,Rarely,3,5,1,3,1,Home Products,5,3,4,3,4,1.0
+22,Male,Low,Student,2,Occasionally,5,2,2,3,4,Food,4,2,3,3,4,1.0
+26,Male,Low,Student,1,Occasionally,5,4,4,5,2,Food,5,2,1,5,5,1.252167539861435
+34,Female,Medium,Working Professional,4,Occasionally,3,4,1,5,2,Home Products,3,5,2,4,4,1.0
+26,Male,Low,Working Professional,3,Occasionally,5,2,1,3,2,Fashion,3,5,2,4,2,2.7941950787958647
+28,Male,Medium,Student,2,Rarely,5,2,4,5,4,Food,3,5,1,4,3,1.9815335395143825
+32,Female,Medium,Working Professional,1,Occasionally,4,4,4,2,1,Fashion,5,2,1,3,3,2.380660264005165
+41,Male,High,Working Professional,4,Frequently,5,4,2,2,2,Food,5,3,1,5,4,4.30769466305875
+23,Male,High,Student,3,Frequently,4,3,4,5,1,Home Products,4,2,1,3,5,2.6708196074171138
+40,Female,High,Working Professional,1,Frequently,2,5,3,1,1,Food,5,5,1,3,2,1.0
+20,Female,Low,Student,2,Rarely,4,2,1,3,3,Food,5,3,3,3,5,2.2741312301574075
+34,Female,Low,Working Professional,5,Occasionally,4,5,3,2,1,Fashion,4,4,4,4,3,4.411228914672497
+22,Male,Medium,Student,5,Occasionally,5,4,2,5,1,Home Products,3,4,1,5,4,3.6141702653039847
+29,Male,Low,Student,3,Rarely,3,5,4,5,1,Fashion,4,5,3,4,2,2.6890743906700116
+35,Male,Low,Student,1,Frequently,2,2,1,2,1,Fashion,2,3,1,3,4,1.0
+31,Female,Medium,Working Professional,4,Occasionally,2,2,4,2,1,Personal Care,5,5,1,3,2,1.1518371327111017
+38,Female,Medium,Working Professional,1,Rarely,2,5,4,1,4,Fashion,5,2,2,5,4,1.4654369628170334
+41,Male,High,Working Professional,5,Rarely,3,2,2,5,3,Home Products,2,2,2,4,5,1.1014793662530598
+28,Female,Low,Working Professional,3,Frequently,2,3,2,5,2,Food,2,3,2,3,3,2.103364960583902
+26,Male,Low,Student,2,Rarely,2,4,2,4,3,Home Products,2,5,2,3,4,1.386666473926457
+19,Male,Low,Working Professional,1,Rarely,3,4,2,1,3,Fashion,4,5,4,5,4,2.623728380762271
+29,Male,High,Student,5,Occasionally,2,2,1,2,2,Food,3,4,4,3,2,1.0
+20,Male,Medium,Working Professional,4,Rarely,5,4,3,2,1,Food,4,3,2,4,5,2.653531386057194
+20,Female,High,Student,3,Frequently,5,3,3,3,2,Home Products,2,5,2,4,5,1.3747579723475376
+18,Female,High,Working Professional,2,Occasionally,4,2,1,2,1,Home Products,4,2,1,3,2,1.0
+25,Male,Medium,Working Professional,1,Occasionally,4,3,4,5,2,Food,5,5,1,3,5,1.3999044590903125
+39,Female,Medium,Working Professional,4,Frequently,4,3,1,2,4,Fashion,4,5,2,3,3,1.5354876335853793
+25,Male,Medium,Student,2,Occasionally,5,4,3,5,3,Food,2,2,2,5,4,1.526994489947769
+28,Female,Medium,Student,5,Rarely,5,4,3,5,1,Food,5,2,2,5,2,1.828500156527953
+26,Female,Medium,Student,5,Occasionally,5,5,1,1,3,Food,3,5,1,4,5,3.392530123947056
+22,Male,Medium,Working Professional,4,Occasionally,4,3,2,2,1,Personal Care,4,2,2,4,3,3.1888394964419797
+31,Female,High,Student,5,Rarely,4,4,4,1,2,Food,4,4,2,3,3,2.3432941910039657
+20,Male,High,Working Professional,3,Occasionally,4,3,1,5,2,Personal Care,2,4,4,3,5,1.2462868101570543
+38,Male,Medium,Student,4,Frequently,4,5,3,2,2,Home Products,3,4,4,3,5,3.528399015856075
+22,Male,Medium,Student,5,Occasionally,4,3,2,2,4,Food,5,2,1,5,2,3.581630826242365
+22,Female,Medium,Working Professional,4,Frequently,4,2,4,1,2,Fashion,2,2,4,5,5,1.3060286816486262
+36,Female,Low,Student,5,Occasionally,5,5,3,1,2,Personal Care,2,2,1,3,2,4.095300350734903
+44,Male,Low,Working Professional,3,Occasionally,3,5,4,5,4,Food,4,3,3,3,4,2.617401871982293
+31,Female,Medium,Working Professional,2,Frequently,3,3,2,5,3,Food,3,2,2,4,3,1.0
+43,Female,Medium,Student,2,Rarely,4,3,3,5,3,Food,2,4,1,5,2,1.2863065378415182
+21,Female,Low,Student,4,Rarely,3,4,2,2,1,Fashion,4,4,4,3,3,2.4261522048417996
+42,Female,High,Student,2,Occasionally,3,2,1,5,3,Home Products,5,4,3,5,4,1.5468272903664722
+30,Female,Low,Student,5,Occasionally,5,5,1,4,1,Fashion,2,3,4,3,5,3.3868612896671353
+27,Male,Low,Working Professional,3,Rarely,4,5,4,3,1,Home Products,5,5,1,3,2,2.564611077389926
+42,Male,Medium,Student,2,Rarely,4,5,2,5,3,Fashion,5,4,3,4,5,1.0
+35,Other,Low,Student,1,Rarely,3,4,2,3,3,Home Products,4,3,4,4,3,2.270896913917049
+25,Male,Low,Student,5,Occasionally,4,2,4,3,4,Personal Care,3,5,3,4,2,2.0010724497417534
+25,Other,Medium,Student,2,Frequently,4,5,4,1,1,Food,5,3,2,3,4,2.3334502449951144
+24,Female,Medium,Student,3,Frequently,4,5,4,1,3,Home Products,2,3,2,4,4,3.0953067398516203
+25,Male,Medium,Working Professional,3,Occasionally,4,4,1,4,3,Home Products,3,5,3,3,5,4.072991184178286
+31,Male,Medium,Working Professional,1,Frequently,3,3,4,3,4,Personal Care,3,2,4,5,4,1.0
+36,Male,Medium,Working Professional,3,Occasionally,2,5,1,4,3,Home Products,4,2,4,5,4,1.0089827218578664
+23,Female,Low,Working Professional,3,Rarely,3,2,4,5,2,Personal Care,2,4,4,3,5,1.0
+18,Male,High,Student,2,Rarely,5,2,2,2,2,Fashion,2,5,2,4,5,3.2609521024840484
+40,Male,Low,Working Professional,5,Occasionally,2,2,2,5,1,Home Products,4,4,1,4,2,2.449247559003218
+32,Male,High,Student,4,Rarely,2,2,4,5,4,Food,4,3,1,5,2,1.575891170948799
+18,Male,Medium,Student,3,Occasionally,2,4,4,5,3,Fashion,3,2,3,3,5,2.1068584976064084
+42,Male,High,Student,3,Occasionally,3,5,1,1,1,Fashion,5,4,4,3,3,3.727471424009323
+34,Male,Low,Student,4,Occasionally,5,4,3,1,3,Home Products,5,4,3,3,3,2.630225224331498
+18,Female,Medium,Working Professional,3,Frequently,3,2,1,3,2,Food,5,2,1,5,2,2.122793133287368
+32,Male,Low,Student,2,Occasionally,5,2,2,4,3,Fashion,5,3,1,5,2,2.8526731827924694
+40,Male,Low,Working Professional,2,Rarely,3,2,4,5,3,Food,2,4,4,4,5,1.1058654335883062
+19,Male,Medium,Student,5,Occasionally,3,4,2,3,3,Food,2,4,3,3,3,1.4810837742732388
+31,Male,Low,Student,3,Occasionally,3,2,3,3,2,Fashion,4,5,4,3,5,1.0
+38,Other,Medium,Working Professional,3,Rarely,2,5,1,5,2,Personal Care,4,5,1,3,2,1.9517790899546998
+25,Female,Low,Student,5,Rarely,3,2,2,5,4,Home Products,5,2,1,3,4,1.0
+25,Male,Medium,Student,3,Occasionally,5,5,1,2,2,Food,4,2,4,5,4,2.1869226620278606
+36,Female,Medium,Student,2,Frequently,5,5,4,4,1,Home Products,2,3,3,4,4,1.8101539961668696
+24,Male,Medium,Working Professional,1,Occasionally,5,2,2,5,3,Personal Care,5,3,2,5,5,1.480432110061448
+36,Male,Medium,Working Professional,1,Frequently,2,4,3,1,2,Fashion,5,4,4,4,3,2.08352073187208
+23,Other,Medium,Student,5,Frequently,3,3,1,2,1,Personal Care,2,5,1,3,2,1.0
+23,Female,High,Working Professional,1,Rarely,3,3,1,4,2,Home Products,3,3,2,3,3,1.0
+20,Other,Medium,Working Professional,3,Occasionally,4,5,3,1,3,Personal Care,5,4,4,3,3,3.7162628014724888
+24,Male,Medium,Working Professional,3,Occasionally,2,4,2,1,1,Home Products,4,4,2,3,2,2.775618742607902
+36,Female,High,Working Professional,5,Rarely,5,3,2,4,2,Fashion,3,2,4,3,3,3.2693898328861843
+25,Male,Medium,Student,3,Occasionally,5,2,1,2,2,Personal Care,2,5,1,5,4,2.7752755881887357
+27,Male,Medium,Working Professional,1,Occasionally,3,2,3,1,1,Fashion,3,4,4,4,2,1.002719298748758
+37,Female,Medium,Student,4,Rarely,5,5,1,3,4,Fashion,3,2,2,5,4,2.9223898790843132
+32,Male,Medium,Student,4,Frequently,3,4,1,4,1,Food,5,4,3,3,5,2.1758454000364145
+32,Female,Medium,Working Professional,2,Occasionally,3,4,4,5,1,Fashion,3,5,1,4,4,1.0
+18,Female,Low,Working Professional,2,Frequently,4,3,2,5,1,Home Products,4,4,1,4,5,1.7834531796349782
+37,Male,Low,Student,3,Rarely,2,3,2,2,1,Fashion,5,4,2,3,5,1.8192126409746785
+24,Female,High,Student,4,Frequently,3,2,4,3,2,Personal Care,2,3,4,4,2,1.7646146097647122
+44,Female,Low,Working Professional,1,Rarely,3,5,2,3,1,Personal Care,4,3,4,5,4,2.5125079578791585
+21,Male,Medium,Student,1,Rarely,3,4,2,5,1,Fashion,5,2,4,5,4,1.0
+23,Female,Medium,Student,1,Occasionally,4,3,2,1,3,Fashion,3,4,1,5,4,2.559626568163297
+42,Female,Medium,Student,3,Occasionally,3,3,3,1,2,Food,4,2,1,5,2,1.0113160482194994
+18,Male,Low,Student,3,Occasionally,2,5,4,3,3,Fashion,5,5,2,4,5,2.7402097807132324
+22,Female,Low,Working Professional,5,Occasionally,2,5,1,5,2,Fashion,5,2,4,5,5,3.30417748219833
+44,Other,High,Student,1,Rarely,5,2,3,1,4,Food,2,4,4,4,5,4.1618179411377465
+40,Male,High,Working Professional,1,Occasionally,2,5,1,4,4,Personal Care,5,3,2,3,2,2.7009036925001597
+18,Female,Medium,Student,3,Occasionally,5,2,4,5,2,Home Products,2,3,1,5,2,2.7363541524508688
+21,Male,Medium,Working Professional,3,Occasionally,2,2,4,2,4,Fashion,3,2,1,3,3,1.0
+39,Female,Medium,Working Professional,5,Occasionally,5,5,4,1,4,Fashion,5,3,3,5,4,2.9147427124392045
+19,Female,Medium,Working Professional,5,Frequently,3,5,2,5,2,Home Products,5,4,3,3,5,2.0749955241905216
+27,Male,Medium,Working Professional,2,Occasionally,4,5,3,5,1,Food,3,4,4,3,3,2.309483294160168
+22,Male,Low,Working Professional,4,Occasionally,4,5,4,1,3,Fashion,5,5,1,3,3,4.494237397528483
+44,Female,Medium,Student,1,Frequently,4,5,1,3,2,Personal Care,5,3,4,3,4,1.0
+27,Male,Medium,Working Professional,1,Occasionally,3,2,2,1,2,Fashion,4,3,1,3,2,1.0
+18,Female,High,Working Professional,5,Rarely,4,3,2,5,2,Fashion,2,5,3,4,3,2.333407820374973
+39,Male,Low,Student,3,Rarely,2,4,3,4,3,Food,5,2,2,4,2,1.0
+23,Female,Medium,Student,2,Occasionally,5,4,3,4,2,Fashion,5,5,1,5,2,1.677187864706208
+30,Female,Medium,Working Professional,5,Rarely,3,2,3,3,3,Food,2,3,3,4,4,3.144762521336505
+32,Female,Medium,Working Professional,2,Occasionally,4,2,2,4,3,Fashion,4,2,3,3,3,2.121457962786898
+21,Male,Low,Student,4,Rarely,2,3,4,5,4,Food,2,4,1,4,5,2.2295318964498594
+30,Female,Medium,Student,1,Rarely,2,5,1,3,1,Home Products,5,4,4,4,3,1.0
+41,Female,Medium,Working Professional,2,Occasionally,3,2,4,1,4,Food,3,5,1,3,5,1.0
+37,Male,Medium,Student,5,Frequently,3,4,1,2,2,Fashion,3,4,3,4,5,2.3709744480397585
+41,Male,Medium,Working Professional,2,Occasionally,4,5,4,1,2,Home Products,4,3,1,3,2,1.0
+32,Male,Medium,Working Professional,2,Frequently,5,2,3,5,3,Home Products,4,5,2,4,5,1.9525961258254712
+25,Female,Medium,Working Professional,1,Frequently,4,5,1,3,4,Home Products,5,3,4,3,4,2.6473710730767994
+22,Female,High,Student,5,Rarely,4,4,2,1,3,Food,4,3,1,5,3,2.514338806904709
+32,Male,Medium,Working Professional,5,Rarely,3,5,1,3,4,Home Products,5,2,3,4,2,3.3820984052128877
+21,Female,Low,Working Professional,3,Occasionally,4,2,2,4,4,Food,3,2,3,5,2,2.276694217232555
+29,Male,Medium,Working Professional,3,Frequently,4,2,4,2,4,Personal Care,4,2,4,3,5,1.0
+30,Male,Low,Student,1,Occasionally,5,4,3,5,4,Home Products,5,4,1,3,2,1.8001533559742655
+19,Other,Medium,Student,1,Frequently,2,3,1,1,4,Food,2,2,3,5,4,1.0
+44,Female,Low,Working Professional,2,Rarely,2,3,2,2,1,Fashion,4,3,4,3,4,2.332812236926471
+36,Female,Low,Student,5,Rarely,5,5,4,5,2,Personal Care,5,5,2,3,2,3.732365306804307
+36,Male,High,Student,5,Occasionally,2,2,3,5,4,Food,5,5,4,3,2,2.0722954753701535
+21,Female,Low,Student,2,Occasionally,4,2,3,4,4,Personal Care,2,3,1,3,4,1.0
+21,Male,Medium,Working Professional,5,Rarely,5,4,3,3,3,Personal Care,3,4,1,3,5,4.565710260887356
+43,Male,Low,Student,2,Rarely,5,4,4,3,2,Personal Care,2,5,3,3,2,2.481207172805285
+28,Male,Medium,Student,1,Rarely,3,2,4,2,2,Food,5,3,2,3,5,1.6955705230414337
+44,Female,Medium,Student,1,Occasionally,2,4,4,4,2,Food,2,3,1,3,2,2.6306270394450655
+22,Female,Medium,Working Professional,1,Frequently,3,3,3,5,4,Food,2,3,3,5,4,1.4623675536372711
+37,Male,Medium,Student,2,Frequently,4,3,1,4,3,Home Products,5,5,4,4,2,1.4802271815988686
+28,Female,Low,Student,2,Occasionally,5,5,2,4,2,Home Products,3,5,4,3,2,1.8019472801715146
+27,Female,Medium,Student,4,Occasionally,4,4,4,2,3,Fashion,2,2,1,5,2,1.066116232405314
+25,Male,Low,Working Professional,1,Occasionally,2,5,1,3,1,Fashion,2,2,2,3,4,1.0
+23,Female,Medium,Student,5,Rarely,3,4,2,4,1,Fashion,4,3,3,4,4,3.255794112086609
+23,Female,Medium,Student,4,Rarely,2,4,3,4,3,Fashion,4,3,1,3,4,1.0
+25,Male,High,Student,4,Rarely,4,3,1,5,4,Food,5,3,3,5,3,3.211292104707957
+40,Male,Low,Working Professional,1,Frequently,3,2,3,1,2,Food,5,3,4,5,3,2.203393560537071
+32,Female,Medium,Working Professional,4,Frequently,2,4,2,4,1,Home Products,5,5,3,4,3,1.0
+43,Female,Low,Working Professional,2,Occasionally,4,4,4,4,1,Food,4,2,4,3,3,1.981578089327134
+31,Female,Medium,Working Professional,3,Occasionally,2,4,3,5,3,Food,5,4,2,5,4,1.8761949985211663
+28,Male,Medium,Student,2,Rarely,5,2,1,1,4,Home Products,2,3,2,4,2,2.3919614422585194
+29,Other,High,Working Professional,4,Occasionally,3,5,4,4,3,Personal Care,2,2,4,4,4,3.5312235229805946
+43,Male,Low,Student,5,Occasionally,3,5,1,4,3,Fashion,3,3,1,3,3,1.2079041183742174
+30,Male,Low,Student,2,Occasionally,3,4,2,2,3,Home Products,5,5,4,5,5,2.404165910738505
+25,Female,Medium,Student,5,Rarely,5,4,2,2,3,Fashion,2,4,3,3,5,2.791084942052216
+35,Male,Low,Student,2,Frequently,3,5,4,1,3,Personal Care,2,2,3,3,4,1.0
+42,Male,Low,Working Professional,5,Occasionally,5,5,1,5,4,Food,3,2,3,3,2,1.8397734752211965
+18,Male,Medium,Student,2,Frequently,3,3,1,1,3,Personal Care,2,4,1,5,3,1.3755145648700968
+32,Male,Low,Working Professional,5,Frequently,2,4,1,1,4,Fashion,3,5,2,4,2,2.7232546001775613
+25,Male,Low,Student,3,Frequently,2,5,1,2,2,Home Products,3,4,2,3,2,1.198913671480911
+28,Other,Medium,Student,1,Rarely,2,3,2,2,2,Home Products,4,2,3,3,2,1.0
+29,Male,Medium,Working Professional,2,Rarely,2,2,1,5,2,Fashion,2,4,1,5,3,1.0
+29,Female,Low,Working Professional,3,Rarely,5,4,2,4,2,Fashion,4,5,3,3,4,1.5204498036962415
+21,Female,Low,Working Professional,1,Rarely,4,5,1,5,1,Food,2,5,2,4,3,1.0
+33,Female,Medium,Student,2,Occasionally,4,4,1,4,4,Fashion,4,3,4,3,3,2.372954952313117
+21,Male,Low,Student,3,Occasionally,2,3,3,3,2,Food,3,4,3,4,4,3.1489609377517076
+22,Female,Medium,Working Professional,3,Occasionally,4,5,3,2,1,Personal Care,3,4,3,3,4,2.908333444332168
+41,Female,Low,Working Professional,3,Rarely,4,2,1,3,4,Personal Care,3,2,3,3,4,2.031631744349185
+22,Female,Medium,Student,4,Frequently,3,2,2,3,1,Personal Care,3,5,2,3,5,1.8196225747473636
+25,Female,Medium,Working Professional,5,Rarely,5,3,1,2,1,Home Products,2,4,1,4,5,2.8090988131154213
+27,Female,Medium,Working Professional,1,Rarely,2,2,3,3,3,Food,5,2,4,3,4,1.2757713840147615
+34,Male,High,Working Professional,5,Occasionally,4,2,1,1,1,Personal Care,2,3,4,3,2,3.8831680915696847
+43,Female,Medium,Working Professional,5,Occasionally,4,2,3,4,1,Fashion,4,4,4,3,5,1.1383640410695497
+26,Female,Low,Working Professional,5,Occasionally,2,2,1,5,4,Fashion,2,4,3,4,3,2.5382834953855893
+39,Female,Low,Student,3,Rarely,3,2,4,2,1,Home Products,2,2,2,3,3,3.4254538417722724
+36,Other,Medium,Student,3,Occasionally,2,2,1,1,3,Personal Care,4,2,4,5,5,1.2923835034496522
+31,Male,Low,Working Professional,4,Rarely,3,2,2,5,2,Fashion,3,5,3,4,3,2.4206859718886626
+25,Other,Low,Student,2,Rarely,4,5,3,5,2,Personal Care,4,5,1,5,4,3.4353793334426035
+26,Male,Medium,Student,3,Occasionally,5,2,4,5,4,Home Products,4,5,3,3,3,2.5158636017706195
+39,Male,Medium,Student,1,Rarely,3,5,3,3,4,Food,5,4,4,4,5,1.4240372874301548
+28,Male,Medium,Student,2,Rarely,3,4,3,3,1,Home Products,5,2,4,4,2,2.4788258944398804
+40,Male,Medium,Working Professional,2,Occasionally,2,3,2,3,4,Fashion,3,5,1,3,3,1.0
+18,Female,Medium,Working Professional,2,Frequently,4,2,1,3,1,Fashion,4,4,2,5,3,1.2874558441409643
+31,Male,Low,Student,5,Frequently,5,3,2,1,4,Personal Care,4,5,1,4,2,2.6673541087273995
+22,Male,High,Student,5,Occasionally,2,2,1,3,2,Fashion,4,3,1,4,5,1.0
+38,Female,Low,Working Professional,3,Rarely,2,5,4,2,2,Home Products,2,4,4,4,2,2.1415111526415447
+43,Female,Medium,Working Professional,5,Rarely,5,2,2,5,2,Personal Care,5,5,4,4,3,2.704045785454515
+31,Female,Medium,Working Professional,5,Rarely,4,4,2,1,2,Personal Care,5,5,2,4,5,3.9623495014421315
+21,Female,Medium,Student,5,Occasionally,5,3,3,3,1,Home Products,3,3,4,3,4,1.0
+39,Female,Medium,Student,3,Occasionally,2,3,2,5,1,Home Products,5,3,1,4,5,1.2826963189648
+40,Male,Low,Student,3,Occasionally,2,4,1,1,1,Home Products,5,5,1,5,5,2.1788547077737563
+42,Male,Medium,Working Professional,4,Occasionally,3,5,2,5,2,Food,3,5,2,4,4,1.0092657067391668
+18,Female,Medium,Working Professional,4,Rarely,5,5,2,1,3,Home Products,4,2,4,3,5,3.055573480066416
+39,Male,Medium,Working Professional,4,Occasionally,5,4,4,4,2,Home Products,2,5,4,3,3,3.4542896703992834
+40,Female,High,Student,4,Rarely,5,3,1,1,2,Home Products,3,5,1,5,3,3.197398946060706
+36,Male,Medium,Working Professional,2,Occasionally,2,2,3,3,3,Fashion,5,2,1,4,3,1.0
+25,Male,Low,Working Professional,2,Occasionally,4,5,1,5,3,Fashion,3,2,4,5,3,2.6929229762916553
+32,Female,Low,Student,4,Occasionally,2,2,4,5,4,Food,5,5,3,5,4,3.51483894212435
+38,Female,Medium,Student,4,Occasionally,3,3,1,5,2,Food,4,2,1,5,3,1.457426849700847
+32,Female,Medium,Student,1,Occasionally,2,2,1,2,3,Home Products,4,4,1,5,5,1.1467715714584878
+26,Female,Medium,Student,2,Rarely,2,4,2,2,4,Home Products,4,3,1,4,2,1.0
+38,Male,Medium,Student,1,Rarely,2,5,2,3,3,Personal Care,5,4,2,3,4,3.4447796350832505
+26,Male,High,Student,1,Occasionally,3,5,1,4,3,Home Products,3,3,4,3,4,1.0
+27,Female,High,Student,5,Rarely,5,4,1,2,4,Food,5,3,4,4,2,1.592108587485556
+37,Female,High,Student,3,Occasionally,4,4,3,1,2,Food,4,5,4,5,3,3.3217825299070327
+42,Male,Low,Student,2,Occasionally,4,5,4,3,4,Personal Care,4,3,1,4,3,1.0
+38,Female,Medium,Working Professional,4,Frequently,3,5,2,4,2,Personal Care,4,4,4,5,5,3.5950289832142337
+43,Male,Low,Student,4,Frequently,5,5,2,1,3,Personal Care,5,5,4,5,3,4.089293620124676
+26,Male,Low,Working Professional,3,Rarely,5,3,2,5,4,Personal Care,2,2,4,4,3,1.0
+20,Male,Medium,Student,2,Frequently,3,3,2,2,1,Personal Care,4,4,2,4,5,2.370578634814385
+37,Female,Medium,Working Professional,4,Occasionally,2,3,1,1,3,Home Products,3,5,2,5,3,1.8661922100793789
+42,Female,Low,Student,4,Occasionally,5,2,1,4,4,Fashion,4,3,1,5,2,2.726782584835132
+43,Male,Low,Working Professional,5,Rarely,4,3,3,3,3,Home Products,5,4,4,5,3,1.4186489377931126
+28,Female,Low,Student,1,Frequently,3,5,2,1,4,Home Products,3,3,1,5,2,1.0
+23,Male,High,Working Professional,4,Rarely,4,3,2,3,2,Food,5,5,1,4,2,2.7178696451759943
+19,Male,Low,Student,3,Frequently,2,5,1,5,1,Food,2,5,1,3,2,3.0838828244220577
+24,Male,Low,Working Professional,3,Rarely,3,4,3,4,3,Home Products,2,2,1,3,3,1.1548653053140403
+35,Male,Medium,Student,5,Occasionally,4,2,1,4,1,Home Products,5,2,1,5,3,1.5792166025378225
+44,Male,Medium,Student,2,Occasionally,4,2,2,5,2,Personal Care,4,4,1,3,4,1.461281816892722
+19,Female,High,Student,5,Rarely,2,4,2,4,4,Food,3,2,2,3,5,1.0
+44,Female,Low,Working Professional,1,Rarely,3,5,4,1,1,Fashion,4,3,3,3,5,2.5528058032861787
+34,Female,Medium,Working Professional,4,Occasionally,5,2,4,1,4,Food,5,3,2,3,4,3.8020291563425594
+28,Male,Medium,Working Professional,2,Rarely,5,3,4,1,2,Personal Care,5,2,1,3,2,2.9822138123423536
+44,Male,High,Student,3,Occasionally,4,5,3,5,3,Fashion,4,2,3,3,5,1.9302386088837067
+29,Male,Medium,Student,1,Occasionally,2,2,1,4,2,Personal Care,3,2,3,5,4,1.0
+44,Male,High,Working Professional,1,Frequently,4,4,2,4,1,Home Products,3,4,4,5,2,3.563298180544063
+36,Female,Low,Student,5,Occasionally,2,5,2,1,1,Fashion,3,4,1,5,4,2.042558616600125
+39,Male,Medium,Working Professional,1,Rarely,5,2,3,2,1,Home Products,3,3,1,4,3,1.0
+41,Female,Medium,Working Professional,2,Rarely,4,4,2,2,4,Food,3,4,2,3,3,1.0
+42,Female,High,Working Professional,5,Rarely,4,5,2,4,3,Personal Care,2,4,3,3,2,1.4782351636088424
+24,Male,Low,Student,1,Frequently,2,3,1,4,1,Home Products,2,5,3,4,2,1.0496163613452734
+37,Female,Low,Student,3,Frequently,3,5,4,3,1,Personal Care,5,3,1,3,3,1.7732207699086728
+23,Female,Medium,Student,2,Rarely,2,3,4,4,1,Home Products,2,3,4,5,5,1.0
+38,Female,Low,Working Professional,3,Rarely,3,5,3,1,2,Home Products,3,2,1,5,5,1.8021986355114161
+41,Female,Low,Student,3,Frequently,5,4,4,5,1,Personal Care,3,5,3,4,3,1.6862430491108142
+18,Male,High,Student,5,Frequently,4,3,4,4,2,Food,3,2,4,5,5,1.8356144663347176
+34,Male,Medium,Student,4,Frequently,4,3,3,4,1,Home Products,5,4,4,4,3,3.602667095955404
+28,Male,Medium,Student,5,Frequently,2,5,3,1,2,Food,5,3,3,5,4,2.528040226482308
+39,Male,Medium,Working Professional,2,Occasionally,2,2,4,3,4,Home Products,4,4,1,3,4,1.1457879151877806
+43,Female,Medium,Working Professional,2,Rarely,5,3,1,4,4,Food,2,4,1,5,4,1.9592068407597638
+35,Male,Low,Student,5,Occasionally,5,5,3,2,2,Fashion,2,5,1,4,5,3.69315938091061
+38,Female,Low,Student,4,Occasionally,3,4,2,2,3,Fashion,4,5,2,3,4,2.1293804022982243
+34,Female,Medium,Working Professional,5,Occasionally,5,5,3,2,3,Personal Care,4,3,2,4,2,3.12573749041115
+24,Male,Medium,Student,2,Occasionally,5,5,2,5,2,Food,2,3,4,3,2,2.743111298580172
+34,Male,Medium,Working Professional,4,Rarely,5,3,3,5,4,Fashion,3,5,1,3,4,2.5196722461150083
+37,Female,Low,Working Professional,2,Rarely,5,2,3,4,2,Food,2,5,2,5,2,1.0
+26,Female,Medium,Student,4,Occasionally,3,4,4,4,3,Fashion,3,5,4,5,4,1.0
+34,Female,High,Student,4,Rarely,5,3,4,4,2,Fashion,5,5,3,3,4,1.8930430319848734
+37,Male,High,Working Professional,5,Occasionally,3,3,4,5,4,Fashion,2,3,3,5,3,1.0
+39,Male,High,Student,5,Frequently,2,3,1,4,3,Home Products,2,3,1,5,4,1.0
+39,Male,Medium,Student,5,Frequently,4,4,4,1,3,Food,5,4,3,4,2,1.9778717639496772
+25,Male,Medium,Student,4,Occasionally,2,2,4,3,1,Personal Care,5,4,3,5,5,2.7595605501069054
+34,Female,Medium,Student,4,Occasionally,5,4,3,2,1,Home Products,5,4,3,3,4,4.252489116450089
+24,Female,Low,Working Professional,2,Rarely,4,4,3,2,3,Fashion,5,3,4,5,3,2.958031787025448
+18,Female,Medium,Working Professional,3,Occasionally,5,2,1,1,3,Home Products,5,2,3,3,2,2.266139674081234
+30,Female,Medium,Working Professional,5,Occasionally,5,4,2,4,2,Fashion,4,4,3,3,3,2.334098679824079
+40,Female,Low,Student,2,Occasionally,2,5,3,5,4,Personal Care,4,2,4,4,4,1.0
+36,Male,Medium,Student,2,Frequently,5,4,3,4,3,Home Products,5,2,2,3,4,3.014395195522746
+44,Male,High,Working Professional,1,Occasionally,2,3,2,4,4,Home Products,5,2,4,3,4,1.5686225484872216
+41,Female,Low,Student,5,Rarely,5,4,1,2,3,Fashion,5,5,2,4,4,3.892775554367514
+36,Male,High,Working Professional,2,Rarely,3,3,3,2,4,Fashion,5,3,4,3,2,1.0
+34,Female,Low,Student,1,Occasionally,4,4,4,5,1,Home Products,3,3,1,4,5,1.0
+30,Female,Medium,Working Professional,5,Occasionally,2,3,1,2,3,Food,3,4,3,3,4,2.1805198591092583
+33,Male,Medium,Student,4,Frequently,2,3,2,4,2,Food,5,4,2,5,3,1.0
+25,Female,Medium,Student,1,Occasionally,4,3,2,1,4,Food,5,3,4,4,2,3.3288266024692197
+36,Female,High,Student,4,Occasionally,2,2,4,5,3,Food,2,5,2,4,2,1.0
+35,Female,High,Student,3,Occasionally,4,4,4,1,1,Personal Care,5,3,2,3,2,1.920383768758092
+18,Female,Medium,Student,3,Occasionally,3,4,4,4,1,Personal Care,5,2,3,4,3,1.0
+31,Female,Low,Working Professional,3,Occasionally,5,5,1,5,1,Fashion,4,3,2,3,5,2.1964385731267084
+36,Male,High,Working Professional,3,Occasionally,3,5,2,1,1,Personal Care,3,5,4,4,3,2.351464526844399
+32,Male,Low,Working Professional,2,Occasionally,5,5,4,5,3,Home Products,5,3,1,4,3,3.0801541190785295
+35,Female,High,Working Professional,3,Rarely,4,4,4,4,2,Food,3,3,1,5,3,1.1524335720233185
+19,Female,Medium,Student,2,Frequently,3,2,2,5,4,Personal Care,3,3,3,3,4,1.0
+39,Male,Low,Student,2,Rarely,5,3,3,4,2,Home Products,2,2,4,5,4,1.9801700110690472
+34,Male,Medium,Student,5,Rarely,4,4,1,5,4,Home Products,3,4,4,4,3,1.0
+35,Female,Low,Working Professional,2,Rarely,5,2,3,5,2,Home Products,3,5,1,3,3,2.8314865231490116
+23,Female,Low,Student,2,Rarely,2,2,4,2,3,Personal Care,5,2,4,5,4,1.0
+36,Female,Medium,Working Professional,3,Occasionally,2,4,1,4,3,Home Products,4,3,2,4,4,3.3169973476941093
+21,Female,Low,Student,2,Rarely,4,3,3,3,4,Fashion,5,3,3,5,5,1.0079549787553277
+18,Male,Low,Working Professional,4,Rarely,5,2,2,5,3,Food,5,4,1,4,3,1.0
+25,Male,Low,Working Professional,3,Occasionally,2,4,4,1,4,Food,4,4,3,4,2,2.683081016851694
+40,Female,Medium,Student,1,Occasionally,3,3,1,2,2,Personal Care,4,4,2,3,5,1.9255087207345112
+24,Male,Low,Student,3,Rarely,5,5,1,2,3,Personal Care,2,2,1,3,2,3.5497500952228327
+20,Male,Medium,Working Professional,2,Occasionally,5,2,1,5,3,Home Products,4,5,4,3,5,1.600588827408665
+27,Male,Low,Student,4,Occasionally,2,2,1,3,4,Personal Care,5,4,4,4,3,3.8397219299990635
+27,Female,High,Student,3,Frequently,2,4,4,2,4,Fashion,4,3,2,5,2,1.0
+36,Female,High,Working Professional,4,Occasionally,4,4,4,5,4,Food,4,5,1,3,4,3.7615913903270375
+31,Male,Low,Student,1,Rarely,5,3,2,5,4,Personal Care,4,3,3,3,5,1.0
+19,Male,Medium,Working Professional,1,Occasionally,3,5,2,5,1,Fashion,3,3,1,3,2,2.8518954604807494
+18,Female,High,Working Professional,5,Occasionally,2,5,2,3,4,Home Products,2,5,4,3,5,2.852606384012492
+40,Other,High,Student,5,Rarely,5,4,3,4,1,Fashion,3,2,1,4,3,4.559365432477511
+40,Male,Medium,Student,3,Frequently,2,4,2,4,2,Fashion,3,5,1,5,2,2.3921283652995187
+35,Male,Low,Student,5,Occasionally,4,3,4,3,4,Home Products,2,4,4,4,2,1.0
+24,Male,Medium,Working Professional,4,Frequently,5,4,3,1,1,Personal Care,3,5,4,4,2,2.9620012983528214
+25,Female,Medium,Student,5,Occasionally,5,3,4,4,1,Home Products,4,4,3,4,5,1.5467834266898106
+18,Male,Medium,Working Professional,4,Occasionally,4,3,3,1,1,Food,2,4,1,3,4,4.293765816361321
+42,Male,Medium,Student,5,Occasionally,3,5,2,1,3,Food,3,5,4,5,4,4.000596863039458
+40,Female,High,Student,5,Occasionally,2,3,2,5,1,Fashion,5,5,2,4,4,1.8514159078711916
+20,Female,High,Student,5,Occasionally,4,5,2,5,4,Fashion,3,4,4,4,3,2.2875164032989384
+41,Male,Low,Student,2,Frequently,5,5,3,2,4,Home Products,5,3,3,4,2,3.123527846062057
+40,Female,Low,Student,2,Occasionally,4,5,4,5,4,Home Products,4,5,3,3,4,1.0
+44,Male,Low,Student,5,Frequently,5,4,1,4,1,Food,5,2,2,3,4,3.2813268799483737
+25,Female,High,Student,4,Frequently,4,5,4,4,1,Home Products,3,4,3,4,2,2.4767330838193007
+39,Male,Medium,Student,3,Frequently,3,3,2,1,3,Fashion,3,3,1,3,3,1.3832253597878268
+42,Female,Medium,Student,1,Occasionally,5,4,3,4,2,Personal Care,3,5,3,5,5,2.49546058347934
+32,Male,Medium,Working Professional,2,Occasionally,4,3,3,5,3,Food,2,5,2,3,5,3.285810892248832
+22,Female,Medium,Student,5,Rarely,3,4,2,5,4,Food,2,3,3,4,5,1.0
+20,Female,Medium,Student,1,Occasionally,3,3,3,5,4,Fashion,3,2,2,5,2,1.7446984637177005
+36,Female,Medium,Working Professional,2,Rarely,2,2,2,3,4,Home Products,3,4,3,3,3,1.0
+18,Female,Medium,Student,3,Rarely,5,2,4,5,3,Fashion,4,5,4,4,2,2.5840170084588046
+32,Female,High,Working Professional,4,Rarely,2,2,3,2,4,Personal Care,2,2,2,5,5,1.1828329660622763
+25,Male,High,Student,5,Frequently,3,3,1,4,4,Fashion,2,4,3,5,4,1.9002882453763135
+19,Male,High,Student,3,Frequently,2,4,3,4,4,Food,2,2,1,5,4,1.29919450495674
+20,Female,Medium,Working Professional,2,Occasionally,2,5,2,3,1,Home Products,5,4,2,3,4,2.961343322276921
+41,Male,Medium,Student,5,Occasionally,4,5,1,4,2,Food,3,4,2,5,5,2.807955852503219
+31,Female,Medium,Working Professional,1,Occasionally,2,3,2,1,1,Food,4,2,3,3,3,1.0
+41,Other,High,Student,4,Occasionally,3,3,3,5,1,Fashion,4,4,4,4,5,1.6171108081776544
+31,Male,Low,Working Professional,2,Occasionally,2,3,1,5,2,Home Products,3,5,4,3,2,2.6960832435518016
+28,Female,Medium,Working Professional,4,Rarely,5,3,1,3,2,Food,3,5,3,3,3,3.2600868526043016
+33,Male,Low,Student,5,Rarely,4,5,3,5,3,Home Products,4,2,3,4,4,2.0895537978841343
+21,Female,Medium,Working Professional,3,Occasionally,3,4,1,1,2,Home Products,5,2,1,3,3,3.8981518918910893
+37,Male,Medium,Student,4,Occasionally,2,5,4,3,3,Personal Care,4,4,3,3,3,2.380563874188002
+22,Male,Medium,Working Professional,1,Occasionally,5,3,1,2,3,Home Products,5,4,2,4,5,1.1371187810503947
+39,Female,Low,Student,2,Frequently,3,2,1,5,1,Personal Care,5,2,3,5,3,1.2937057466979947
+38,Female,Medium,Working Professional,1,Rarely,2,5,4,4,4,Personal Care,2,3,1,4,5,1.0
+31,Female,High,Student,4,Rarely,4,2,2,1,1,Fashion,3,2,3,5,2,1.0
+40,Female,Low,Student,3,Occasionally,2,2,2,1,1,Fashion,2,3,3,3,3,2.030747325200237
+33,Male,Medium,Working Professional,3,Rarely,3,3,4,5,2,Fashion,5,3,2,4,3,1.0
+35,Female,Medium,Working Professional,1,Rarely,3,5,1,2,2,Fashion,4,2,4,5,3,1.0
+24,Male,High,Student,5,Rarely,3,4,3,4,3,Personal Care,2,2,3,3,4,1.0
+27,Female,Low,Student,5,Occasionally,5,5,4,2,3,Fashion,4,2,1,3,5,3.7281904981813234
+24,Female,High,Student,3,Rarely,2,4,3,2,3,Fashion,5,3,3,3,5,1.752469283463271
+18,Female,Medium,Student,1,Occasionally,2,4,2,5,2,Home Products,4,5,3,5,4,1.649082623747527
+40,Female,High,Student,1,Occasionally,2,3,4,4,3,Home Products,2,5,2,5,5,1.0
+38,Male,High,Working Professional,1,Rarely,4,4,3,5,3,Home Products,5,2,4,5,2,1.0
+36,Female,Low,Student,4,Occasionally,5,5,1,5,2,Food,3,2,4,3,4,4.679567301324379
+33,Male,Low,Working Professional,5,Rarely,5,5,4,1,4,Fashion,2,4,4,5,5,1.8250776224484198
+36,Female,Low,Working Professional,5,Frequently,4,2,3,5,1,Fashion,2,4,3,4,2,3.3158972608743684
+21,Male,Medium,Student,4,Frequently,5,4,4,3,2,Personal Care,3,4,2,5,5,2.1202097132591664
+35,Female,Low,Student,2,Rarely,4,3,4,4,3,Food,5,2,2,5,4,4.714749002777726
+19,Female,Low,Student,4,Frequently,3,3,2,1,1,Home Products,3,5,3,3,5,3.222154766376875
+18,Male,Medium,Student,1,Occasionally,3,5,2,4,2,Personal Care,2,5,2,4,2,1.0
+32,Male,Low,Working Professional,3,Frequently,5,4,1,1,1,Fashion,5,2,4,4,2,1.9062440430764187
+22,Female,Low,Student,1,Occasionally,3,3,2,3,1,Home Products,4,2,2,4,2,1.6092494527202588
+37,Male,Medium,Working Professional,3,Rarely,3,4,2,5,4,Personal Care,2,3,3,5,5,1.0
+28,Male,Low,Student,1,Frequently,3,4,2,1,3,Home Products,4,3,3,3,4,2.4885164361772194
+27,Male,Medium,Student,5,Rarely,2,2,3,1,2,Food,3,5,1,5,5,1.0
+19,Male,Medium,Student,4,Rarely,3,3,4,1,3,Home Products,5,4,1,3,3,1.5301421372646404
+20,Female,Medium,Student,1,Rarely,2,2,2,3,4,Food,3,5,2,4,4,1.0
+40,Female,High,Student,2,Rarely,4,3,3,4,4,Personal Care,4,3,2,5,3,1.730136917699705
+40,Male,Medium,Student,3,Occasionally,4,4,4,3,2,Home Products,2,5,3,3,5,2.5793919220472086
+29,Male,Medium,Working Professional,2,Occasionally,4,3,2,1,2,Food,5,3,1,5,4,2.2283684988918395
+37,Male,Medium,Working Professional,4,Frequently,4,5,2,1,4,Home Products,3,3,1,3,3,1.0
+22,Male,High,Student,2,Rarely,4,4,4,5,2,Home Products,4,4,4,4,5,3.0346437569674114
+22,Male,High,Student,3,Frequently,3,3,3,3,1,Home Products,4,4,4,5,4,1.6379521787986997
+23,Male,High,Student,3,Frequently,3,2,3,3,1,Food,2,3,3,4,2,1.078201315253597
+26,Male,Medium,Student,3,Rarely,3,2,1,2,4,Fashion,4,2,3,5,2,2.6032255605245203
+19,Female,Low,Student,3,Rarely,4,4,4,4,3,Personal Care,5,4,3,5,2,1.6596809299052238
+38,Male,Low,Student,2,Frequently,4,2,1,2,2,Personal Care,4,3,3,3,3,2.2412160049312346
+29,Female,Low,Student,5,Occasionally,2,4,3,2,2,Food,2,2,1,3,3,1.7197319140387521
+20,Female,High,Student,3,Occasionally,5,4,2,4,1,Food,3,2,3,3,5,3.816157893859773
+37,Female,Medium,Student,3,Occasionally,3,4,1,5,2,Fashion,5,5,3,4,2,2.3904836284817765
+43,Female,Medium,Student,4,Occasionally,5,3,3,5,3,Fashion,3,5,1,4,3,1.846817911655707
+39,Female,Medium,Working Professional,1,Rarely,4,4,3,5,2,Food,3,4,4,5,2,1.652259022757772
+29,Female,High,Student,4,Occasionally,4,2,2,4,2,Personal Care,4,2,3,3,5,1.9751932924722666
+41,Female,Low,Student,4,Rarely,4,5,4,3,1,Fashion,4,4,4,4,4,2.674905215675496
+34,Female,Low,Student,4,Occasionally,5,3,3,3,2,Fashion,2,3,1,5,3,1.512033592637718
+27,Female,Medium,Working Professional,5,Frequently,2,2,1,3,4,Personal Care,4,4,4,4,3,1.0
+41,Female,Medium,Working Professional,1,Occasionally,4,4,2,3,4,Home Products,4,2,1,5,4,1.3147227999607007
+44,Male,Medium,Working Professional,4,Frequently,2,4,4,1,3,Personal Care,3,5,3,3,3,2.468826470212059
+31,Male,High,Student,3,Occasionally,2,5,4,1,3,Home Products,5,4,4,5,5,1.4164227807273735
+40,Male,Low,Student,5,Occasionally,3,2,4,5,3,Food,4,5,3,5,3,1.814445768706648
+34,Female,Medium,Working Professional,3,Occasionally,5,3,3,1,3,Fashion,5,4,2,3,3,1.0
+35,Female,Medium,Student,2,Frequently,4,2,4,5,1,Fashion,4,3,2,3,4,2.302900624880765
+36,Female,Low,Student,4,Occasionally,2,4,3,3,2,Food,4,2,4,5,5,2.0771136029009036
+34,Female,High,Working Professional,3,Rarely,5,3,2,3,1,Home Products,2,4,1,4,2,3.2187288360195736
+31,Male,Medium,Student,1,Frequently,5,4,2,4,3,Personal Care,4,3,4,3,2,3.2226708322521014
+26,Male,Medium,Student,3,Occasionally,4,4,4,3,2,Personal Care,2,3,1,5,4,2.9843935168768705
+25,Female,High,Student,4,Rarely,3,2,2,4,4,Personal Care,3,3,2,3,5,3.497417959938078
+19,Female,Medium,Student,3,Occasionally,3,5,1,4,1,Home Products,5,5,1,3,4,1.9707177438519812
+30,Other,Low,Student,5,Frequently,2,4,1,1,2,Fashion,4,5,2,4,4,2.7462958728602263
+42,Male,Medium,Working Professional,5,Occasionally,3,2,3,3,4,Personal Care,2,3,4,3,2,3.0066809042333
+24,Female,Medium,Working Professional,5,Rarely,3,3,4,1,4,Fashion,3,3,3,5,5,2.6931358351921437
+26,Female,Low,Student,2,Frequently,3,5,3,3,3,Food,4,4,3,5,5,1.569078249752033
+39,Female,Low,Working Professional,5,Occasionally,5,4,2,5,4,Personal Care,2,4,3,3,4,4.974216309341273
+39,Female,Medium,Student,5,Occasionally,4,4,4,5,4,Home Products,2,2,1,3,2,4.023702033903058
+28,Female,Medium,Student,2,Rarely,5,3,3,1,3,Fashion,3,4,3,4,5,3.1597418430381006
+31,Male,Low,Working Professional,5,Rarely,5,2,4,5,2,Fashion,4,2,1,4,4,1.5357283280989704
+21,Female,Medium,Working Professional,4,Occasionally,4,4,4,1,2,Home Products,4,2,3,4,3,3.9437177392107827
+43,Female,High,Working Professional,5,Frequently,5,3,3,2,3,Home Products,5,2,1,5,2,3.2822903398371226
+43,Female,Low,Working Professional,5,Rarely,2,4,4,2,1,Home Products,4,5,1,4,5,1.5103457852400595
+30,Female,Low,Working Professional,2,Rarely,2,2,2,2,3,Home Products,2,4,2,5,5,1.896927464419449
+19,Male,Medium,Working Professional,4,Rarely,5,5,1,5,2,Fashion,5,3,2,4,5,1.700938817216414
+40,Male,Low,Student,3,Occasionally,3,2,1,1,1,Home Products,5,2,4,5,2,1.0
+22,Other,Medium,Working Professional,1,Rarely,5,2,4,2,3,Fashion,4,3,2,3,4,1.0
+28,Female,Low,Working Professional,4,Rarely,3,2,1,5,2,Fashion,5,2,1,5,3,1.4515337902592709
+23,Female,Medium,Working Professional,3,Rarely,5,3,4,2,2,Home Products,2,4,2,3,5,4.141095089377037
+35,Male,Medium,Student,4,Occasionally,2,4,3,3,2,Food,2,2,2,5,2,2.312804699988324
+38,Female,Medium,Student,3,Occasionally,3,5,2,5,4,Home Products,3,4,2,5,5,1.697516864180855
+27,Female,High,Student,3,Rarely,2,3,1,1,4,Food,2,3,1,3,4,3.2191368654420343
+21,Female,High,Student,4,Frequently,5,2,3,5,1,Food,3,4,1,5,3,2.610251952876084
+26,Male,Medium,Working Professional,2,Rarely,4,5,2,5,1,Fashion,5,3,4,5,5,2.8240082550725774
+23,Female,Medium,Student,4,Rarely,3,2,1,3,1,Food,3,4,2,4,2,2.872301515269459
+19,Female,Low,Student,4,Frequently,3,2,1,3,4,Home Products,4,2,2,3,4,1.5862708218459705
+34,Male,Medium,Working Professional,1,Occasionally,5,2,2,3,1,Food,3,2,1,3,3,1.9683475118625677
+22,Female,Low,Student,1,Occasionally,5,5,3,4,2,Home Products,4,4,4,4,2,1.1665414097119586
+42,Female,High,Student,3,Rarely,3,4,3,2,2,Home Products,5,3,4,4,5,3.0307508111328856
+23,Female,Medium,Student,3,Occasionally,4,2,1,1,1,Home Products,3,3,1,3,2,1.6723794278213293
+43,Male,Medium,Working Professional,4,Occasionally,5,4,2,3,1,Personal Care,2,3,2,3,3,2.0140267013016135
+29,Male,Low,Student,4,Frequently,5,5,3,1,4,Food,4,4,4,3,4,3.429985561193088
+40,Male,Medium,Working Professional,2,Rarely,5,5,2,1,2,Fashion,5,4,4,4,4,3.0099262799112987
+38,Male,High,Student,3,Occasionally,4,2,2,1,3,Personal Care,2,4,2,4,5,2.886664409425398
+27,Male,Medium,Student,2,Occasionally,3,4,1,3,3,Fashion,4,4,4,5,5,1.6583624506302308
+39,Female,High,Student,4,Frequently,2,4,2,3,4,Personal Care,5,3,2,4,5,1.6363010092173431
+38,Male,Low,Working Professional,3,Rarely,5,2,2,2,4,Fashion,5,3,4,5,5,3.1230437733934044
+44,Female,Medium,Student,3,Frequently,4,3,4,3,4,Fashion,2,5,4,5,3,3.0143053146445107
+42,Other,High,Student,5,Rarely,3,3,2,3,2,Personal Care,5,4,1,4,5,1.0
+23,Female,Medium,Student,5,Occasionally,3,5,3,1,1,Personal Care,3,5,4,4,2,4.269543624502772
+44,Female,High,Working Professional,1,Rarely,4,5,1,2,1,Fashion,5,4,2,4,3,1.7731816570601824
+25,Female,Low,Student,5,Occasionally,5,3,1,5,4,Personal Care,4,5,4,4,3,4.198073246040453
+19,Female,Low,Working Professional,3,Rarely,2,3,2,3,2,Food,4,3,1,3,5,1.0
+29,Male,High,Working Professional,5,Rarely,5,3,2,3,3,Fashion,4,3,4,4,3,2.0054916493160504
+30,Male,Low,Student,1,Rarely,3,2,3,5,4,Personal Care,3,5,3,5,2,1.2480277108639168
+42,Female,High,Student,4,Rarely,2,2,4,1,2,Fashion,2,2,2,5,3,4.130812391617332
+38,Female,High,Student,5,Frequently,5,2,1,2,4,Fashion,3,4,3,3,3,1.3772474846358889
+24,Male,Low,Student,3,Frequently,2,2,4,1,2,Home Products,3,5,1,3,2,2.538392971982411
+27,Female,Medium,Student,4,Occasionally,4,2,3,4,2,Personal Care,3,5,3,4,2,2.560323884328377
+30,Female,Low,Student,3,Rarely,5,2,1,3,4,Personal Care,5,2,4,3,3,2.1673816142718625
+34,Male,Medium,Student,4,Occasionally,3,5,3,4,1,Fashion,2,3,2,4,4,4.373330600872041
+43,Other,Low,Student,3,Occasionally,3,4,2,3,4,Home Products,5,5,3,4,3,1.0
+38,Female,Low,Student,5,Frequently,2,5,3,4,1,Home Products,3,3,4,3,2,3.412445057675863
+43,Male,Medium,Student,5,Occasionally,4,4,2,5,1,Fashion,4,4,3,3,2,3.4728631577547873
+31,Female,Medium,Working Professional,1,Frequently,5,5,4,3,3,Fashion,3,2,4,5,2,3.3974236620224083
+19,Male,High,Working Professional,4,Frequently,4,5,1,3,2,Fashion,2,3,4,3,4,3.870722281959013
+39,Female,High,Working Professional,1,Frequently,4,2,1,4,4,Home Products,4,5,3,3,2,1.3353612960521593
+28,Male,Medium,Student,4,Rarely,2,2,4,2,2,Fashion,2,2,1,3,5,1.0
+18,Male,Medium,Student,5,Rarely,2,4,2,4,3,Personal Care,3,2,2,5,5,1.4896259565155796
+36,Other,High,Student,4,Occasionally,5,4,1,3,1,Fashion,2,2,1,4,4,3.48771806215467
+38,Female,Medium,Student,1,Occasionally,3,2,3,3,4,Fashion,5,2,3,5,2,1.0
+21,Male,Medium,Student,1,Rarely,5,5,2,2,2,Fashion,4,2,4,3,2,2.189246009725646
+36,Male,High,Working Professional,2,Rarely,4,4,1,1,3,Personal Care,2,4,3,3,5,1.8462985850375535
+43,Female,Medium,Student,1,Occasionally,2,3,3,2,1,Fashion,4,4,4,3,5,1.0
+38,Male,Medium,Student,1,Occasionally,4,3,3,1,1,Personal Care,4,2,4,4,3,3.2770249755776715
+28,Male,High,Working Professional,5,Rarely,2,3,1,3,2,Home Products,3,5,1,5,4,2.1186154635084975
+25,Male,High,Student,1,Occasionally,3,4,4,5,1,Personal Care,3,5,1,5,3,2.209217218535122
+28,Male,Medium,Student,1,Occasionally,4,2,4,5,3,Home Products,4,4,3,4,4,1.0
+21,Female,Low,Student,2,Occasionally,2,2,1,4,1,Home Products,2,3,2,5,2,1.420541069720779
+34,Female,Medium,Student,3,Rarely,5,2,3,2,4,Home Products,4,2,1,4,2,1.3918952922580032
+44,Male,Low,Working Professional,1,Occasionally,5,4,4,2,4,Food,3,5,4,4,4,3.409201502311439
+24,Female,Medium,Student,5,Occasionally,5,4,4,5,2,Fashion,2,4,3,5,3,4.035890309899061
+25,Male,Low,Student,5,Rarely,4,3,4,1,3,Fashion,4,4,3,5,5,1.6897482022937493
+20,Other,High,Working Professional,3,Occasionally,2,4,2,2,1,Home Products,3,3,2,4,4,1.0
+39,Other,Low,Working Professional,3,Rarely,2,3,4,1,1,Home Products,4,3,3,5,4,1.1771903628065417
+19,Male,Low,Working Professional,5,Rarely,2,3,1,1,1,Home Products,4,5,1,4,4,3.762580189161378
+40,Female,Medium,Working Professional,5,Occasionally,4,2,1,1,4,Fashion,4,3,4,5,2,2.305919142961712
+32,Female,Medium,Student,3,Rarely,2,4,2,1,3,Home Products,2,3,3,5,4,2.790008758237084
+41,Male,Low,Student,3,Rarely,3,2,2,4,1,Food,3,2,3,5,2,1.0
+39,Male,Medium,Student,1,Frequently,4,2,1,4,2,Personal Care,3,4,4,5,5,2.1754503822430404
+39,Male,Medium,Student,4,Rarely,3,4,2,5,3,Food,5,4,3,5,5,3.074692374951922
+22,Female,Low,Working Professional,2,Frequently,3,4,4,4,3,Personal Care,4,3,3,3,3,3.1699005466369625
+41,Other,Low,Working Professional,4,Occasionally,5,5,3,2,1,Fashion,4,4,2,3,2,3.1285579498199505
+18,Female,High,Student,1,Rarely,4,3,3,4,4,Personal Care,5,4,1,5,5,2.202788696001867
+43,Female,Medium,Student,5,Rarely,2,5,3,2,3,Personal Care,4,5,3,5,5,2.5608805258068243
+21,Female,Low,Student,3,Occasionally,3,3,1,2,2,Home Products,2,4,1,5,3,2.0263811488680434
+32,Female,High,Working Professional,5,Occasionally,4,3,2,1,3,Home Products,5,3,2,4,3,2.6743906612651642
+37,Female,High,Student,2,Rarely,2,3,3,5,4,Home Products,3,5,1,3,3,1.857057168290192
+36,Male,Medium,Working Professional,1,Rarely,5,2,4,1,2,Fashion,4,4,2,4,2,1.239317313518762
+20,Female,Medium,Working Professional,2,Occasionally,4,2,4,1,4,Personal Care,3,4,1,3,4,1.8554216340553582
+37,Female,High,Working Professional,5,Rarely,4,4,4,4,1,Personal Care,4,5,1,3,2,2.892593171059932
+28,Male,High,Working Professional,5,Frequently,4,3,2,4,3,Food,5,5,3,5,3,2.9904437624020788
+34,Female,Medium,Working Professional,5,Occasionally,2,3,3,2,2,Personal Care,3,4,1,5,4,1.109183286617
+44,Male,Medium,Student,5,Occasionally,3,3,4,4,4,Food,4,2,3,4,5,1.9541236174443228
+30,Female,Medium,Student,4,Rarely,3,2,2,4,1,Personal Care,2,2,3,4,2,1.7220846571474346
+28,Female,Medium,Student,1,Rarely,4,4,4,3,2,Fashion,5,4,1,5,3,2.5022724734892376
+19,Male,Low,Student,5,Frequently,4,2,3,2,3,Fashion,4,4,3,5,3,2.1864123754283855
+26,Male,Medium,Working Professional,5,Rarely,2,5,3,2,3,Personal Care,4,5,1,3,4,2.5978435237019606
+43,Male,High,Student,3,Rarely,5,5,3,3,4,Food,4,5,4,3,2,2.937439715712932
+19,Female,Medium,Working Professional,4,Occasionally,4,5,3,2,2,Home Products,5,4,3,5,5,4.049205543817483
+38,Male,Medium,Student,5,Rarely,4,4,3,5,1,Food,4,4,4,3,5,1.0
+26,Female,Medium,Student,5,Occasionally,5,5,4,5,1,Food,4,4,4,4,4,3.106049675551932
+26,Male,Low,Working Professional,1,Frequently,4,4,3,3,1,Home Products,3,4,3,3,4,2.8693487287161634
+25,Other,Medium,Student,1,Occasionally,3,2,4,4,4,Home Products,3,2,2,5,5,1.0
+34,Other,Medium,Student,4,Frequently,4,2,3,5,1,Home Products,5,5,2,3,4,1.047139258861646
+18,Male,Low,Student,4,Frequently,3,4,4,3,2,Home Products,5,3,4,5,4,3.52422241157398
+42,Female,Low,Working Professional,4,Rarely,2,2,3,5,4,Personal Care,2,4,4,3,2,1.0
+28,Male,High,Student,5,Rarely,2,2,4,1,3,Personal Care,4,4,1,4,4,1.9803583180171376
+25,Female,Low,Student,1,Occasionally,3,4,3,3,4,Home Products,3,4,4,4,3,1.6771859973814143
+27,Male,Low,Student,5,Occasionally,3,5,2,2,4,Fashion,3,3,3,5,3,1.0
+42,Male,High,Working Professional,5,Rarely,5,4,4,5,4,Personal Care,4,5,2,5,3,1.0
+24,Male,Medium,Working Professional,2,Frequently,3,3,2,2,2,Food,4,5,2,5,4,2.579505981942366
+20,Male,Medium,Student,1,Occasionally,3,2,4,3,3,Personal Care,5,4,2,3,5,1.0
+20,Male,High,Student,4,Rarely,4,4,4,5,3,Home Products,2,4,3,3,3,2.039699983452648
+35,Female,Low,Working Professional,2,Occasionally,5,2,4,2,4,Fashion,2,5,1,3,2,1.4426644842987297
+22,Other,Medium,Student,4,Rarely,3,5,1,4,4,Home Products,5,3,3,4,4,2.025004854556419
+29,Male,Medium,Student,5,Frequently,3,2,3,5,4,Personal Care,5,4,3,5,5,3.192032598534289
+29,Female,High,Student,1,Occasionally,3,4,2,1,2,Food,3,3,2,3,5,1.9319655566019052
+36,Male,Medium,Working Professional,1,Rarely,4,5,2,3,2,Food,5,3,3,4,4,2.959516990372666
+23,Female,Medium,Student,1,Rarely,4,5,4,2,1,Food,2,5,4,5,4,1.9456130505833626
+19,Female,Medium,Student,3,Frequently,4,5,2,1,3,Fashion,3,4,3,4,2,2.9193193777257074
+29,Female,Medium,Working Professional,4,Occasionally,2,3,2,3,1,Personal Care,2,2,2,5,4,2.1255342058818587
+36,Other,Medium,Working Professional,3,Frequently,4,4,2,4,1,Food,4,5,2,3,4,2.6265592179172956
+22,Male,Medium,Student,2,Rarely,3,4,2,2,4,Food,2,5,3,4,5,1.0525926924461526
+29,Female,Medium,Student,5,Rarely,4,5,1,5,2,Food,3,2,4,4,3,2.674191111381369
+44,Female,Medium,Working Professional,3,Rarely,4,2,4,4,1,Home Products,2,4,4,4,3,1.0246491070209096
+44,Male,Medium,Working Professional,3,Occasionally,5,5,2,5,1,Personal Care,3,3,2,5,5,3.9090153768240326
+34,Other,Medium,Working Professional,5,Rarely,3,3,1,5,1,Fashion,3,3,4,5,4,1.0
+34,Male,High,Student,1,Rarely,4,5,1,2,4,Food,5,3,4,4,2,2.686080490313182
+27,Female,Medium,Student,5,Occasionally,2,4,4,2,4,Home Products,2,4,1,5,3,1.7266200470570328
+42,Male,High,Working Professional,4,Occasionally,5,5,3,5,2,Fashion,5,5,1,4,4,1.5650658993044455
+40,Male,High,Working Professional,5,Rarely,4,2,3,1,1,Fashion,5,5,4,3,3,2.597769963198069
+34,Female,Medium,Student,1,Occasionally,5,4,3,5,1,Home Products,2,5,4,4,5,2.8903039360596665
+32,Female,Medium,Student,5,Occasionally,5,2,2,5,2,Home Products,3,5,1,4,3,1.7577127848453418
+29,Male,High,Working Professional,3,Rarely,2,5,4,2,2,Fashion,4,5,1,5,5,1.0
+33,Male,Medium,Student,2,Rarely,2,4,3,3,2,Fashion,2,2,1,5,5,1.0
+41,Female,High,Student,3,Rarely,2,3,2,4,3,Fashion,5,3,2,5,5,1.423695695089611
+36,Male,Medium,Student,2,Occasionally,3,4,4,2,2,Fashion,5,3,2,3,2,1.0
+25,Male,Medium,Student,5,Frequently,5,2,2,1,4,Food,3,4,1,3,4,3.921228192007673
+38,Female,Low,Student,4,Rarely,4,4,3,4,3,Home Products,5,2,1,3,5,1.0
+34,Female,Medium,Working Professional,5,Rarely,2,3,3,2,2,Home Products,4,5,1,5,5,1.8178065222641373
+40,Male,High,Student,1,Frequently,2,3,1,2,4,Home Products,5,5,2,4,3,1.9189872752630004
+22,Female,Medium,Student,5,Frequently,5,3,1,3,2,Personal Care,3,5,2,4,4,2.4977779004251355
+39,Female,Medium,Student,2,Occasionally,5,3,4,1,2,Home Products,2,2,4,4,2,1.1568238341260615
+33,Female,High,Student,3,Frequently,5,2,2,1,3,Food,3,4,3,5,2,2.5091732897890906
+23,Female,Medium,Student,4,Occasionally,4,4,2,2,4,Home Products,5,2,4,5,3,2.306690964875911
+25,Male,Medium,Student,5,Occasionally,3,5,3,3,1,Personal Care,3,4,3,3,2,4.011785731151751
+42,Male,Medium,Working Professional,5,Rarely,3,3,3,2,2,Home Products,5,3,3,5,3,3.421979748080794
+35,Male,Medium,Student,3,Occasionally,2,5,4,5,3,Food,3,4,3,4,4,2.0063290722731923
+42,Female,Low,Student,4,Rarely,3,5,1,5,4,Fashion,2,3,4,3,3,2.1215547521601863
+29,Male,Medium,Student,5,Frequently,4,4,3,3,2,Personal Care,5,4,2,3,3,2.6811747736524216
+32,Female,Medium,Student,5,Frequently,3,5,2,2,1,Food,4,3,2,5,5,2.7759350972075243
+44,Male,Medium,Working Professional,2,Occasionally,4,5,3,3,4,Food,4,3,2,3,2,1.0
+43,Male,Medium,Student,2,Rarely,2,2,1,2,4,Personal Care,4,5,2,3,4,1.2029468885659418
+26,Female,Medium,Working Professional,1,Rarely,5,5,2,2,3,Personal Care,4,4,4,5,4,1.6074951291949486
+30,Male,Low,Student,3,Rarely,4,4,1,5,2,Personal Care,5,5,1,3,5,1.8143808690778782
+43,Male,Medium,Working Professional,4,Rarely,5,5,4,4,2,Personal Care,5,3,3,4,3,2.9521616725125948
+32,Female,Low,Student,5,Occasionally,2,4,4,1,4,Food,2,5,2,5,4,2.2144024691277893
+27,Male,Medium,Working Professional,5,Frequently,4,3,1,1,2,Fashion,3,2,2,4,4,4.033098120704556
+33,Female,High,Student,1,Rarely,4,5,2,3,4,Personal Care,5,5,4,4,3,1.0
+24,Female,Medium,Student,5,Rarely,3,5,1,1,1,Food,4,4,3,4,3,2.706027790266614
+34,Male,Medium,Working Professional,3,Occasionally,4,5,3,5,3,Personal Care,5,5,2,4,4,1.7716146913648634
+40,Female,Low,Working Professional,1,Rarely,2,3,3,4,2,Home Products,4,2,1,3,3,1.8554628261860573
+43,Female,Low,Student,3,Frequently,5,2,1,2,2,Personal Care,2,5,2,3,2,2.4310617474596725
+38,Male,Medium,Student,1,Rarely,4,5,3,2,3,Food,3,3,3,5,4,2.082615853471279
+39,Male,Low,Student,5,Rarely,2,4,1,5,1,Food,5,3,1,5,3,2.770513063555475
+43,Male,Medium,Working Professional,1,Rarely,2,2,3,1,1,Personal Care,3,3,4,4,4,1.0
+24,Female,Low,Student,2,Rarely,4,2,1,2,1,Food,4,4,1,4,4,2.675160366798968
+31,Male,High,Student,4,Occasionally,3,2,3,1,1,Food,4,5,3,5,5,2.6977995626997826
+32,Female,Medium,Working Professional,5,Rarely,4,5,2,5,1,Food,3,3,3,5,2,3.937500702537926
+38,Female,Low,Working Professional,4,Occasionally,4,3,2,2,4,Personal Care,2,5,1,5,2,2.2209440043211863
+24,Female,High,Working Professional,5,Occasionally,3,3,3,3,2,Personal Care,3,2,2,5,5,2.1055517175469713
+26,Male,Medium,Working Professional,4,Rarely,2,5,1,4,2,Personal Care,3,2,3,4,5,2.142154971262964
+36,Male,Low,Working Professional,2,Rarely,4,4,3,1,2,Personal Care,5,4,1,5,4,2.3391970181590005
+33,Female,Medium,Student,4,Occasionally,3,4,4,1,4,Personal Care,5,5,3,3,2,3.467671369841116
+25,Male,Medium,Student,1,Occasionally,5,4,4,1,3,Fashion,4,2,2,4,5,2.183546169307768
+35,Male,Medium,Working Professional,4,Frequently,5,5,1,5,1,Home Products,5,4,2,3,3,2.4396601749418547
+44,Male,Low,Student,5,Rarely,3,3,3,5,3,Home Products,2,4,1,5,4,3.3545328652753694
+40,Male,Medium,Working Professional,3,Rarely,2,5,3,5,1,Food,2,3,4,3,2,3.415224504684222
+35,Female,Low,Student,4,Rarely,3,3,2,5,1,Food,2,2,4,5,4,1.0
+37,Male,Low,Student,4,Occasionally,2,2,1,5,3,Personal Care,4,5,2,3,4,1.6801822967083553
+24,Male,High,Working Professional,4,Occasionally,5,5,4,2,2,Home Products,2,2,4,4,3,4.04713818778848
+20,Male,Medium,Working Professional,5,Frequently,4,3,4,5,4,Home Products,2,2,2,3,3,2.543356548057715
+35,Female,Medium,Student,4,Occasionally,3,2,1,2,3,Fashion,5,5,4,4,5,3.6738820193963413
+44,Female,Medium,Working Professional,5,Rarely,5,2,4,3,2,Fashion,4,5,2,3,3,1.4581045202919307
+27,Male,Low,Working Professional,5,Occasionally,4,5,1,5,1,Food,3,3,3,3,2,2.1362939122402405
+24,Female,High,Student,3,Frequently,5,3,4,3,2,Fashion,2,4,1,4,5,2.506812400539828
+34,Female,Low,Student,1,Rarely,3,2,4,5,1,Food,5,5,1,4,2,1.519871675484911
+31,Female,Low,Working Professional,5,Occasionally,3,5,1,3,1,Food,3,5,4,5,2,4.007313641615725
+41,Female,Medium,Working Professional,2,Frequently,4,2,1,4,2,Personal Care,2,2,1,4,5,1.0
+20,Male,Medium,Student,4,Occasionally,3,4,4,3,1,Food,3,5,4,4,3,1.0
+29,Male,Medium,Working Professional,2,Occasionally,5,5,4,2,4,Personal Care,3,5,2,5,4,3.4795636838560005
+30,Male,Low,Working Professional,4,Rarely,4,2,2,5,2,Food,4,2,3,4,3,2.716564827886118
+19,Male,Medium,Student,3,Occasionally,4,5,3,3,3,Food,4,2,1,4,2,2.6643742578174474
+20,Other,Medium,Working Professional,5,Rarely,5,5,1,1,1,Fashion,2,2,3,3,2,4.603830046810902
+22,Male,Low,Student,1,Occasionally,2,3,1,4,1,Home Products,2,3,1,5,5,1.0
+28,Male,High,Student,5,Rarely,4,3,3,4,4,Home Products,4,4,2,5,2,2.260165713071078
+25,Female,Low,Working Professional,4,Frequently,2,2,2,2,4,Fashion,2,5,1,3,5,2.3236916170403976
+43,Female,Medium,Working Professional,1,Frequently,5,5,4,5,3,Food,2,2,1,5,5,1.449183015389309
+40,Male,Medium,Working Professional,5,Occasionally,5,5,4,3,1,Personal Care,4,2,2,3,3,2.8576417846872473
+40,Male,Low,Student,1,Rarely,4,4,2,5,3,Home Products,3,4,4,4,2,1.4048513407206318
+29,Male,Medium,Student,4,Rarely,3,5,2,4,3,Fashion,2,3,4,5,3,2.823540469695744
+24,Female,High,Student,3,Occasionally,4,3,3,1,1,Home Products,5,5,2,4,4,1.0537052004910352
+32,Male,Low,Student,3,Occasionally,3,5,3,5,3,Food,4,3,4,5,3,2.4670624031106945
+41,Male,High,Student,5,Occasionally,2,3,4,4,3,Home Products,2,3,1,4,2,2.336811022430067
+34,Female,Medium,Student,2,Rarely,3,4,2,3,4,Home Products,2,3,3,5,4,1.0
+21,Male,Low,Student,4,Occasionally,4,2,2,4,4,Home Products,4,2,2,5,2,4.249224472200918
+39,Female,Medium,Working Professional,5,Occasionally,3,3,4,2,3,Fashion,5,4,1,4,4,1.6494561882257492
+42,Male,Medium,Student,5,Occasionally,5,2,4,1,1,Personal Care,5,4,2,3,2,3.934516745718424
+30,Male,Medium,Student,3,Occasionally,2,2,4,1,4,Fashion,4,4,3,5,3,1.9775441822657533
+35,Female,Medium,Student,1,Occasionally,5,2,4,2,3,Fashion,5,3,1,3,2,1.386397989824475
+18,Female,High,Student,4,Rarely,5,2,4,5,2,Fashion,2,5,1,3,5,2.1902419789916974
+33,Male,High,Student,1,Rarely,5,3,3,2,2,Food,5,3,3,3,5,2.5336608061082746
+30,Female,Medium,Student,4,Occasionally,5,4,4,1,3,Food,2,4,3,3,3,5.0
+27,Female,Medium,Working Professional,2,Rarely,3,5,2,3,2,Fashion,3,2,4,3,3,1.0
+29,Female,Medium,Student,3,Occasionally,5,3,1,5,4,Personal Care,5,3,1,3,4,1.0
+19,Male,Medium,Working Professional,2,Occasionally,3,4,3,4,1,Fashion,3,2,3,5,3,1.0
+40,Other,Low,Working Professional,5,Frequently,5,5,2,3,3,Food,4,4,3,3,5,3.369874016023138
+20,Male,Medium,Working Professional,3,Occasionally,4,2,1,5,4,Personal Care,5,3,1,5,3,2.165489813353585
+27,Male,Medium,Student,5,Rarely,5,5,3,1,1,Home Products,2,2,4,5,5,3.896466024632339
+19,Male,Low,Working Professional,2,Rarely,4,5,4,1,2,Home Products,5,3,2,5,3,2.4478084978123613
+44,Male,Low,Student,4,Frequently,3,4,3,3,2,Home Products,4,4,4,4,5,3.836668415524318
+40,Female,Medium,Student,5,Rarely,2,5,4,5,2,Personal Care,4,5,3,3,4,1.309117400910985
+30,Male,Medium,Working Professional,1,Occasionally,3,2,4,4,2,Fashion,2,4,2,4,2,2.4625180643166242
+30,Male,Medium,Working Professional,4,Occasionally,2,3,4,4,4,Fashion,5,5,2,3,2,2.220534089629091
+35,Female,Medium,Student,4,Rarely,2,3,1,2,4,Personal Care,3,5,4,4,5,3.4996091879804756
+20,Male,Medium,Student,2,Rarely,5,4,3,3,1,Food,4,4,2,5,3,1.3570806178342525
+44,Male,Medium,Student,2,Occasionally,2,2,4,5,3,Personal Care,4,2,3,4,3,1.0
+24,Male,Low,Student,3,Frequently,3,2,2,3,1,Fashion,2,3,1,5,2,1.0
+31,Male,Low,Student,3,Rarely,5,5,3,4,3,Food,5,3,1,4,5,2.900195238772504
+37,Male,Medium,Working Professional,1,Frequently,2,4,2,5,2,Fashion,3,3,1,3,3,1.0209324851629384
+34,Female,Medium,Working Professional,4,Occasionally,3,2,1,1,2,Fashion,5,5,4,3,2,4.308505734288778
+38,Male,Low,Working Professional,1,Frequently,2,2,1,1,2,Food,5,5,1,4,5,1.1808131846076135
+29,Male,Medium,Student,1,Rarely,2,2,3,5,2,Home Products,3,4,1,4,4,1.0
+42,Female,Low,Working Professional,2,Rarely,5,3,1,3,4,Personal Care,2,2,1,3,3,3.044193479413063
+33,Female,Medium,Working Professional,1,Frequently,5,3,1,3,1,Home Products,4,4,2,4,3,1.0
+41,Male,Medium,Working Professional,1,Frequently,3,3,3,1,3,Home Products,2,4,2,4,5,1.0
+29,Female,Medium,Student,5,Occasionally,5,5,2,1,3,Fashion,2,2,2,3,2,4.501980055763699
+32,Male,High,Student,3,Occasionally,5,5,4,4,4,Home Products,5,5,3,5,5,1.832130193997728
+42,Male,Low,Student,3,Frequently,4,5,3,5,2,Home Products,3,4,3,3,2,1.5010990033635168
+27,Female,High,Student,4,Rarely,4,2,3,3,1,Food,4,4,3,3,5,3.602487794107593
+42,Male,Medium,Working Professional,3,Occasionally,3,3,4,4,2,Food,5,5,1,4,4,2.1135602881106523
+24,Female,Medium,Working Professional,4,Frequently,5,2,2,3,4,Personal Care,4,3,2,3,3,3.0970156789382743
+37,Male,Medium,Student,5,Rarely,3,2,4,1,3,Home Products,5,2,3,3,2,1.2235656472838219
+22,Female,Medium,Student,3,Rarely,4,4,4,5,4,Fashion,3,2,4,4,4,2.605544467462159
+18,Male,Medium,Student,5,Occasionally,4,2,2,2,3,Fashion,4,3,2,4,5,2.422571291670935
+34,Female,Medium,Student,3,Rarely,4,5,2,5,1,Personal Care,4,2,1,5,2,1.6558880046216191
+20,Female,Low,Student,3,Rarely,3,3,4,2,3,Home Products,2,3,2,3,2,2.4084948304572458
+30,Female,Low,Working Professional,2,Frequently,5,3,4,4,1,Home Products,5,4,1,5,4,2.8083151052281345
+31,Male,Medium,Student,1,Occasionally,2,2,3,2,2,Personal Care,5,2,3,5,5,1.0
+41,Female,Medium,Working Professional,1,Frequently,5,5,2,2,2,Food,5,2,1,5,4,3.3520023763103763
+35,Female,Medium,Student,1,Frequently,3,5,1,4,4,Home Products,2,4,1,5,5,2.447545434585983
+21,Female,Low,Student,1,Rarely,4,5,2,5,1,Home Products,2,5,4,3,4,1.0
+35,Female,Medium,Student,2,Rarely,2,3,4,4,2,Fashion,4,5,2,3,4,1.9089115549031106
+22,Female,High,Working Professional,2,Rarely,3,5,4,1,1,Home Products,5,4,1,3,4,3.2135007116842425
+42,Male,High,Student,5,Rarely,4,5,4,1,2,Food,5,2,4,5,4,1.6313307442604654
+33,Male,Medium,Working Professional,2,Occasionally,3,2,4,2,2,Fashion,4,2,4,4,5,1.0
+18,Male,Medium,Student,2,Occasionally,2,4,1,4,3,Personal Care,4,2,4,3,3,1.0
+38,Male,High,Working Professional,4,Occasionally,4,5,2,4,4,Food,4,3,3,5,4,3.2340437332205587
+31,Other,Medium,Working Professional,1,Rarely,5,2,1,4,3,Home Products,3,5,3,5,5,1.8465060965816251
+32,Female,Medium,Student,3,Rarely,3,2,1,5,1,Home Products,3,2,1,5,3,1.0
+26,Other,High,Working Professional,1,Occasionally,2,5,4,3,2,Fashion,4,5,2,5,2,1.149763492505452
+32,Male,Medium,Student,1,Occasionally,5,4,1,3,4,Home Products,2,5,3,5,2,1.631872514444683
+34,Female,Medium,Working Professional,2,Rarely,2,3,4,3,2,Personal Care,2,2,3,5,4,1.0
+42,Female,Low,Student,4,Occasionally,3,4,4,5,2,Fashion,5,4,1,3,2,3.200325610243128
+41,Female,Low,Student,1,Rarely,2,5,4,4,3,Personal Care,3,4,1,4,4,1.3551749177945975
+21,Female,High,Working Professional,5,Rarely,4,4,1,3,1,Fashion,3,5,3,3,4,2.755729592351013
+29,Male,Medium,Working Professional,3,Occasionally,2,2,4,4,4,Home Products,4,3,1,3,3,1.5622121866987204
+44,Female,Medium,Student,1,Rarely,3,2,1,2,4,Food,4,5,4,5,2,1.9077306667798657
+43,Female,Low,Working Professional,2,Occasionally,4,4,2,3,4,Personal Care,4,5,1,3,4,1.0
+22,Male,Medium,Student,2,Rarely,2,3,4,2,1,Home Products,4,4,4,4,2,1.0
+22,Male,Medium,Student,3,Rarely,2,4,3,5,4,Personal Care,4,2,3,4,3,1.512967340194623
+28,Female,Low,Working Professional,4,Rarely,4,5,3,1,1,Fashion,2,2,2,5,2,4.315572864818609
+23,Female,High,Student,2,Frequently,5,3,3,5,4,Food,2,3,4,4,3,1.0
+24,Other,Low,Student,3,Occasionally,5,4,3,5,2,Fashion,4,4,2,5,3,3.1960723391189654
+41,Female,Medium,Working Professional,5,Frequently,4,4,3,5,1,Fashion,2,4,3,4,3,1.7919825581755053
+31,Male,Medium,Student,5,Occasionally,2,3,1,3,3,Personal Care,4,5,1,4,4,1.8134246930637743
+41,Male,Low,Working Professional,5,Occasionally,5,4,2,2,4,Home Products,4,4,4,3,5,3.433811696231355
+28,Male,High,Student,1,Rarely,4,5,1,3,3,Personal Care,3,5,4,4,4,1.0
+30,Male,Medium,Student,2,Rarely,3,2,4,1,1,Fashion,2,3,3,5,2,1.0597407327596868
+19,Male,Medium,Student,3,Rarely,2,5,2,5,2,Food,2,4,3,4,4,1.707543874356397
+42,Male,Low,Working Professional,4,Rarely,3,4,2,4,3,Personal Care,3,4,1,4,4,3.994845045552691
+24,Male,Low,Working Professional,1,Occasionally,2,2,2,1,3,Fashion,2,5,2,3,5,1.0
+37,Female,Low,Student,3,Rarely,5,3,2,2,2,Personal Care,3,4,4,5,2,1.6459421295265158
+21,Male,Medium,Student,3,Rarely,3,5,3,1,2,Fashion,5,2,2,5,3,1.3762626346043443
+44,Female,Medium,Working Professional,2,Rarely,3,3,4,3,1,Home Products,2,3,4,5,3,1.2744447073295786
+25,Female,High,Student,4,Occasionally,4,2,2,4,4,Home Products,4,2,4,3,2,1.0173569545999275
+37,Male,Medium,Working Professional,4,Occasionally,5,4,2,3,3,Home Products,3,5,1,4,4,1.9388842219309859
+39,Male,High,Student,2,Frequently,5,2,3,5,3,Fashion,4,5,4,5,5,1.7101745174532512
+38,Male,Medium,Working Professional,5,Rarely,2,2,1,5,1,Fashion,4,5,4,4,5,1.0
+36,Male,Medium,Student,1,Rarely,4,3,1,1,4,Fashion,2,3,3,4,2,3.5223090328925917
+30,Female,Low,Working Professional,4,Rarely,4,5,1,5,1,Fashion,3,4,1,4,2,1.2242351316684643
+31,Male,Medium,Working Professional,2,Frequently,2,2,4,5,3,Fashion,5,2,3,3,4,1.73143774496869
+27,Male,Low,Student,3,Rarely,3,4,1,2,3,Personal Care,4,4,4,4,5,4.172981570570091
+28,Male,Low,Student,2,Occasionally,2,2,2,2,2,Fashion,4,5,1,3,2,2.398087963489708
+19,Other,Medium,Working Professional,3,Occasionally,2,3,3,3,2,Home Products,5,4,4,3,4,3.1737884756291725
+42,Female,High,Working Professional,1,Rarely,2,5,3,3,4,Personal Care,3,3,1,3,4,2.0961604226379325
+43,Female,Low,Student,5,Rarely,4,4,1,2,3,Fashion,2,5,2,5,2,3.3137715475488356
+26,Male,Medium,Student,3,Rarely,2,3,3,1,3,Personal Care,4,4,2,3,5,3.078803712927434
+34,Female,High,Working Professional,3,Frequently,2,2,2,2,2,Fashion,2,2,1,5,3,1.2394152461838037
+43,Female,Medium,Student,3,Occasionally,2,2,1,3,1,Home Products,3,5,4,3,4,2.1652218950725124
+20,Female,Low,Working Professional,3,Occasionally,5,5,2,4,1,Personal Care,5,5,1,3,3,3.707780586896977
+41,Other,Low,Student,2,Occasionally,3,3,4,5,3,Fashion,2,3,4,3,4,1.6085123406439141
+23,Male,Medium,Working Professional,3,Occasionally,3,3,2,4,3,Personal Care,3,3,2,3,5,1.3307031293858982
+22,Female,Medium,Working Professional,3,Occasionally,3,5,2,4,4,Fashion,2,2,4,4,3,2.4881290354592274
+22,Female,High,Working Professional,2,Rarely,3,4,2,5,4,Home Products,2,4,3,4,2,1.0
+39,Male,Medium,Student,3,Rarely,4,3,2,2,2,Food,4,4,2,3,4,1.7561787176986159
+32,Male,Low,Working Professional,5,Rarely,4,5,4,1,3,Fashion,2,5,3,4,2,4.287670153435405
+40,Other,Low,Student,5,Occasionally,2,3,1,4,1,Home Products,4,5,2,5,2,2.0462022587612196
+34,Male,Medium,Student,4,Rarely,4,5,2,1,4,Personal Care,3,4,2,4,5,3.975772647855039
+26,Female,Low,Student,5,Occasionally,3,2,1,3,2,Fashion,3,4,3,4,2,2.3525876419256266
+20,Other,Medium,Student,1,Rarely,5,2,3,4,2,Fashion,4,4,1,4,4,1.909487426329461
+37,Female,Medium,Working Professional,1,Frequently,2,3,2,3,1,Food,5,5,4,3,2,2.2983252107101118
+43,Male,Low,Student,1,Rarely,2,3,2,2,4,Personal Care,2,3,2,5,2,1.0
+34,Female,Low,Working Professional,2,Rarely,3,2,3,4,1,Food,3,3,4,3,4,1.0
+44,Male,Medium,Working Professional,5,Frequently,3,4,1,3,2,Personal Care,3,2,2,5,2,3.029775834085381
+27,Female,Low,Working Professional,1,Occasionally,3,5,4,3,3,Fashion,5,4,4,3,5,1.0
+20,Male,Low,Student,4,Frequently,4,4,2,2,1,Home Products,3,4,2,4,4,3.5088659177944153
+35,Female,Medium,Student,2,Rarely,2,4,3,1,2,Food,4,4,1,5,5,1.0
+35,Female,High,Working Professional,4,Rarely,3,4,3,1,3,Food,5,2,2,4,2,4.375905143361176
+34,Female,Low,Student,5,Occasionally,5,2,2,4,3,Home Products,3,4,1,5,3,3.389748202938472
+41,Female,Medium,Student,3,Frequently,2,3,1,2,4,Personal Care,5,3,2,5,5,2.6160884721512305
+20,Female,Medium,Student,4,Rarely,2,4,1,4,4,Fashion,5,4,4,3,5,2.7396864049097505
+20,Female,Medium,Student,3,Frequently,4,2,2,1,2,Fashion,3,2,3,3,2,1.840798966194746
+23,Male,High,Working Professional,2,Occasionally,2,5,3,2,1,Personal Care,3,5,2,4,3,1.5399087090749946
+30,Female,Medium,Student,4,Frequently,3,3,2,5,3,Food,3,5,2,4,4,1.0
+41,Male,High,Student,4,Rarely,3,5,4,5,4,Home Products,5,3,1,5,3,4.194518147916887
+32,Female,Low,Student,2,Rarely,5,4,4,2,4,Food,4,3,4,5,4,1.211817856330167
+42,Male,Low,Student,2,Frequently,2,3,1,5,1,Personal Care,4,3,1,3,2,1.0
+26,Male,High,Student,1,Frequently,2,4,4,3,4,Home Products,2,5,4,3,3,2.3250406433846873
+21,Female,Medium,Student,5,Occasionally,4,3,3,3,2,Food,3,4,4,3,2,4.234245052922272
+31,Male,Low,Student,4,Rarely,3,4,4,3,1,Personal Care,4,2,1,3,5,2.0491574510940147
+22,Male,Medium,Working Professional,4,Rarely,5,5,2,1,3,Personal Care,2,2,3,3,3,1.793914763576051
+19,Female,High,Student,2,Occasionally,3,5,3,2,2,Home Products,2,4,4,5,4,2.3310727301955376
+28,Female,High,Student,2,Rarely,2,4,1,5,3,Home Products,3,5,3,5,5,1.3331353418183398
+26,Female,Medium,Student,5,Rarely,2,3,1,1,3,Food,2,5,1,4,4,2.9239507429325187
+41,Male,High,Student,2,Rarely,5,5,4,5,4,Personal Care,4,2,3,5,5,1.7944414317391382
+20,Female,Low,Working Professional,3,Occasionally,2,3,1,1,2,Fashion,2,3,4,3,4,1.7619385450403926
+44,Male,Low,Student,3,Rarely,5,3,2,1,2,Personal Care,2,3,1,5,4,2.105955556985064
+26,Female,Medium,Student,3,Occasionally,5,5,3,5,1,Fashion,4,2,3,5,2,3.3587155967502684
+20,Female,Low,Student,3,Occasionally,3,2,2,5,2,Home Products,2,2,1,5,5,2.0017916341308326
+42,Female,Medium,Working Professional,5,Occasionally,5,2,2,4,1,Fashion,2,4,1,4,2,2.8632498739630523
+19,Male,Medium,Student,4,Occasionally,2,3,2,1,2,Food,5,4,3,4,2,2.1560377224959293
+29,Male,Medium,Working Professional,3,Rarely,4,5,2,3,3,Food,2,4,4,5,2,3.6238064217418113
+27,Male,Low,Student,2,Occasionally,4,2,3,2,1,Fashion,2,4,4,5,2,2.056521572998413
+26,Male,Low,Working Professional,3,Frequently,2,4,3,4,2,Fashion,5,4,4,3,4,1.5310022729407766
+32,Male,Medium,Working Professional,5,Occasionally,4,3,2,4,1,Home Products,5,4,4,4,2,2.577666222942029
+25,Female,Medium,Student,2,Frequently,4,2,2,5,4,Home Products,5,3,2,3,2,1.0
+42,Male,Medium,Student,3,Occasionally,5,5,1,4,4,Fashion,3,2,1,3,2,1.5099305312605082
+22,Female,Medium,Student,4,Occasionally,4,5,1,5,1,Fashion,3,5,1,5,4,2.2757657546423116
+28,Male,Medium,Student,2,Rarely,4,3,3,5,1,Home Products,4,4,2,5,5,1.0
+44,Female,High,Student,2,Occasionally,4,5,1,3,3,Home Products,2,3,1,5,4,2.154755463568946
+19,Female,Low,Student,4,Occasionally,3,4,3,1,2,Fashion,4,2,1,3,4,3.556708315014529
+41,Male,Low,Student,2,Rarely,2,4,3,4,4,Home Products,3,2,3,3,4,1.9057306076839162
+32,Male,High,Student,3,Occasionally,5,2,4,1,4,Food,2,2,2,3,5,2.9925505845152465
+23,Female,Medium,Student,2,Rarely,4,5,3,5,2,Fashion,2,4,1,5,2,3.4447479986365312
+25,Male,High,Student,3,Occasionally,2,4,1,1,4,Home Products,5,4,1,5,2,3.130328385841344
+44,Female,Medium,Student,4,Occasionally,4,3,4,5,4,Fashion,3,5,2,5,5,2.994169598563931
+22,Female,Medium,Working Professional,1,Occasionally,3,5,1,1,1,Fashion,2,4,2,3,5,2.969504233397417
+33,Female,Medium,Student,4,Frequently,3,2,3,4,4,Fashion,5,2,3,3,3,1.0
+43,Male,Medium,Working Professional,3,Rarely,4,3,3,5,4,Personal Care,2,2,3,4,2,1.0
+35,Female,Medium,Student,5,Rarely,4,3,2,4,4,Food,3,3,4,5,4,1.7197724173349853
+23,Female,Medium,Student,4,Rarely,4,3,3,5,2,Home Products,4,3,4,3,4,1.5432091185510939
+22,Female,Medium,Student,5,Frequently,3,4,4,2,3,Fashion,4,5,3,4,2,3.728598521046912
+33,Male,High,Student,3,Occasionally,3,3,3,2,1,Fashion,2,3,1,3,5,2.503514275373206
+30,Female,Low,Working Professional,3,Occasionally,2,4,2,2,3,Home Products,5,5,2,3,3,1.4201823859686526
+22,Male,Low,Working Professional,3,Rarely,5,3,3,2,4,Fashion,5,3,3,5,4,2.763533706102822
+30,Female,Medium,Student,1,Occasionally,5,4,3,5,4,Personal Care,5,2,4,4,3,2.1358310171616424
+34,Male,Medium,Working Professional,2,Rarely,3,5,3,1,4,Home Products,3,4,2,3,4,3.0757478424264386
+35,Female,High,Student,4,Occasionally,5,4,2,3,3,Food,4,4,4,4,4,2.486974304284555
+25,Male,Medium,Working Professional,3,Frequently,4,4,1,3,2,Fashion,4,5,1,4,2,1.3429856700660245
+30,Female,Medium,Working Professional,4,Occasionally,2,5,3,2,2,Home Products,2,4,1,5,4,1.6214477732166106
+36,Female,Medium,Student,5,Occasionally,3,3,4,1,1,Fashion,4,4,4,4,3,2.920124180945569
+43,Female,Medium,Student,2,Occasionally,3,5,2,4,3,Home Products,5,3,2,5,3,1.0
+20,Female,High,Student,1,Occasionally,5,3,4,1,2,Home Products,3,2,4,5,2,3.148301310458182
+41,Male,Low,Working Professional,4,Occasionally,4,4,3,4,1,Food,5,4,2,5,4,1.3573378936923761
+25,Other,Medium,Student,2,Occasionally,2,3,2,3,4,Home Products,5,2,3,4,3,1.0
+19,Male,High,Working Professional,1,Rarely,5,4,3,5,4,Personal Care,4,3,4,3,5,2.5553535769389626
+25,Female,High,Working Professional,4,Rarely,3,3,4,1,1,Fashion,3,3,4,5,2,2.2239943849250916
+44,Female,Medium,Student,2,Occasionally,3,4,2,3,2,Fashion,3,4,2,3,5,2.1711983021388086
+30,Female,Medium,Student,5,Occasionally,5,4,1,1,3,Home Products,5,4,3,4,3,2.5009332314353596
+30,Male,Low,Working Professional,4,Rarely,4,2,1,4,1,Food,2,3,2,3,5,2.4031295555634653
+18,Female,Medium,Student,2,Occasionally,2,3,1,1,2,Home Products,4,3,2,3,2,2.6072035785432366
+23,Female,High,Working Professional,1,Rarely,2,3,3,4,1,Home Products,2,5,4,5,5,1.0
+41,Male,Medium,Student,2,Rarely,2,2,2,2,2,Personal Care,5,5,4,5,3,1.7125874113196797
+36,Female,Low,Student,1,Occasionally,2,4,4,1,4,Personal Care,4,2,2,5,5,3.8957757766099057
+33,Male,Low,Student,4,Occasionally,4,4,4,4,1,Personal Care,2,3,1,4,5,3.1713230450442684
+25,Male,Low,Working Professional,4,Occasionally,3,2,3,3,3,Fashion,2,2,1,3,5,1.10677886758468
+18,Male,Low,Student,4,Occasionally,3,2,3,2,1,Personal Care,2,3,1,4,4,2.4348572703269746
+44,Male,Low,Working Professional,3,Frequently,2,5,4,1,4,Home Products,4,2,4,4,3,1.0
+44,Female,Medium,Student,1,Occasionally,2,4,2,4,4,Personal Care,2,5,4,4,5,1.0
+33,Male,Low,Working Professional,4,Rarely,2,5,3,1,2,Home Products,3,3,3,4,3,4.091754863809793
+26,Male,Low,Student,1,Rarely,5,3,2,4,4,Home Products,5,3,4,5,5,2.007907880073969
+30,Male,Medium,Student,2,Rarely,5,5,4,1,2,Personal Care,4,2,3,3,2,4.438380164178955
+28,Female,Low,Working Professional,1,Frequently,3,2,2,2,4,Home Products,3,2,4,5,2,1.6261504164268346
+30,Female,Low,Student,1,Rarely,3,2,1,2,2,Personal Care,2,4,1,5,2,1.0
+42,Male,Medium,Student,4,Rarely,2,2,4,1,3,Personal Care,5,4,1,4,5,2.043181147352183
+38,Male,Low,Student,5,Rarely,5,2,1,1,2,Fashion,2,5,2,5,3,3.4681315766571856
+27,Female,Medium,Working Professional,5,Frequently,4,5,4,5,2,Fashion,3,3,2,3,2,4.913611203620823
+21,Male,Low,Working Professional,3,Rarely,5,5,1,1,3,Home Products,2,3,3,4,4,3.90302326770738
+44,Male,Medium,Student,3,Frequently,3,5,2,1,2,Food,4,2,3,5,2,1.8565515420077487
+23,Male,High,Student,5,Rarely,5,2,4,2,2,Fashion,3,5,2,4,2,2.8066408779572627
+24,Female,Medium,Working Professional,2,Rarely,3,2,4,1,3,Fashion,4,3,3,3,4,2.172794999769453
+22,Male,Medium,Student,4,Rarely,2,4,1,3,4,Personal Care,5,5,4,4,2,1.0
+28,Female,High,Working Professional,4,Frequently,4,4,2,1,1,Home Products,4,4,1,5,5,2.9821955597289658
+30,Male,Medium,Student,2,Frequently,2,2,4,5,2,Personal Care,4,2,2,5,5,1.0
+43,Other,Low,Working Professional,2,Rarely,2,4,3,4,4,Home Products,2,3,2,3,2,1.685797940224462
+42,Male,Medium,Working Professional,4,Rarely,4,3,1,2,1,Home Products,2,2,4,3,3,2.8011894873004284
+36,Female,High,Working Professional,3,Occasionally,4,3,4,3,3,Personal Care,3,4,3,4,3,1.0
+40,Male,Medium,Working Professional,2,Rarely,4,2,2,4,2,Food,5,5,2,5,2,1.3545274315362148
+27,Male,Low,Student,3,Rarely,3,5,2,3,2,Personal Care,3,5,2,3,4,2.9682355543863657
+27,Female,Medium,Student,1,Rarely,2,3,2,2,3,Food,5,4,4,3,5,2.5452017284428523
+28,Male,High,Student,4,Rarely,3,3,2,5,2,Fashion,5,4,1,5,5,2.6621091138852253
+38,Female,Low,Working Professional,5,Rarely,4,5,1,2,1,Fashion,4,3,2,3,5,1.7042586365379584
+24,Female,Medium,Working Professional,4,Rarely,3,4,4,3,1,Home Products,2,3,2,3,2,1.0
+35,Female,Low,Working Professional,5,Rarely,4,5,1,3,3,Home Products,5,3,4,5,5,2.042757187399748
+21,Male,Medium,Student,1,Frequently,5,4,1,2,2,Food,2,3,2,3,2,3.7056037136791264
+19,Female,Low,Student,4,Rarely,4,4,2,1,4,Personal Care,5,3,2,5,2,3.4949876096223416
+31,Male,Medium,Student,3,Occasionally,2,5,3,2,2,Food,2,5,1,5,3,4.13932125111147
+30,Female,High,Working Professional,5,Rarely,2,4,2,5,3,Fashion,3,3,2,4,4,3.184422192409857
+29,Female,Medium,Student,2,Occasionally,2,3,3,2,4,Fashion,2,4,4,5,4,1.4953905972425174
+24,Female,Medium,Student,4,Rarely,3,2,1,4,1,Personal Care,4,4,1,3,4,1.2445199080999352
+19,Male,Medium,Working Professional,1,Occasionally,2,4,2,1,1,Home Products,5,3,1,4,5,1.8741706948163812
+30,Female,Low,Student,4,Rarely,4,3,2,4,4,Home Products,4,4,1,4,3,3.041105641131106
+31,Male,Medium,Student,4,Frequently,5,5,1,2,4,Personal Care,5,2,3,3,3,4.510942429663306
+44,Female,Low,Student,4,Rarely,2,4,2,1,3,Personal Care,4,5,4,4,2,2.110994341945098
+34,Male,Medium,Working Professional,3,Rarely,3,3,4,4,2,Fashion,5,5,3,3,3,3.791987381003528
+26,Female,Low,Student,1,Frequently,5,4,3,4,1,Personal Care,2,3,2,4,2,1.7556471193993455
+34,Female,Medium,Working Professional,1,Occasionally,2,5,3,1,2,Personal Care,5,2,1,3,3,2.883210902945107
+25,Female,High,Student,4,Rarely,2,2,3,1,1,Home Products,4,3,3,5,2,2.336727484097886
+19,Male,High,Working Professional,2,Frequently,5,4,2,3,2,Home Products,4,3,2,5,5,1.9456861032527455
+41,Female,Medium,Student,4,Rarely,2,2,4,1,1,Food,5,4,3,4,3,1.0
+30,Male,Low,Student,3,Rarely,3,4,2,2,2,Fashion,5,5,1,4,4,1.0
+20,Male,Medium,Working Professional,5,Frequently,4,4,3,5,3,Personal Care,3,2,2,5,2,3.676735539315917
+33,Male,High,Working Professional,3,Rarely,4,5,2,3,1,Personal Care,3,4,1,3,3,3.25233729604956
+23,Male,Low,Student,2,Frequently,5,4,3,1,3,Home Products,2,5,1,4,3,3.2926524254057346
+36,Male,High,Working Professional,4,Rarely,4,3,1,5,1,Personal Care,2,5,3,5,2,3.5541532433034977
+24,Female,Medium,Student,1,Occasionally,2,3,3,3,1,Food,2,3,4,4,3,1.0
+27,Male,High,Working Professional,4,Occasionally,2,2,1,2,1,Home Products,2,2,2,5,4,1.3279725448392998
+26,Male,High,Working Professional,2,Frequently,3,2,1,5,2,Fashion,2,3,2,5,2,1.0
+19,Female,High,Student,1,Occasionally,4,3,1,1,1,Fashion,5,4,4,5,2,1.0
+32,Male,Medium,Working Professional,3,Rarely,5,2,3,1,3,Home Products,3,3,2,3,2,1.8008371719917118
+22,Female,Low,Student,5,Occasionally,2,2,4,2,2,Home Products,5,3,3,4,2,1.0275002298929186
+39,Female,Medium,Student,5,Rarely,5,3,3,3,2,Fashion,3,5,2,3,2,1.4301396994183952
+21,Female,Medium,Working Professional,4,Occasionally,2,3,2,5,1,Fashion,3,5,3,3,4,1.0
+37,Female,Low,Working Professional,3,Frequently,2,3,2,2,4,Home Products,4,4,2,5,2,1.6341777480926603
+21,Female,Medium,Student,2,Occasionally,3,5,4,3,2,Home Products,4,5,3,3,4,3.6871009073866503
+35,Female,Medium,Student,5,Occasionally,4,5,4,4,1,Fashion,3,5,4,4,4,1.8807523672279667
+21,Male,Medium,Student,3,Rarely,3,3,4,4,3,Personal Care,5,5,2,4,4,2.673462758144179
+44,Female,Medium,Working Professional,4,Occasionally,4,4,1,3,4,Personal Care,3,3,3,5,2,2.8211822434859974
+34,Male,Low,Student,1,Rarely,5,3,4,1,2,Food,2,2,1,5,4,2.6369704271219283
+29,Female,High,Student,4,Occasionally,4,5,4,1,4,Fashion,5,4,1,4,2,3.3447864895314448
+39,Male,Low,Student,4,Rarely,5,2,4,4,2,Home Products,5,3,1,4,4,1.0
+34,Female,Medium,Student,3,Occasionally,2,4,3,1,4,Home Products,3,4,2,5,2,1.04833718436362
+27,Male,Medium,Student,5,Rarely,5,4,2,5,4,Fashion,2,3,3,3,3,4.173579551268569
+39,Female,High,Student,3,Occasionally,5,2,2,3,3,Home Products,3,4,1,4,3,2.2461898944345315
+18,Male,Low,Student,1,Rarely,2,4,4,3,4,Fashion,2,5,2,5,4,1.0
+39,Female,Medium,Student,3,Frequently,5,2,2,1,3,Home Products,5,4,3,5,5,2.3825286534012826
+43,Female,Medium,Working Professional,2,Rarely,5,5,3,3,1,Home Products,3,2,1,4,5,3.0923626179587758
+41,Male,Low,Student,4,Occasionally,2,4,2,5,2,Fashion,2,4,1,5,3,1.0
+44,Female,Medium,Working Professional,5,Rarely,2,4,1,4,3,Fashion,4,2,2,4,4,1.7033625478708705
+35,Female,High,Working Professional,1,Occasionally,2,2,3,5,2,Home Products,5,4,3,5,4,1.81836479423863
+35,Female,High,Working Professional,4,Rarely,4,2,2,5,3,Personal Care,5,5,2,5,4,2.3893165148959064
+31,Male,Low,Working Professional,3,Occasionally,2,5,2,1,2,Personal Care,4,4,1,3,5,3.886660862335666
+32,Male,Low,Student,5,Rarely,2,2,3,1,3,Personal Care,2,3,2,5,3,1.0236530414121516
+29,Male,Medium,Student,3,Occasionally,5,2,2,5,2,Food,5,5,2,4,4,2.881685076673442
+21,Male,Medium,Student,4,Rarely,3,5,2,5,1,Home Products,2,5,1,4,3,1.0684270585561422

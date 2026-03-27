@@ -1,71 +1,92 @@
 import streamlit as st
-import pandas as pd
 import plotly.express as px
-from mlxtend.frequent_patterns import apriori, association_rules
+from sklearn.cluster import KMeans
+from sklearn.preprocessing import StandardScaler
+from sklearn.decomposition import PCA
 
+# -----------------------------
+# HEADER
+# -----------------------------
+def header():
+    col1, col2 = st.columns([1, 6])
+
+    with col1:
+        st.image("logo.png", width=60)
+
+    with col2:
+        st.markdown("## EcoSense AI")
+
+
+# -----------------------------
+# MAIN FUNCTION
+# -----------------------------
 def show(df):
-    st.title("🔗 Association Rules")
-    st.caption("Discovering patterns in customer behavior")
 
-    st.markdown(" ")
+    header()
+    st.markdown("---")
+
+    st.title("🔍 Customer Segmentation")
+    st.caption("Grouping customers based on behavior")
 
     try:
         # -----------------------------
-        # Prepare Data
+        # SELECT FEATURES
         # -----------------------------
-        df_rules = df[['Preferred_Category', 'Purchase_Frequency', 'Income']]
-        df_encoded = pd.get_dummies(df_rules)
+        features = [
+            "Awareness",
+            "Price_Sensitivity",
+            "Environmental_Concern",
+            "Health_Concern",
+            "Social_Influence"
+        ]
 
-        # -----------------------------
-        # Apriori
-        # -----------------------------
-        freq_items = apriori(df_encoded, min_support=0.1, use_colnames=True)
-
-        rules = association_rules(freq_items, metric="confidence", min_threshold=0.5)
-
-        if rules.empty:
-            st.warning("No strong association rules found.")
-            return
-
-        rules = rules.sort_values(by="lift", ascending=False)
-
-        # Clean columns
-        rules['antecedents'] = rules['antecedents'].apply(lambda x: ', '.join(list(x)))
-        rules['consequents'] = rules['consequents'].apply(lambda x: ', '.join(list(x)))
-
-        st.markdown("### 🎯 Top Rule Insight")
-
-        top_rule = rules.iloc[0]
-
-        st.success(f"""
-**If a user shows:** {top_rule['antecedents']}  
-👉 They are likely to also show: **{top_rule['consequents']}**
-
-Lift: {top_rule['lift']:.2f} | Confidence: {top_rule['confidence']:.2f}
-""")
-
-        st.markdown("---")
+        X = df[features]
 
         # -----------------------------
-        # VISUAL: Lift Chart
+        # SCALE
         # -----------------------------
-        st.markdown("### 📊 Strongest Associations (by Lift)")
+        scaler = StandardScaler()
+        X_scaled = scaler.fit_transform(X)
 
-        top_rules = rules.head(8).copy()
-        top_rules['rule'] = top_rules['antecedents'] + " → " + top_rules['consequents']
+        # -----------------------------
+        # KMEANS
+        # -----------------------------
+        kmeans = KMeans(n_clusters=4, random_state=42)
+        df['Cluster'] = kmeans.fit_predict(X_scaled)
 
-        fig = px.bar(
-            top_rules,
-            x='lift',
-            y='rule',
-            orientation='h'
+        # -----------------------------
+        # PCA (for visualization)
+        # -----------------------------
+        pca = PCA(n_components=2)
+        components = pca.fit_transform(X_scaled)
+
+        df['PC1'] = components[:, 0]
+        df['PC2'] = components[:, 1]
+
+        # -----------------------------
+        # CLEAN SCATTER (PASTEL 🌿)
+        # -----------------------------
+        st.markdown("### 📊 Customer Segments")
+
+        fig = px.scatter(
+            df,
+            x="PC1",
+            y="PC2",
+            color=df["Cluster"].astype(str),
+            color_discrete_sequence=[
+                "#52b788",
+                "#74c69d",
+                "#95d5b2",
+                "#b7e4c7"
+            ],
+            opacity=0.7
         )
 
         fig.update_layout(
             template="simple_white",
-            margin=dict(l=10, r=10, t=30, b=10),
-            yaxis_title="Rule",
-            xaxis_title="Lift"
+            paper_bgcolor="#f7fcf9",
+            plot_bgcolor="#f7fcf9",
+            font=dict(color="#1b4332")
         )
 
         st.plotly_chart(fig, use_container_width=True)
@@ -73,48 +94,64 @@ Lift: {top_rule['lift']:.2f} | Confidence: {top_rule['confidence']:.2f}
         st.markdown("---")
 
         # -----------------------------
-        # Table (clean)
+        # SEGMENT PROFILES
         # -----------------------------
-        st.markdown("### 📋 Rule Details")
+        st.markdown("### 📋 Segment Profiles")
 
-        display_cols = ['antecedents', 'consequents', 'support', 'confidence', 'lift']
+        cluster_summary = df.groupby("Cluster")[features].mean().round(2)
 
         st.dataframe(
-            rules[display_cols].head(10),
+            cluster_summary.style.set_properties(**{
+                'background-color': '#ffffff',
+                'color': '#1b4332'
+            }),
             use_container_width=True
         )
 
         st.markdown("---")
 
         # -----------------------------
-        # Insights
+        # SEGMENT INTERPRETATION
         # -----------------------------
-        st.markdown("### 🔍 Key Insights")
+        st.markdown("### 🧠 Segment Insights")
 
         st.markdown("""
-- High lift values indicate **strong relationships between behaviors**
-- Certain customer groups tend to exhibit **predictable patterns**
-- These insights help in **personalization and targeting**
+**Cluster 0 – Premium Eco Users**
+- High awareness  
+- Low price sensitivity  
+👉 Target with premium products  
+
+**Cluster 1 – Price-Sensitive Greens**
+- High awareness  
+- High price sensitivity  
+👉 Offer discounts  
+
+**Cluster 2 – Unaware Users**
+- Low awareness  
+👉 Focus on education  
+
+**Cluster 3 – Casual Buyers**
+- Moderate behavior  
+👉 Use retargeting strategies  
 """)
 
         st.markdown("---")
 
         # -----------------------------
-        # Business Use
+        # BUSINESS STRATEGY
         # -----------------------------
-        st.markdown("### 🚀 Business Applications")
+        st.markdown("### 🚀 Business Application")
 
         st.success("""
-Use these rules to:
+Customer segmentation enables:
 
-• Recommend related products  
-• Create smart bundles  
-• Personalize user journeys  
-• Improve cross-selling  
+• Personalized marketing  
+• Better targeting  
+• Improved conversion  
 
-👉 This directly increases conversion and revenue
+👉 Focus on Cluster 1 for highest growth potential
 """)
 
     except Exception as e:
-        st.error("Error in association rules page")
+        st.error("Error in clustering page")
         st.write(e)

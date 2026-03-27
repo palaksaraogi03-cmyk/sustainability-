@@ -4,6 +4,9 @@ import plotly.express as px
 def show(df):
     st.title("📊 Descriptive Analysis")
 
+    # -----------------------------
+    # Demographics
+    # -----------------------------
     st.markdown("### 👥 Customer Demographics")
 
     col1, col2 = st.columns(2)
@@ -27,10 +30,12 @@ def show(df):
 
     col3, col4 = st.columns(2)
 
+    # Awareness
     with col3:
         fig_awareness = px.histogram(df, x="Awareness", title="Awareness Levels")
         st.plotly_chart(fig_awareness, use_container_width=True)
 
+    # Purchase Frequency
     with col4:
         fig_freq = px.pie(df, names="Purchase_Frequency", title="Purchase Frequency")
         st.plotly_chart(fig_freq, use_container_width=True)
@@ -38,17 +43,20 @@ def show(df):
     st.markdown("---")
 
     # -----------------------------
-    # Preferences
+    # Product Preferences (FIXED)
     # -----------------------------
     st.markdown("### 🛍️ Product Preferences")
 
+    cat_df = df['Preferred_Category'].value_counts().reset_index()
+    cat_df.columns = ['Category', 'Count']
+
     fig_cat = px.bar(
-        df['Preferred_Category'].value_counts().reset_index(),
-        x='index',
-        y='Preferred_Category',
-        labels={'index': 'Category', 'Preferred_Category': 'Count'},
+        cat_df,
+        x='Category',
+        y='Count',
         title="Preferred Categories"
     )
+
     st.plotly_chart(fig_cat, use_container_width=True)
 
     st.markdown("---")
@@ -64,7 +72,7 @@ def show(df):
     st.markdown("---")
 
     # -----------------------------
-    # Insights
+    # Key Insights
     # -----------------------------
     st.markdown("### 🔍 Key Insights")
 

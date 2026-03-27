@@ -41,7 +41,7 @@ def show(df):
         ]]
 
         # -----------------------------
-        # BINARIZE (IMPORTANT)
+        # BINARIZE
         # -----------------------------
         binary = selected.applymap(lambda x: 1 if x >= 4 else 0)
 
@@ -53,15 +53,27 @@ def show(df):
         rules = association_rules(frequent, metric="confidence", min_threshold=0.6)
 
         # -----------------------------
-        # FORMAT RULES
+        # HANDLE EMPTY RULES 🔥
+        # -----------------------------
+        if rules.empty:
+            st.warning("No strong association rules found. Try adjusting thresholds.")
+            return
+
+        # -----------------------------
+        # CLEAN RULE FORMAT
         # -----------------------------
         rules['antecedents'] = rules['antecedents'].apply(lambda x: ', '.join(list(x)))
         rules['consequents'] = rules['consequents'].apply(lambda x: ', '.join(list(x)))
 
+        # Ensure numeric
+        rules['confidence'] = rules['confidence'].astype(float)
+        rules['lift'] = rules['lift'].astype(float)
+        rules['support'] = rules['support'].astype(float)
+
         # -----------------------------
         # TOP RULES
         # -----------------------------
-        st.markdown("### 🔥 Top Association Rules")
+        st.markdown("### 🔥 Top Rules")
 
         top_rules = rules.sort_values(by="confidence", ascending=False).head(5)
 
@@ -77,7 +89,7 @@ Lift: {row['lift']:.2f}
         st.markdown("---")
 
         # -----------------------------
-        # VISUAL (CONFIDENCE)
+        # BAR CHART (CONFIDENCE)
         # -----------------------------
         st.markdown("### 📊 Rule Strength (Confidence)")
 
@@ -101,7 +113,7 @@ Lift: {row['lift']:.2f}
         st.markdown("---")
 
         # -----------------------------
-        # LIFT VISUAL
+        # LIFT SCATTER (FIXED 🔥)
         # -----------------------------
         st.markdown("### 📈 Lift Analysis")
 
@@ -109,8 +121,8 @@ Lift: {row['lift']:.2f}
             rules,
             x="support",
             y="lift",
-            size="confidence",
-            color_discrete_sequence=["#52b788"],
+            color="confidence",  # better visual encoding
+            color_continuous_scale=["#d8f3dc", "#52b788"],
             opacity=0.7
         )
 
@@ -126,30 +138,30 @@ Lift: {row['lift']:.2f}
         st.markdown("---")
 
         # -----------------------------
-        # BUSINESS INSIGHTS
+        # INSIGHTS
         # -----------------------------
         st.markdown("### 🧠 Key Insights")
 
         st.markdown("""
-- Customers with high awareness value certifications  
+- High awareness users prefer certifications  
 - Health-conscious users rely on reviews  
-- Price-sensitive users still show eco-interest  
+- Strong relationships exist between trust signals  
 
-👉 Bundling features can increase conversions
+👉 Combining features improves conversions
 """)
 
         st.markdown("---")
 
         # -----------------------------
-        # BUSINESS APPLICATION
+        # BUSINESS USE
         # -----------------------------
         st.markdown("### 🚀 Business Application")
 
         st.success("""
 Use association rules to:
 
-• Recommend bundled features  
-• Personalize product suggestions  
+• Bundle product features  
+• Recommend combinations  
 • Improve cross-selling  
 
 👉 Example: Show certifications + reviews together

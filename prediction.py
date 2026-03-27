@@ -58,7 +58,7 @@ def show(df):
         st.markdown("---")
 
         # -----------------------------
-        # ROC Curve
+        # ROC Curve (🔥 UPGRADED)
         # -----------------------------
         st.markdown("### 📈 ROC Curve")
 
@@ -66,16 +66,34 @@ def show(df):
         roc_auc = auc(fpr, tpr)
 
         fig_roc = go.Figure()
+
+        # ROC Curve
         fig_roc.add_trace(go.Scatter(
-            x=fpr, y=tpr,
+            x=fpr,
+            y=tpr,
             mode='lines',
-            name=f"AUC = {roc_auc:.2f}"
+            name=f"ROC Curve (AUC = {roc_auc:.2f})",
+            line=dict(width=3, color="#6366F1"),
+            fill='tozeroy',
+            fillcolor='rgba(99,102,241,0.1)'
+        ))
+
+        # Baseline
+        fig_roc.add_trace(go.Scatter(
+            x=[0, 1],
+            y=[0, 1],
+            mode='lines',
+            name="Random Model",
+            line=dict(dash='dash', color='gray')
         ))
 
         fig_roc.update_layout(
             template="simple_white",
+            title="ROC Curve",
             xaxis_title="False Positive Rate",
-            yaxis_title="True Positive Rate"
+            yaxis_title="True Positive Rate",
+            legend=dict(orientation="h", y=-0.2),
+            margin=dict(l=10, r=10, t=40, b=10)
         )
 
         st.plotly_chart(fig_roc, use_container_width=True)
@@ -100,7 +118,8 @@ def show(df):
         )
 
         fig_imp.update_layout(
-            template="simple_white"
+            template="simple_white",
+            margin=dict(l=10, r=10, t=30, b=10)
         )
 
         st.plotly_chart(fig_imp, use_container_width=True)
@@ -117,20 +136,20 @@ def show(df):
         st.markdown(f"""
 - The most important driver of purchase intent is **{top_feature}**
 - Awareness and price sensitivity strongly influence decisions  
-- Model can effectively predict high-value customers  
+- The model effectively distinguishes high-intent users  
 """)
 
         st.markdown("---")
 
         # -----------------------------
-        # Business Use
+        # Business Application
         # -----------------------------
         st.markdown("### 🚀 Business Application")
 
         st.success("""
 Use this model to:
 
-• Target high-intent customers  
+• Target high-intent users  
 • Personalize marketing campaigns  
 • Optimize pricing strategies  
 • Improve conversion rates  
